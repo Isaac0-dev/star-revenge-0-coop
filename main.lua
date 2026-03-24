@@ -1,0 +1,3 @@
+-- name: Star Revenge 0
+-- description: Extracted with rom-decomp-64.
+-- incompatible: romhack

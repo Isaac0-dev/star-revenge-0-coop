@@ -1,0 +1,5 @@
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bowser_2
+const LevelScript bowser_2_entry[] = {
+/* 0x002AC2C4 :: 02040000 */                                                     EXECUTE(/* seg */ 0x000e, /* start */ 0x004ce9f0, /* end */ 0x004cec00, level_bowser_2_entry),
+/* 0x002AC2D4 :: 07040000 */                                                     RETURN(),
+};

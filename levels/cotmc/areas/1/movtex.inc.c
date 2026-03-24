@@ -1,0 +1,19 @@
+Movtex cotmc_area_1_movtex_tris_0700BED0[] = {
+    MOV_TEX_SPD(30),
+    MOV_TEX_TRIS(256, 0, -7373, 0, 0),
+    MOV_TEX_TRIS(256, 5120, -7373, 4, 0),
+    MOV_TEX_TRIS(-256, 0, -7373, 0, 1),
+    MOV_TEX_TRIS(-256, 5120, -7373, 4, 1),
+    MOV_TEX_TRIS(1536, -204, 3584, 0, 0),
+    MOV_TEX_TRIS(1536, 0, 3430, 1, 0),
+    MOV_TEX_TRIS(1536, 0, -7680, 5, 0),
+    MOV_TEX_TRIS(-1536, -204, 3584, 0, 2),
+    MOV_TEX_TRIS(-1536, 0, 3430, 1, 2),
+    MOV_TEX_TRIS(-1536, 0, -7680, 5, 2),
+    MOV_TEX_TRIS(-1024, -614, 3584, 0, 0),
+    MOV_TEX_TRIS(-1024, 1434, 3584, 1, 0),
+    MOV_TEX_TRIS(1024, -614, 3584, 0, 1),
+    MOV_TEX_TRIS(1024, 1434, 3584, 1, 1),
+    MOV_TEX_END(),
+};
+

@@ -1,0 +1,81 @@
+{
+    "date": "1996-02-14",
+    "sample_bank": "sample_bank8",
+    "envelopes": {
+        "envelope0": [
+            [1, 0],
+            [1, 32700],
+            [1, 32700],
+            [32700, 29430],
+            ["goto", 2]
+        ],
+        "envelope1_unused": [
+            "stop"
+        ],
+        "envelope2": [
+            [1, 0],
+            [1, 32700],
+            [1, 32700],
+            [32700, 19620],
+            ["goto", 2]
+        ],
+        "envelope3_unused": [
+            "stop"
+        ],
+        "envelope4": [
+            [1, 0],
+            [1, 10000],
+            [30, 10000],
+            [30, 32700],
+            ["goto", 2]
+        ]
+    },
+    "instruments": {
+        "inst0": {
+            "release_rate": 208,
+            "normal_range_hi": 50,
+            "envelope": "envelope0",
+            "sound": null,
+            "sound_hi": null
+        },
+        "inst1": {
+            "release_rate": 208,
+            "envelope": "envelope2",
+            "sound": null
+        },
+        "inst2": {
+            "release_rate": 208,
+            "envelope": "envelope4",
+            "sound": null
+        },
+        "inst3": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": null
+        },
+        "inst4": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": null
+        },
+        "inst5": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": null
+        },
+        "inst6": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": null
+        }
+    },
+    "instrument_list": [
+        "inst0",
+        "inst1",
+        "inst2",
+        "inst3",
+        "inst4",
+        "inst5",
+        "inst6"
+    ]
+}

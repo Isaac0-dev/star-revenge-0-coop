@@ -1,0 +1,5 @@
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> ending
+const LevelScript ending_entry[] = {
+/* 0x002AC238 :: 05080000 0E000044 */                                            EXECUTE(/* seg */ 0x000e, /* start */ 0x004ac4b0, /* end */ 0x004ac570, level_ending_entry),
+/* 0x002AC248 :: 07040000 */                                                     RETURN(),
+};

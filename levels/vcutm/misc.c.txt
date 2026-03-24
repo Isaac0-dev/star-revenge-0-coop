@@ -1,0 +1,5 @@
+// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> vcutm
+const LevelScript vcutm_entry[] = {
+/* 0x002AC1AC :: 02040000 */                                                     EXECUTE(/* seg */ 0x000e, /* start */ 0x00461220, /* end */ 0x004614d0, level_vcutm_entry),
+/* 0x002AC1BC :: 07040000 */                                                     RETURN(),
+};

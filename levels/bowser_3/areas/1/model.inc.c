@@ -1,0 +1,106 @@
+const Vtx bowser_3_area_1_vertex_07004060_n16[] = {
+    {{{ -1182,  -2364,    394}, 0, {  2232,     24}, {216, 137, 245, 255}}},
+    {{{ -2364,  -1852,   -787}, 0, {  3412,   1202}, {216, 137, 245, 255}}},
+    {{{  -787,  -2364,  -1024}, 0, {  3648,   -370}, {216, 137, 245, 255}}},
+    {{{ -1182,  -2364,    394}, 0, {  2232,     24}, {233, 136, 32, 255}}},
+    {{{     0,  -2364,   1262}, 0, {  1366,  -1156}, {233, 136, 32, 255}}},
+    {{{ -1497,  -1852,   2050}, 0, {   580,    338}, {233, 136, 32, 255}}},
+    {{{     0,  -2364,   1262}, 0, {  1366,  -1156}, { 0, 129,  0, 255}}},
+    {{{ -1182,  -2364,    394}, 0, {  2232,     24}, { 0, 129,  0, 255}}},
+    {{{  -787,  -2364,  -1024}, 0, {  3648,   -370}, { 0, 129,  0, 255}}},
+    {{{  -787,  -2364,  -1024}, 0, {  3648,   -370}, { 0, 136, 215, 255}}},
+    {{{     0,  -1852,  -2522}, 0, {  5144,  -1156}, { 0, 136, 215, 255}}},
+    {{{   788,  -2364,  -1024}, 0, {  3648,  -1944}, { 0, 136, 215, 255}}},
+    {{{   788,  -2364,  -1024}, 0, {  3648,  -1944}, { 0, 129,  0, 255}}},
+    {{{  1498,  -1852,   2050}, 0, {   580,  -2652}, {23, 136, 32, 255}}},
+    {{{     0,  -2364,   1262}, 0, {  1366,  -1156}, {23, 136, 32, 255}}},
+    {{{  1183,  -2364,    394}, 0, {  2232,  -2336}, {23, 136, 32, 255}}},
+};
+
+
+
+const Vtx bowser_3_area_1_vertex_07004160_n6[] = {
+    {{{     0,  -2364,   1262}, 0, {  1366,  -1156}, { 0, 129,  0, 255}}},
+    {{{   788,  -2364,  -1024}, 0, {  3648,  -1944}, { 0, 129,  0, 255}}},
+    {{{  1183,  -2364,    394}, 0, {  2232,  -2336}, { 0, 129,  0, 255}}},
+    {{{  1183,  -2364,    394}, 0, {  2232,  -2336}, {40, 137, 245, 255}}},
+    {{{   788,  -2364,  -1024}, 0, {  3648,  -1944}, {40, 137, 245, 255}}},
+    {{{  2365,  -1852,   -787}, 0, {  3412,  -3518}, {40, 137, 245, 255}}},
+};
+
+
+
+const Vtx bowser_3_area_1_vertex_070041C0_n10[] = {
+    {{{ -2364,    307,   -787}, 0, {  -582,  -1714}, { 0, 127,  0, 255}}},
+    {{{ -1182,    307,    394}, 0, {   204,   -928}, { 0, 127,  0, 255}}},
+    {{{  -787,    307,  -1024}, 0, {   466,  -1872}, { 0, 127,  0, 255}}},
+    {{{     0,    307,   1262}, 0, {   990,   -350}, { 0, 127,  0, 255}}},
+    {{{ -1497,    307,   2050}, 0, {    -6,    174}, { 0, 127,  0, 255}}},
+    {{{  1183,    307,    394}, 0, {  1776,   -928}, { 0, 127,  0, 255}}},
+    {{{   788,    307,  -1024}, 0, {  1514,  -1872}, { 0, 127,  0, 255}}},
+    {{{     0,    307,  -2522}, 0, {   990,  -2870}, { 0, 127,  0, 255}}},
+    {{{  1498,    307,   2050}, 0, {  1986,    174}, { 0, 127,  0, 255}}},
+    {{{  2365,    307,   -787}, 0, {  2564,  -1714}, { 0, 127,  0, 255}}},
+};
+
+
+
+Light_t bowser_3_area_1_light_07004038 = {
+    { 137, 137, 138 }, 0, { 137, 137, 138 }, 0, { 40, 40, 40 }, 0
+};
+
+
+Light_t bowser_3_area_1_light_07004030 = {
+    { 34, 34, 34 }, 0, { 34, 34, 34 }, 0, { -119, -119, -118 }, 0
+};
+
+
+Light_t bowser_3_area_1_light_07004050 = {
+    { 255, 255, 255 }, 0, { 255, 255, 255 }, 0, { 40, 40, 40 }, 0
+};
+
+
+Light_t bowser_3_area_1_light_07004048 = {
+    { 63, 63, 63 }, 0, { 63, 63, 63 }, 0, { -1, -1, -1 }, 0
+};
+
+
+const Gfx bowser_3_area_1_dl_07004500[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0xF),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ bowser_3_area_1_texture_07000800_01166887_seg7),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+    gsSPLight(/* light */ &bowser_3_area_1_light_07004038.col, /* idx */ 1),
+    gsSPLight(/* light */ &bowser_3_area_1_light_07004030.col, /* idx */ 2),
+    gsSPVertex(/* vertices */ bowser_3_area_1_vertex_07004060_n16, /* count */ 0x10, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x6, /* v01 */ 0x7, /* v02 */ 0x8, /* flag0 */ 0x0, /* v10 */ 0x9, /* v11 */ 0xA, /* v12 */ 0xB, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x6, /* v01 */ 0x8, /* v02 */ 0xC, /* flag0 */ 0x0, /* v10 */ 0xD, /* v11 */ 0xE, /* v12 */ 0xF, /* flag1 */ 0x0),
+    gsSPVertex(/* vertices */ bowser_3_area_1_vertex_07004160_n6, /* count */ 0x6, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSPLight(/* light */ &bowser_3_area_1_light_07004050.col, /* idx */ 1),
+    gsSPLight(/* light */ &bowser_3_area_1_light_07004048.col, /* idx */ 2),
+    gsSPVertex(/* vertices */ bowser_3_area_1_vertex_070041C0_n10, /* count */ 0xA, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x2, /* v11 */ 0x1, /* v12 */ 0x3, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x1, /* v01 */ 0x4, /* v02 */ 0x3, /* flag0 */ 0x0, /* v10 */ 0x2, /* v11 */ 0x3, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x2, /* v01 */ 0x5, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x6, /* v11 */ 0x7, /* v12 */ 0x2, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x8, /* v02 */ 0x5, /* flag0 */ 0x0, /* v10 */ 0x5, /* v11 */ 0x9, /* v12 */ 0x6, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx bowser_3_area_1_dl_070046B0[] = {
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_MODULATEI, /* cycle2 */ G_CC_MODULATEI),
+    gsSPClearGeometryMode(/* flags */ G_SHADING_SMOOTH),
+    gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x0, /* tmem */ 0x0, /* tile */ G_TX_LOADTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x0, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x0, /* shifts */ 0x0),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_ON),
+    gsDPTileSync(),
+    gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
+    gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
+    gsSPDisplayList(/* dl */ bowser_3_area_1_dl_07004500),
+};
+
+ALIGNED8 Texture bowser_3_area_1_texture_07000800_01166887_seg7 = {
+#include "bowser_3/areas/1/bowser_3_area_1_texture_07000800_01166887_seg7.inc.c"
+};
+
