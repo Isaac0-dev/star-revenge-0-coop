@@ -121,11 +121,29 @@ const Vtx lll_vertex_0500C530_n4[] = {
 
 
 
+const Vtx lll_vertex_0500C570_n4[] = {
+    {{{    76,     76,      0}, 0, {   990,      0}, {255, 255, 255, 255}}},
+    {{{     0,    -76,      0}, 0, {     0,   2012}, {255, 255, 255, 255}}},
+    {{{    76,    -76,      0}, 0, {   990,   2012}, {255, 255, 255, 255}}},
+    {{{     0,     76,      0}, 0, {     0,      0}, {255, 255, 255, 255}}},
+};
+
+
+
 const Vtx lll_vertex_0500CB08_n4[] = {
     {{{     0,     57,      0}, 0, {   990,      0}, {255, 255, 255, 255}}},
     {{{   -57,    -57,      0}, 0, {     0,   2012}, {255, 255, 255, 255}}},
     {{{     0,    -57,      0}, 0, {   990,   2012}, {255, 255, 255, 255}}},
     {{{   -57,     57,      0}, 0, {     0,      0}, {255, 255, 255, 255}}},
+};
+
+
+
+const Vtx lll_vertex_0500CB48_n4[] = {
+    {{{    57,     57,      0}, 0, {   990,      0}, {255, 255, 255, 255}}},
+    {{{     0,    -57,      0}, 0, {     0,   2012}, {255, 255, 255, 255}}},
+    {{{    57,    -57,      0}, 0, {   990,   2012}, {255, 255, 255, 255}}},
+    {{{     0,     57,      0}, 0, {     0,      0}, {255, 255, 255, 255}}},
 };
 
 
@@ -341,6 +359,90 @@ const Vtx lll_vertex_05006748_n15[] = {
 
 
 
+const Vtx lll_vertex_05005E28_n8[] = {
+    {{{    27,     97,     36}, 0, {   484,   1164}, {172, 74, 58, 255}}},
+    {{{    79,     90,     42}, 0, {   696,   -154}, {50, 100, 59, 255}}},
+    {{{    57,    105,      0}, 0, {  -440,    404}, {49, 117,  0, 255}}},
+    {{{    41,     76,     60}, 0, {  1270,    804}, {204, 37, 109, 255}}},
+    {{{    41,     76,    -59}, 0, {  1262,    804}, {204, 37, 147, 255}}},
+    {{{    27,     97,    -35}, 0, {   476,   1164}, {188, 80, 186, 255}}},
+    {{{    79,     90,    -41}, 0, {   688,   -154}, {50, 100, 197, 255}}},
+    {{{    57,    105,      0}, 0, {  -448,    404}, {49, 117,  0, 255}}},
+};
+
+
+
+const Vtx lll_vertex_05005EA8_n4[] = {
+    {{{    26,    154,      0}, 0, {  -468,   1134}, {44, 119, 255, 255}}},
+    {{{    27,     97,     36}, 0, {  1974,   1130}, {172, 74, 58, 255}}},
+    {{{    57,    105,      0}, 0, {  1030,   -328}, {49, 117,  0, 255}}},
+    {{{    27,     97,    -35}, 0, {  1974,   1130}, {188, 80, 186, 255}}},
+};
+
+
+
+const Vtx lll_vertex_05005EE8_n16[] = {
+    {{{    93,     17,     53}, 0, {     0,      0}, {90, 234, 86, 255}}},
+    {{{   110,     55,     26}, 0, {     0,      0}, {118, 32, 31, 255}}},
+    {{{    92,     64,     53}, 0, {     0,      0}, {61, 30, 106, 255}}},
+    {{{    79,     90,     42}, 0, {     0,      0}, {50, 100, 59, 255}}},
+    {{{   110,     55,    -25}, 0, {     0,      0}, {118, 32, 225, 255}}},
+    {{{   105,     -5,      0}, 0, {     0,      0}, {123, 229,  0, 255}}},
+    {{{    82,     99,      0}, 0, {     0,      0}, {78, 99,  0, 255}}},
+    {{{    92,     64,    -52}, 0, {     0,      0}, {61, 30, 150, 255}}},
+    {{{    79,     90,    -41}, 0, {     0,      0}, {50, 100, 197, 255}}},
+    {{{    93,     17,    -52}, 0, {     0,      0}, {90, 235, 170, 255}}},
+    {{{    57,    105,      0}, 0, {     0,      0}, {49, 117,  0, 255}}},
+    {{{    41,     76,    -59}, 0, {     0,      0}, {204, 37, 147, 255}}},
+    {{{    41,     76,     60}, 0, {     0,      0}, {204, 37, 109, 255}}},
+    {{{    43,      4,    -61}, 0, {     0,      0}, {240, 227, 134, 255}}},
+    {{{    18,     10,     37}, 0, {     0,      0}, {137, 249, 41, 255}}},
+    {{{    43,      4,     62}, 0, {     0,      0}, {240, 227, 122, 255}}},
+};
+
+
+
+const Vtx lll_vertex_05005FE8_n16[] = {
+    {{{    18,     10,    -36}, 0, {     0,      0}, {140, 249, 207, 255}}},
+    {{{    28,    -96,      0}, 0, {     0,      0}, {192, 147,  0, 255}}},
+    {{{    18,     10,     37}, 0, {     0,      0}, {137, 249, 41, 255}}},
+    {{{    16,     58,    -19}, 0, {     0,      0}, {132, 13, 234, 255}}},
+    {{{    43,      4,     62}, 0, {     0,      0}, {240, 227, 122, 255}}},
+    {{{    41,     76,     60}, 0, {     0,      0}, {204, 37, 109, 255}}},
+    {{{    16,     58,     20}, 0, {     0,      0}, {135, 12, 33, 255}}},
+    {{{    27,     97,     36}, 0, {     0,      0}, {172, 74, 58, 255}}},
+    {{{    27,     97,    -35}, 0, {     0,      0}, {188, 80, 186, 255}}},
+    {{{    41,     76,    -59}, 0, {     0,      0}, {204, 37, 147, 255}}},
+    {{{    92,     64,     53}, 0, {     0,      0}, {61, 30, 106, 255}}},
+    {{{    43,      4,    -61}, 0, {     0,      0}, {240, 227, 134, 255}}},
+    {{{    91,    -35,    -28}, 0, {     0,      0}, {88, 189, 196, 255}}},
+    {{{    92,     64,    -52}, 0, {     0,      0}, {61, 30, 150, 255}}},
+    {{{    93,     17,    -52}, 0, {     0,      0}, {90, 235, 170, 255}}},
+    {{{   105,     -5,      0}, 0, {     0,      0}, {123, 229,  0, 255}}},
+};
+
+
+
+const Vtx lll_vertex_050060E8_n7[] = {
+    {{{    28,    -96,      0}, 0, {     0,      0}, {192, 147,  0, 255}}},
+    {{{    91,    -35,    -28}, 0, {     0,      0}, {88, 189, 196, 255}}},
+    {{{    91,    -35,     29}, 0, {     0,      0}, {88, 188, 59, 255}}},
+    {{{   105,     -5,      0}, 0, {     0,      0}, {123, 229,  0, 255}}},
+    {{{    43,      4,     62}, 0, {     0,      0}, {240, 227, 122, 255}}},
+    {{{    93,     17,     53}, 0, {     0,      0}, {90, 234, 86, 255}}},
+    {{{    92,     64,     53}, 0, {     0,      0}, {61, 30, 106, 255}}},
+};
+
+
+
+const Vtx lll_vertex_05006158_n3[] = {
+    {{{    27,     97,     36}, 0, {     0,      0}, {172, 74, 58, 255}}},
+    {{{    26,    154,      0}, 0, {     0,      0}, {44, 119, 255, 255}}},
+    {{{    27,     97,    -35}, 0, {     0,      0}, {188, 80, 186, 255}}},
+};
+
+
+
 Light_t lll_light_05000098 = {
     { 0, 63, 0 }, 0, { 0, 63, 0 }, 0, { 40, 40, 40 }, 0
 };
@@ -461,6 +563,36 @@ Light_t lll_light_05002D98 = {
 };
 
 
+Light_t lll_light_05005DE8 = {
+    { 11, 38, 164 }, 0, { 11, 38, 164 }, 0, { 40, 40, 40 }, 0
+};
+
+
+Light_t lll_light_05005DE0 = {
+    { 4, 15, 65 }, 0, { 4, 15, 65 }, 0, { 11, 38, -92 }, 0
+};
+
+
+Light_t lll_light_05005E00 = {
+    { 255, 255, 255 }, 0, { 255, 255, 255 }, 0, { 40, 40, 40 }, 0
+};
+
+
+Light_t lll_light_05005DF8 = {
+    { 102, 102, 102 }, 0, { 102, 102, 102 }, 0, { -1, -1, -1 }, 0
+};
+
+
+Light_t lll_light_05005E18 = {
+    { 242, 213, 28 }, 0, { 242, 213, 28 }, 0, { 40, 40, 40 }, 0
+};
+
+
+Light_t lll_light_05005E10 = {
+    { 96, 85, 11 }, 0, { 96, 85, 11 }, 0, { -14, -43, 28 }, 0
+};
+
+
 const Gfx lll_dl_050028D0[] = {
     gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x2),
     gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ lll_texture_050006D0_008FBF64_seg5),
@@ -481,6 +613,11 @@ const Gfx lll_dl_05002900[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ lll_dl_050028D0),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_05000328[] = {
@@ -526,6 +663,10 @@ const Gfx lll_dl_05002A20[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ lll_dl_050029C8),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_05002AD8[] = {
@@ -551,6 +692,10 @@ const Gfx lll_dl_05002B30[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ lll_dl_05002AD8),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_050002A0[] = {
@@ -595,6 +740,10 @@ const Gfx lll_dl_05002D08[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ lll_dl_05002C98),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_05002710[] = {
@@ -617,6 +766,11 @@ const Gfx lll_dl_05002748[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ lll_dl_05002710),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_050027F8[] = {
@@ -639,6 +793,11 @@ const Gfx lll_dl_05002830[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ lll_dl_050027F8),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_0500C5B0[] = {
@@ -647,6 +806,16 @@ const Gfx lll_dl_0500C5B0[] = {
     gsDPLoadSync(),
     gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
     gsSPVertex(/* vertices */ lll_vertex_0500C530_n4, /* count */ 0x4, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx lll_dl_0500C5E8[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x3),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ lll_texture_0500A470_00905D04_seg5),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ lll_vertex_0500C570_n4, /* count */ 0x4, /* v0 */ 0x0),
     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
     gsSPEndDisplayList(),
 };
@@ -661,6 +830,12 @@ const Gfx lll_dl_0500C620[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x6, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0xFC),
     gsSPDisplayList(/* dl */ lll_dl_0500C5B0),
+    gsSPDisplayList(/* dl */ lll_dl_0500C5E8),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_0500CB88[] = {
@@ -669,6 +844,16 @@ const Gfx lll_dl_0500CB88[] = {
     gsDPLoadSync(),
     gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
     gsSPVertex(/* vertices */ lll_vertex_0500CB08_n4, /* count */ 0x4, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx lll_dl_0500CBC0[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x3),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ lll_texture_0500A470_00905D04_seg5),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ lll_vertex_0500CB48_n4, /* count */ 0x4, /* v0 */ 0x0),
     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
     gsSPEndDisplayList(),
 };
@@ -683,6 +868,12 @@ const Gfx lll_dl_0500CBF8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x6, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0xFC),
     gsSPDisplayList(/* dl */ lll_dl_0500CB88),
+    gsSPDisplayList(/* dl */ lll_dl_0500CBC0),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_0500CCB0[] = {
@@ -705,6 +896,11 @@ const Gfx lll_dl_0500CCE8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ lll_dl_0500CCB0),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_0500C718[] = {
@@ -728,6 +924,11 @@ const Gfx lll_dl_0500C760[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ lll_dl_0500C718),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_0500C4C8[] = {
@@ -745,6 +946,7 @@ const Gfx lll_dl_0500C500[] = {
     gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
     gsDPPipeSync(),
     gsSPDisplayList(/* dl */ lll_dl_0500C4C8),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_0500C978[] = {
@@ -783,6 +985,10 @@ const Gfx lll_dl_0500CAA8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ lll_dl_0500C978),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_05007540[] = {
@@ -887,24 +1093,117 @@ const Gfx lll_dl_05006380[] = {
     gsSPEndDisplayList(),
 };
 
+const Gfx lll_dl_05006188[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x7),
+    gsSPLight(/* light */ &lll_light_05005DE8.col, /* idx */ 1),
+    gsSPLight(/* light */ &lll_light_05005DE0.col, /* idx */ 2),
+    gsSPVertex(/* vertices */ lll_vertex_05005E28_n8, /* count */ 0x8, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x1, /* v11 */ 0x0, /* v12 */ 0x3, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x4, /* v01 */ 0x5, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x6, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx lll_dl_050061C8[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x3),
+    gsSPLight(/* light */ &lll_light_05005E00.col, /* idx */ 1),
+    gsSPLight(/* light */ &lll_light_05005DF8.col, /* idx */ 2),
+    gsSPVertex(/* vertices */ lll_vertex_05005EA8_n4, /* count */ 0x4, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x0, /* v12 */ 0x2, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx lll_dl_050061F8[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0xF),
+    gsSPLight(/* light */ &lll_light_05005DE8.col, /* idx */ 1),
+    gsSPLight(/* light */ &lll_light_05005DE0.col, /* idx */ 2),
+    gsSPVertex(/* vertices */ lll_vertex_05005EE8_n16, /* count */ 0x10, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x1, /* v11 */ 0x3, /* v12 */ 0x2, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x4, /* v01 */ 0x1, /* v02 */ 0x5, /* flag0 */ 0x0, /* v10 */ 0x1, /* v11 */ 0x4, /* v12 */ 0x6, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x6, /* v01 */ 0x3, /* v02 */ 0x1, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x5, /* v12 */ 0x1, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x7, /* v01 */ 0x8, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x4, /* v11 */ 0x5, /* v12 */ 0x9, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x4, /* v01 */ 0x8, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x9, /* v11 */ 0x7, /* v12 */ 0x4, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x6, /* v01 */ 0x8, /* v02 */ 0xA, /* flag0 */ 0x0, /* v10 */ 0xA, /* v11 */ 0x3, /* v12 */ 0x6, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0xB, /* v01 */ 0x8, /* v02 */ 0x7, /* flag0 */ 0x0, /* v10 */ 0xC, /* v11 */ 0x2, /* v12 */ 0x3, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0xD, /* v01 */ 0xB, /* v02 */ 0x7, /* flag0 */ 0x0, /* v10 */ 0xC, /* v11 */ 0xE, /* v12 */ 0xF, /* flag1 */ 0x0),
+    gsSPVertex(/* vertices */ lll_vertex_05005FE8_n16, /* count */ 0x10, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x2, /* v12 */ 0x3, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x1, /* v01 */ 0x4, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x5, /* v11 */ 0x6, /* v12 */ 0x2, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x2, /* v01 */ 0x6, /* v02 */ 0x3, /* flag0 */ 0x0, /* v10 */ 0x5, /* v11 */ 0x7, /* v12 */ 0x6, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x6, /* v02 */ 0x7, /* flag0 */ 0x0, /* v10 */ 0x8, /* v11 */ 0x9, /* v12 */ 0x3, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x7, /* v01 */ 0x8, /* v02 */ 0x3, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x9, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x5, /* v01 */ 0x4, /* v02 */ 0xA, /* flag0 */ 0x0, /* v10 */ 0xB, /* v11 */ 0x0, /* v12 */ 0x9, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0xB, /* v01 */ 0x1, /* v02 */ 0x0, /* flag0 */ 0x0, /* v10 */ 0xC, /* v11 */ 0x1, /* v12 */ 0xB, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0xB, /* v01 */ 0xD, /* v02 */ 0xE, /* flag0 */ 0x0, /* v10 */ 0xB, /* v11 */ 0xE, /* v12 */ 0xC, /* flag1 */ 0x0),
+    gsSP1Triangle(/* v0 */ 0xF, /* v1 */ 0xC, /* v2 */ 0xE, /* flag */ 0x0),
+    gsSPVertex(/* vertices */ lll_vertex_050060E8_n7, /* count */ 0x7, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x1, /* v11 */ 0x3, /* v12 */ 0x2, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x4, /* v01 */ 0x0, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x5, /* v11 */ 0x2, /* v12 */ 0x3, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x2, /* v01 */ 0x5, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x4, /* v11 */ 0x5, /* v12 */ 0x6, /* flag1 */ 0x0),
+    gsSPLight(/* light */ &lll_light_05005E18.col, /* idx */ 1),
+    gsSPLight(/* light */ &lll_light_05005E10.col, /* idx */ 2),
+    gsSPVertex(/* vertices */ lll_vertex_05006158_n3, /* count */ 0x3, /* v0 */ 0x0),
+    gsSP1Triangle(/* v0 */ 0x0, /* v1 */ 0x1, /* v2 */ 0x2, /* flag */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx lll_dl_050063C8[] = {
+    gsSPDisplayList(/* dl */ lll_dl_05006188),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_MODULATEI, /* cycle2 */ G_CC_MODULATEI),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ lll_texture_050055E0_00900E74_seg5),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+    gsSPDisplayList(/* dl */ lll_dl_050061C8),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPDisplayList(/* dl */ lll_dl_050061F8),
+    gsSPEndDisplayList(),
+};
+
 const Gfx lll_dl_05006428[] = {
     gsSPDisplayList(/* dl */ lll_dl_05006380),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ lll_texture_05002DE0_008FE674_seg5),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+    gsSPDisplayList(/* dl */ lll_dl_050063C8),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_05006458[] = {
     gsSPDisplayList(/* dl */ lll_dl_05006380),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ lll_texture_050035E0_008FEE74_seg5),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+    gsSPDisplayList(/* dl */ lll_dl_050063C8),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_05006488[] = {
     gsSPDisplayList(/* dl */ lll_dl_05006380),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ lll_texture_05003DE0_008FF674_seg5),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+    gsSPDisplayList(/* dl */ lll_dl_050063C8),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_050064B8[] = {
     gsSPDisplayList(/* dl */ lll_dl_05006380),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ lll_texture_050045E0_008FFE74_seg5),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+    gsSPDisplayList(/* dl */ lll_dl_050063C8),
+    gsSPEndDisplayList(),
 };
 
 const Gfx lll_dl_050064E8[] = {
     gsSPDisplayList(/* dl */ lll_dl_05006380),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ lll_texture_05004DE0_00900674_seg5),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+    gsSPDisplayList(/* dl */ lll_dl_050063C8),
+    gsSPEndDisplayList(),
 };
 
 ALIGNED8 Texture lll_texture_050006D0_008FBF64_seg5 = {
@@ -937,6 +1236,12 @@ ALIGNED8 Texture lll_texture_05009470_00904D04_seg5 = {
 
 
 
+ALIGNED8 Texture lll_texture_0500A470_00905D04_seg5 = {
+#include "lll/lll_texture_0500A470_00905D04_seg5.inc.c"
+};
+
+
+
 ALIGNED8 Texture lll_texture_0500BC70_00907504_seg5 = {
 #include "lll/lll_texture_0500BC70_00907504_seg5.inc.c"
 };
@@ -951,5 +1256,41 @@ ALIGNED8 Texture lll_texture_0500B470_00906D04_seg5 = {
 
 ALIGNED8 Texture lll_texture_05008C70_00904504_seg5 = {
 #include "lll/lll_texture_05008C70_00904504_seg5.inc.c"
+};
+
+
+
+ALIGNED8 Texture lll_texture_05002DE0_008FE674_seg5 = {
+#include "lll/lll_texture_05002DE0_008FE674_seg5.inc.c"
+};
+
+
+
+ALIGNED8 Texture lll_texture_050055E0_00900E74_seg5 = {
+#include "lll/lll_texture_050055E0_00900E74_seg5.inc.c"
+};
+
+
+
+ALIGNED8 Texture lll_texture_050035E0_008FEE74_seg5 = {
+#include "lll/lll_texture_050035E0_008FEE74_seg5.inc.c"
+};
+
+
+
+ALIGNED8 Texture lll_texture_05003DE0_008FF674_seg5 = {
+#include "lll/lll_texture_05003DE0_008FF674_seg5.inc.c"
+};
+
+
+
+ALIGNED8 Texture lll_texture_050045E0_008FFE74_seg5 = {
+#include "lll/lll_texture_050045E0_008FFE74_seg5.inc.c"
+};
+
+
+
+ALIGNED8 Texture lll_texture_05004DE0_00900674_seg5 = {
+#include "lll/lll_texture_05004DE0_00900674_seg5.inc.c"
 };
 

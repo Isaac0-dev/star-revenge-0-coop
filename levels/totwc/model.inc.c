@@ -27,6 +27,11 @@ const Gfx totwc_dl_070079A8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_IA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ totwc_dl_07007970),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_CULL_BACK|G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 ALIGNED8 Texture totwc_texture_07002000_011278AB_seg7 = {

@@ -433,6 +433,15 @@ const Vtx ssl_vertex_05003C50_n4[] = {
 
 
 
+const Vtx ssl_vertex_05003C90_n4[] = {
+    {{{    57,     57,      0}, 0, {   992,      0}, {255, 255, 255, 255}}},
+    {{{     0,    -55,      0}, 0, {     0,   2016}, {255, 255, 255, 255}}},
+    {{{    57,    -55,      0}, 0, {   992,   2016}, {255, 255, 255, 255}}},
+    {{{     0,     57,      0}, 0, {     0,      0}, {255, 255, 255, 255}}},
+};
+
+
+
 const Vtx ssl_vertex_05000000_n14[] = {
     {{{   196,     17,    114}, 0, {   325,    310}, {255, 255, 255, 255}}},
     {{{   259,      2,    106}, 0, {   422,      7}, {255, 255, 255, 255}}},
@@ -468,6 +477,15 @@ const Vtx ssl_vertex_05003DB8_n4[] = {
     {{{  -111,   -111,      0}, 0, {     0,   2016}, {255, 255, 255, 255}}},
     {{{     0,   -111,      0}, 0, {   992,   2016}, {255, 255, 255, 255}}},
     {{{  -111,    114,      0}, 0, {     0,      0}, {255, 255, 255, 255}}},
+};
+
+
+
+const Vtx ssl_vertex_05003DF8_n4[] = {
+    {{{   114,    114,      0}, 0, {   992,      0}, {255, 255, 255, 255}}},
+    {{{     0,   -111,      0}, 0, {     0,   2016}, {255, 255, 255, 255}}},
+    {{{   114,   -111,      0}, 0, {   992,   2016}, {255, 255, 255, 255}}},
+    {{{     0,    114,      0}, 0, {     0,      0}, {255, 255, 255, 255}}},
 };
 
 
@@ -699,6 +717,16 @@ const Gfx ssl_dl_05003CD0[] = {
     gsSPEndDisplayList(),
 };
 
+const Gfx ssl_dl_05003D08[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x3),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ ssl_texture_05001468_0087F6A4_seg5),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ ssl_vertex_05003C90_n4, /* count */ 0x4, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
 const Gfx ssl_dl_05003D40[] = {
     gsDPPipeSync(),
     gsDPSetCombineMode(/* cycle1 */ G_CC_DECALRGBA, /* cycle2 */ G_CC_DECALRGBA),
@@ -709,6 +737,12 @@ const Gfx ssl_dl_05003D40[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x6, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0xFC),
     gsSPDisplayList(/* dl */ ssl_dl_05003CD0),
+    gsSPDisplayList(/* dl */ ssl_dl_05003D08),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx ssl_dl_050002E0[] = {
@@ -739,6 +773,11 @@ const Gfx ssl_dl_05000398[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x4, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x4, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x4, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3C, /* lrt */ 0x3C),
     gsSPDisplayList(/* dl */ ssl_dl_050002E0),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx ssl_dl_05003F80[] = {
@@ -762,6 +801,11 @@ const Gfx ssl_dl_05003FC8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ ssl_dl_05003F80),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx ssl_dl_05003E38[] = {
@@ -770,6 +814,16 @@ const Gfx ssl_dl_05003E38[] = {
     gsDPLoadSync(),
     gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
     gsSPVertex(/* vertices */ ssl_vertex_05003DB8_n4, /* count */ 0x4, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx ssl_dl_05003E70[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x3),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ ssl_texture_05001468_0087F6A4_seg5),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ ssl_vertex_05003DF8_n4, /* count */ 0x4, /* v0 */ 0x0),
     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
     gsSPEndDisplayList(),
 };
@@ -784,10 +838,22 @@ const Gfx ssl_dl_05003EA8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x6, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0xFC),
     gsSPDisplayList(/* dl */ ssl_dl_05003E38),
+    gsSPDisplayList(/* dl */ ssl_dl_05003E70),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 ALIGNED8 Texture ssl_texture_05000468_0087E6A4_seg5 = {
 #include "ssl/ssl_texture_05000468_0087E6A4_seg5.inc.c"
+};
+
+
+
+ALIGNED8 Texture ssl_texture_05001468_0087F6A4_seg5 = {
+#include "ssl/ssl_texture_05001468_0087F6A4_seg5.inc.c"
 };
 
 

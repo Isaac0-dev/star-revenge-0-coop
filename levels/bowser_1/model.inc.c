@@ -27,6 +27,15 @@ const Vtx bowser_1_vertex_0700BD88_n12[] = {
 
 
 
+const Vtx bowser_1_vertex_0700BE48_n4[] = {
+    {{{  -511,   -255,    512}, 0, {  6100,  -7186}, { 0, 129,  0, 255}}},
+    {{{   512,   -255,   -511}, 0, { 10188,  -3098}, { 0, 129,  0, 255}}},
+    {{{   512,   -255,    512}, 0, {  6100,  -3098}, { 0, 129,  0, 255}}},
+    {{{  -511,   -255,   -511}, 0, { 10188,  -7186}, { 0, 129,  0, 255}}},
+};
+
+
+
 const Vtx bowser_1_vertex_07021E68_n8[] = {
     {{{  -224,      0,   -224}, 0, {   990,    990}, {214, 172, 172, 255}}},
     {{{   224,      0,    224}, 0, {     0,      0}, {42, 172, 84, 255}}},
@@ -36,6 +45,27 @@ const Vtx bowser_1_vertex_07021E68_n8[] = {
     {{{   224,    450,   -224}, 0, {   990,      0}, {42, 84, 172, 255}}},
     {{{  -224,    450,   -224}, 0, {   990,    990}, {153, 51, 205, 255}}},
     {{{   224,    450,    224}, 0, {     0,      0}, {103, 51, 51, 255}}},
+};
+
+
+
+const Vtx bowser_1_vertex_07021EE8_n16[] = {
+    {{{   224,    450,   -224}, 0, {     0,      0}, {42, 84, 172, 255}}},
+    {{{  -224,      0,   -224}, 0, {   990,   2012}, {214, 172, 172, 255}}},
+    {{{  -224,    450,   -224}, 0, {   990,      0}, {153, 51, 205, 255}}},
+    {{{  -224,    450,    224}, 0, {     0,      0}, {214, 84, 84, 255}}},
+    {{{   224,      0,    224}, 0, {   990,   2012}, {42, 172, 84, 255}}},
+    {{{   224,    450,    224}, 0, {   990,      0}, {103, 51, 51, 255}}},
+    {{{  -224,      0,    224}, 0, {     0,   2012}, {153, 205, 51, 255}}},
+    {{{  -224,    450,   -224}, 0, {     0,      0}, {153, 51, 205, 255}}},
+    {{{  -224,      0,   -224}, 0, {     0,   2012}, {214, 172, 172, 255}}},
+    {{{  -224,      0,    224}, 0, {   990,   2012}, {153, 205, 51, 255}}},
+    {{{  -224,    450,    224}, 0, {   990,      0}, {214, 84, 84, 255}}},
+    {{{   224,    450,    224}, 0, {     0,      0}, {103, 51, 51, 255}}},
+    {{{   224,      0,    224}, 0, {     0,   2012}, {42, 172, 84, 255}}},
+    {{{   224,      0,   -224}, 0, {   990,   2012}, {103, 205, 205, 255}}},
+    {{{   224,    450,   -224}, 0, {   990,      0}, {42, 84, 172, 255}}},
+    {{{   224,      0,   -224}, 0, {     0,   2012}, {103, 205, 205, 255}}},
 };
 
 
@@ -101,6 +131,55 @@ const Vtx bowser_1_vertex_070224B8_n5[] = {
 
 
 
+const Vtx bowser_1_vertex_07022508_n15[] = {
+    {{{  -306,    -77,   -188}, 0, {   990,   2012}, {183, 204, 167, 255}}},
+    {{{   307,    -77,   -188}, 0, {   990,  -4120}, {73, 230, 157, 255}}},
+    {{{   307,   -188,    -77}, 0, {     0,  -4120}, {73, 167, 204, 255}}},
+    {{{  -306,    -77,    189}, 0, {   990,   2012}, {183, 230, 99, 255}}},
+    {{{   307,    -77,    189}, 0, {   990,  -4120}, {73, 204, 89, 255}}},
+    {{{   307,     78,    189}, 0, {     0,  -4120}, {73, 26, 99, 255}}},
+    {{{  -306,     78,    189}, 0, {     0,   2012}, {183, 52, 89, 255}}},
+    {{{  -306,   -188,     78}, 0, {   990,   2012}, {183, 167, 52, 255}}},
+    {{{   307,    -77,    189}, 0, {     0,  -4120}, {73, 204, 89, 255}}},
+    {{{  -306,    -77,    189}, 0, {     0,   2012}, {183, 230, 99, 255}}},
+    {{{   307,   -188,     78}, 0, {   990,  -4120}, {73, 157, 26, 255}}},
+    {{{  -306,   -188,    -77}, 0, {   990,   2012}, {183, 157, 230, 255}}},
+    {{{   307,   -188,     78}, 0, {     0,  -4120}, {73, 157, 26, 255}}},
+    {{{  -306,   -188,     78}, 0, {     0,   2012}, {183, 167, 52, 255}}},
+    {{{   307,   -188,    -77}, 0, {   990,  -4120}, {73, 167, 204, 255}}},
+};
+
+
+
+const Vtx bowser_1_vertex_070225F8_n15[] = {
+    {{{  -306,    189,     78}, 0, {   990,   2012}, {183, 99, 26, 255}}},
+    {{{   307,    189,     78}, 0, {   990,  -4120}, {73, 89, 52, 255}}},
+    {{{   307,    189,    -77}, 0, {     0,  -4120}, {73, 99, 230, 255}}},
+    {{{  -306,    -77,   -188}, 0, {   990,   2012}, {183, 204, 167, 255}}},
+    {{{   307,   -188,    -77}, 0, {     0,  -4120}, {73, 167, 204, 255}}},
+    {{{  -306,   -188,    -77}, 0, {     0,   2012}, {183, 157, 230, 255}}},
+    {{{  -306,     78,   -188}, 0, {   990,   2012}, {183, 26, 157, 255}}},
+    {{{   307,    -77,   -188}, 0, {     0,  -4120}, {73, 230, 157, 255}}},
+    {{{  -306,    -77,   -188}, 0, {     0,   2012}, {183, 204, 167, 255}}},
+    {{{   307,     78,   -188}, 0, {   990,  -4120}, {73, 52, 167, 255}}},
+    {{{  -306,    189,    -77}, 0, {   990,   2012}, {183, 89, 204, 255}}},
+    {{{   307,     78,   -188}, 0, {     0,  -4120}, {73, 52, 167, 255}}},
+    {{{  -306,     78,   -188}, 0, {     0,   2012}, {183, 26, 157, 255}}},
+    {{{   307,    189,    -77}, 0, {   990,  -4120}, {73, 99, 230, 255}}},
+    {{{  -306,    189,    -77}, 0, {     0,   2012}, {183, 89, 204, 255}}},
+};
+
+
+
+const Vtx bowser_1_vertex_070226E8_n4[] = {
+    {{{  -306,     78,    189}, 0, {   990,   2012}, {183, 52, 89, 255}}},
+    {{{   307,     78,    189}, 0, {   990,  -4120}, {73, 26, 99, 255}}},
+    {{{   307,    189,     78}, 0, {     0,  -4120}, {73, 89, 52, 255}}},
+    {{{  -306,    189,     78}, 0, {     0,   2012}, {183, 99, 26, 255}}},
+};
+
+
+
 const Vtx bowser_1_vertex_07022970_n4[] = {
     {{{  -183,     82,    193}, 0, {     0,    990}, {255, 255, 255, 255}}},
     {{{   184,     82,    193}, 0, {   990,    990}, {255, 255, 255, 255}}},
@@ -131,6 +210,19 @@ const Vtx bowser_1_vertex_07022AB8_n16[] = {
 
 
 
+const Vtx bowser_1_vertex_07022BB8_n8[] = {
+    {{{    64,      0,    307}, 0, {   990,   1464}, {42, 172, 84, 255}}},
+    {{{   -63,      0,    307}, 0, {   480,   1464}, {153, 205, 51, 255}}},
+    {{{   -63,      0,   -306}, 0, {   480,   -986}, {214, 172, 172, 255}}},
+    {{{    64,      0,   -306}, 0, {   990,   -986}, {103, 205, 205, 255}}},
+    {{{    64,    512,   -306}, 0, {   990,   -986}, {42, 84, 172, 255}}},
+    {{{   -63,    512,    307}, 0, {   480,   1464}, {214, 84, 84, 255}}},
+    {{{    64,    512,    307}, 0, {   990,   1464}, {103, 51, 51, 255}}},
+    {{{   -63,    512,   -306}, 0, {   480,   -986}, {153, 51, 205, 255}}},
+};
+
+
+
 const Vtx bowser_1_vertex_07022DC0_n12[] = {
     {{{   512,      0,   -511}, 0, {  3034,  -1054}, {42, 84, 172, 255}}},
     {{{  -511,    -50,   -511}, 0, { -1052,  -1054}, {214, 172, 172, 255}}},
@@ -144,6 +236,79 @@ const Vtx bowser_1_vertex_07022DC0_n12[] = {
     {{{   512,      0,   -511}, 0, {  3034,  -2076}, {42, 84, 172, 255}}},
     {{{  -511,      0,   -511}, 0, { -1052,  -2076}, {153, 51, 205, 255}}},
     {{{   512,      0,    512}, 0, {  3034,   2010}, {103, 51, 51, 255}}},
+};
+
+
+
+const Vtx bowser_1_vertex_07022E80_n15[] = {
+    {{{   512,    256,   -511}, 0, { -4118,      0}, {33, 101, 189, 255}}},
+    {{{   512,    205,   -511}, 0, { -4118,    480}, {67, 155, 223, 255}}},
+    {{{  -511,    205,   -511}, 0, {  6100,    480}, {223, 155, 189, 255}}},
+    {{{   512,    256,    512}, 0, { -4630,      0}, {67, 101, 33, 255}}},
+    {{{   512,    205,   -511}, 0, {  5590,    478}, {67, 155, 223, 255}}},
+    {{{   512,    256,   -511}, 0, {  5590,      0}, {33, 101, 189, 255}}},
+    {{{   512,    205,    512}, 0, { -4630,    480}, {33, 155, 67, 255}}},
+    {{{  -511,    256,    512}, 0, { -4118,      0}, {223, 101, 67, 255}}},
+    {{{   512,    205,    512}, 0, {  6100,    478}, {33, 155, 67, 255}}},
+    {{{   512,    256,    512}, 0, {  6100,      0}, {67, 101, 33, 255}}},
+    {{{  -511,    205,    512}, 0, { -4118,    480}, {189, 155, 33, 255}}},
+    {{{  -511,    256,   -511}, 0, { -4630,      0}, {189, 101, 223, 255}}},
+    {{{  -511,    205,    512}, 0, {  5590,    478}, {189, 155, 33, 255}}},
+    {{{  -511,    256,    512}, 0, {  5590,      0}, {223, 101, 67, 255}}},
+    {{{  -511,    205,   -511}, 0, { -4630,    480}, {223, 155, 189, 255}}},
+};
+
+
+
+const Vtx bowser_1_vertex_07022F70_n15[] = {
+    {{{  -460,    256,   -460}, 0, { -4118,      0}, {33, 101, 67, 255}}},
+    {{{  -460,    205,   -460}, 0, { -4118,    478}, {67, 155, 33, 255}}},
+    {{{   461,    205,   -460}, 0, {  5078,    478}, {223, 155, 67, 255}}},
+    {{{   512,    256,   -511}, 0, { -4118,      0}, {33, 101, 189, 255}}},
+    {{{  -511,    205,   -511}, 0, {  6100,    480}, {223, 155, 189, 255}}},
+    {{{  -511,    256,   -511}, 0, {  6100,      0}, {189, 101, 223, 255}}},
+    {{{   461,    256,    461}, 0, { -4118,      0}, {223, 101, 189, 255}}},
+    {{{  -460,    205,    461}, 0, {  5078,    480}, {33, 155, 189, 255}}},
+    {{{  -460,    256,    461}, 0, {  5078,      0}, {67, 101, 223, 255}}},
+    {{{   461,    205,    461}, 0, { -4118,    478}, {189, 155, 223, 255}}},
+    {{{  -460,    256,    461}, 0, { -3606,      0}, {67, 101, 223, 255}}},
+    {{{  -460,    205,    461}, 0, { -3606,    480}, {33, 155, 189, 255}}},
+    {{{  -460,    205,   -460}, 0, {  5588,    478}, {67, 155, 33, 255}}},
+    {{{  -460,    256,   -460}, 0, {  5588,      0}, {33, 101, 67, 255}}},
+    {{{   461,    256,   -460}, 0, {  5078,      0}, {189, 101, 33, 255}}},
+};
+
+
+
+const Vtx bowser_1_vertex_07023060_n15[] = {
+    {{{   512,    256,    512}, 0, {  6100,  -5142}, {67, 101, 33, 255}}},
+    {{{  -460,    256,    461}, 0, {  5588,   4564}, {67, 101, 223, 255}}},
+    {{{  -511,    256,    512}, 0, {  6100,   5076}, {223, 101, 67, 255}}},
+    {{{   461,    256,   -460}, 0, { -4628,      0}, {189, 101, 33, 255}}},
+    {{{   461,    205,    461}, 0, {  4566,    480}, {189, 155, 223, 255}}},
+    {{{   461,    256,    461}, 0, {  4566,      0}, {223, 101, 189, 255}}},
+    {{{   461,    205,   -460}, 0, { -4628,    478}, {223, 155, 67, 255}}},
+    {{{  -511,    205,   -511}, 0, { -4118,   6098}, {223, 155, 189, 255}}},
+    {{{  -460,    205,    461}, 0, { -3608,  -3610}, {33, 155, 189, 255}}},
+    {{{  -511,    205,    512}, 0, { -4118,  -4120}, {189, 155, 33, 255}}},
+    {{{   512,    205,   -511}, 0, {  6100,   6098}, {67, 155, 223, 255}}},
+    {{{  -460,    205,   -460}, 0, { -3608,   5588}, {67, 155, 33, 255}}},
+    {{{   461,    205,   -460}, 0, {  5590,   5588}, {223, 155, 67, 255}}},
+    {{{   461,    205,    461}, 0, {  5590,  -3610}, {189, 155, 223, 255}}},
+    {{{   512,    205,    512}, 0, {  6100,  -4120}, {33, 155, 67, 255}}},
+};
+
+
+
+const Vtx bowser_1_vertex_07023150_n8[] = {
+    {{{   512,    256,   -511}, 0, { -4118,  -5142}, {33, 101, 189, 255}}},
+    {{{   461,    256,    461}, 0, {  5588,  -4632}, {223, 101, 189, 255}}},
+    {{{   512,    256,    512}, 0, {  6100,  -5142}, {67, 101, 33, 255}}},
+    {{{  -511,    256,    512}, 0, {  6100,   5076}, {223, 101, 67, 255}}},
+    {{{  -460,    256,   -460}, 0, { -3606,   4566}, {33, 101, 67, 255}}},
+    {{{  -511,    256,   -511}, 0, { -4118,   5076}, {189, 101, 223, 255}}},
+    {{{  -460,    256,    461}, 0, {  5588,   4564}, {67, 101, 223, 255}}},
+    {{{   461,    256,   -460}, 0, { -3606,  -4632}, {189, 101, 33, 255}}},
 };
 
 
@@ -197,6 +362,57 @@ const Vtx bowser_1_vertex_0700F898_n7[] = {
     {{{   154,    154,   -153}, 0, {   990,    -86}, { 0,  0, 127, 255}}},
     {{{  -153,    154,   -153}, 0, {     0,    -86}, { 0,  0, 127, 255}}},
     {{{  -153,   -255,    154}, 0, {   990,    990}, { 0,  0, 129, 255}}},
+};
+
+
+
+const Vtx bowser_1_vertex_0700F908_n16[] = {
+    {{{   256,   -255,   -255}, 0, {   990,   2012}, {127,  0,  0, 255}}},
+    {{{   256,    256,   -255}, 0, {   990,      0}, {127,  0,  0, 255}}},
+    {{{   256,    256,    256}, 0, {     0,      0}, {127,  0,  0, 255}}},
+    {{{  -255,   -255,    256}, 0, {   990,   2012}, {129,  0,  0, 255}}},
+    {{{  -255,    256,   -255}, 0, {     0,      0}, {129,  0,  0, 255}}},
+    {{{  -255,   -255,   -255}, 0, {     0,   2012}, {129,  0,  0, 255}}},
+    {{{  -255,    256,    256}, 0, {   990,      0}, {129,  0,  0, 255}}},
+    {{{   154,   -255,    154}, 0, {   172,   2012}, { 0, 129,  0, 255}}},
+    {{{   154,   -255,   -153}, 0, {   786,   2012}, { 0, 129,  0, 255}}},
+    {{{   256,   -255,   -255}, 0, {   990,   2012}, { 0, 129,  0, 255}}},
+    {{{   256,   -255,    256}, 0, {     0,   2012}, {127,  0,  0, 255}}},
+    {{{   256,   -255,    256}, 0, {     0,   2012}, { 0, 129,  0, 255}}},
+    {{{  -255,   -255,   -255}, 0, {     0,   2012}, { 0, 129,  0, 255}}},
+    {{{  -153,   -255,    154}, 0, {   786,   2012}, { 0, 129,  0, 255}}},
+    {{{  -255,   -255,    256}, 0, {   990,   2012}, { 0, 129,  0, 255}}},
+    {{{  -153,   -255,   -153}, 0, {   172,   2012}, { 0, 129,  0, 255}}},
+};
+
+
+
+const Vtx bowser_1_vertex_0700FA08_n16[] = {
+    {{{  -255,   -255,   -255}, 0, {   990,   2012}, { 0,  0, 129, 255}}},
+    {{{  -255,    256,   -255}, 0, {   990,      0}, { 0,  0, 129, 255}}},
+    {{{   256,    256,   -255}, 0, {     0,      0}, { 0,  0, 129, 255}}},
+    {{{   256,   -255,   -255}, 0, {     0,   2012}, { 0,  0, 129, 255}}},
+    {{{  -255,   -255,   -255}, 0, {   990,   2012}, { 0, 129,  0, 255}}},
+    {{{   256,   -255,   -255}, 0, {     0,   2012}, { 0, 129,  0, 255}}},
+    {{{   154,   -255,   -153}, 0, {   172,   2012}, { 0, 129,  0, 255}}},
+    {{{  -153,   -255,   -153}, 0, {   786,   2012}, { 0, 129,  0, 255}}},
+    {{{   256,   -255,    256}, 0, {   990,   2012}, { 0,  0, 127, 255}}},
+    {{{   256,    256,    256}, 0, {   990,      0}, { 0,  0, 127, 255}}},
+    {{{  -255,    256,    256}, 0, {     0,      0}, { 0,  0, 127, 255}}},
+    {{{  -255,   -255,    256}, 0, {     0,   2012}, { 0, 129,  0, 255}}},
+    {{{   154,   -255,    154}, 0, {   786,   2012}, { 0, 129,  0, 255}}},
+    {{{   256,   -255,    256}, 0, {   990,   2012}, { 0, 129,  0, 255}}},
+    {{{  -255,   -255,    256}, 0, {     0,   2012}, { 0,  0, 127, 255}}},
+    {{{  -153,   -255,    154}, 0, {   172,   2012}, { 0, 129,  0, 255}}},
+};
+
+
+
+const Vtx bowser_1_vertex_0700FB08_n4[] = {
+    {{{  -255,    256,    256}, 0, {     0,   2012}, { 0, 127,  0, 255}}},
+    {{{   256,    256,    256}, 0, {   990,   2012}, { 0, 127,  0, 255}}},
+    {{{   256,    256,   -255}, 0, {   990,      0}, { 0, 127,  0, 255}}},
+    {{{  -255,    256,   -255}, 0, {     0,      0}, { 0, 127,  0, 255}}},
 };
 
 
@@ -372,6 +588,16 @@ const Gfx bowser_1_dl_0700BE88[] = {
     gsSPEndDisplayList(),
 };
 
+const Gfx bowser_1_dl_0700BEE0[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x3),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ bowser_1_texture_0900A800_00CDDCBD_seg9),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ bowser_1_vertex_0700BE48_n4, /* count */ 0x4, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
 const Gfx bowser_1_dl_0700BF18[] = {
     gsDPPipeSync(),
     gsDPSetCombineMode(/* cycle1 */ G_CC_MODULATEI, /* cycle2 */ G_CC_MODULATEI),
@@ -382,6 +608,12 @@ const Gfx bowser_1_dl_0700BF18[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ bowser_1_dl_0700BE88),
+    gsSPDisplayList(/* dl */ bowser_1_dl_0700BEE0),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_SHADING_SMOOTH),
+    gsSPEndDisplayList(),
 };
 
 const Gfx bowser_1_dl_07021FE8[] = {
@@ -394,6 +626,19 @@ const Gfx bowser_1_dl_07021FE8[] = {
     gsSPVertex(/* vertices */ bowser_1_vertex_07021E68_n8, /* count */ 0x8, /* v0 */ 0x0),
     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
     gsSP2Triangles(/* v00 */ 0x4, /* v01 */ 0x5, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x4, /* v11 */ 0x7, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx bowser_1_dl_07022040[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0xF),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ bowser_1_texture_07002800_00EC2D87_seg7),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ bowser_1_vertex_07021EE8_n16, /* count */ 0x10, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x6, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x8, /* v12 */ 0x9, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x7, /* v01 */ 0x9, /* v02 */ 0xA, /* flag0 */ 0x0, /* v10 */ 0xB, /* v11 */ 0xC, /* v12 */ 0xD, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0xB, /* v01 */ 0xD, /* v02 */ 0xE, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0xF, /* v12 */ 0x1, /* flag1 */ 0x0),
     gsSPEndDisplayList(),
 };
 
@@ -412,6 +657,17 @@ const Gfx bowser_1_dl_070220A8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ bowser_1_dl_07021FE8),
+    gsDPTileSync(),
+    gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x6, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
+    gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0xFC),
+    gsSPDisplayList(/* dl */ bowser_1_dl_07022040),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCycleType(/* value */ G_CYC_1CYCLE),
+    gsSPSetOtherMode(/* cmd */ G_SETOTHERMODE_L, /* shift */ 0x3, /* len */ 0x1D, /* val */ 0x442078),
+    gsSPClearGeometryMode(/* flags */ G_FOG),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPEndDisplayList(),
 };
 
 const Gfx bowser_1_dl_070221B0[] = {
@@ -440,6 +696,14 @@ const Gfx bowser_1_dl_070221E8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ bowser_1_dl_070221B0),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCycleType(/* value */ G_CYC_1CYCLE),
+    gsSPSetOtherMode(/* cmd */ G_SETOTHERMODE_L, /* shift */ 0x3, /* len */ 0x1D, /* val */ 0x443078),
+    gsSPClearGeometryMode(/* flags */ G_FOG),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx bowser_1_dl_07022728[] = {
@@ -464,6 +728,26 @@ const Gfx bowser_1_dl_07022728[] = {
     gsSPEndDisplayList(),
 };
 
+const Gfx bowser_1_dl_070227F0[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0xE),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ bowser_1_texture_07002800_00EC2D87_seg7),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ bowser_1_vertex_07022508_n15, /* count */ 0xF, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x5, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x8, /* v12 */ 0x9, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x7, /* v01 */ 0xA, /* v02 */ 0x8, /* flag0 */ 0x0, /* v10 */ 0xB, /* v11 */ 0xC, /* v12 */ 0xD, /* flag1 */ 0x0),
+    gsSP1Triangle(/* v0 */ 0xB, /* v1 */ 0xE, /* v2 */ 0xC, /* flag */ 0x0),
+    gsSPVertex(/* vertices */ bowser_1_vertex_070225F8_n15, /* count */ 0xF, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x6, /* v01 */ 0x7, /* v02 */ 0x8, /* flag0 */ 0x0, /* v10 */ 0x6, /* v11 */ 0x9, /* v12 */ 0x7, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0xA, /* v01 */ 0xB, /* v02 */ 0xC, /* flag0 */ 0x0, /* v10 */ 0xA, /* v11 */ 0xD, /* v12 */ 0xB, /* flag1 */ 0x0),
+    gsSP1Triangle(/* v0 */ 0x0, /* v1 */ 0x2, /* v2 */ 0xE, /* flag */ 0x0),
+    gsSPVertex(/* vertices */ bowser_1_vertex_070226E8_n4, /* count */ 0x4, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x2, /* v12 */ 0x3, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
 const Gfx bowser_1_dl_070228A8[] = {
     gsDPPipeSync(),
     gsDPSetCycleType(/* value */ G_CYC_2CYCLE),
@@ -479,6 +763,17 @@ const Gfx bowser_1_dl_070228A8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ bowser_1_dl_07022728),
+    gsDPTileSync(),
+    gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x6, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
+    gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0xFC),
+    gsSPDisplayList(/* dl */ bowser_1_dl_070227F0),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCycleType(/* value */ G_CYC_1CYCLE),
+    gsSPSetOtherMode(/* cmd */ G_SETOTHERMODE_L, /* shift */ 0x3, /* len */ 0x1D, /* val */ 0x442078),
+    gsSPClearGeometryMode(/* flags */ G_FOG),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPEndDisplayList(),
 };
 
 const Gfx bowser_1_dl_070229B0[] = {
@@ -507,6 +802,14 @@ const Gfx bowser_1_dl_070229E8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ bowser_1_dl_070229B0),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCycleType(/* value */ G_CYC_1CYCLE),
+    gsSPSetOtherMode(/* cmd */ G_SETOTHERMODE_L, /* shift */ 0x3, /* len */ 0x1D, /* val */ 0x443078),
+    gsSPClearGeometryMode(/* flags */ G_FOG),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx bowser_1_dl_07022C38[] = {
@@ -521,6 +824,17 @@ const Gfx bowser_1_dl_07022C38[] = {
     gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x5, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x8, /* v12 */ 0x9, /* flag1 */ 0x0),
     gsSP2Triangles(/* v00 */ 0x7, /* v01 */ 0xA, /* v02 */ 0x8, /* flag0 */ 0x0, /* v10 */ 0xB, /* v11 */ 0xC, /* v12 */ 0xD, /* flag1 */ 0x0),
     gsSP2Triangles(/* v00 */ 0xB, /* v01 */ 0xE, /* v02 */ 0xC, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x2, /* v12 */ 0xF, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx bowser_1_dl_07022CB0[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x7),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ bowser_1_texture_0900A800_00CDDCBD_seg9),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ bowser_1_vertex_07022BB8_n8, /* count */ 0x8, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x2, /* v12 */ 0x3, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x4, /* v01 */ 0x5, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x4, /* v11 */ 0x7, /* v12 */ 0x5, /* flag1 */ 0x0),
     gsSPEndDisplayList(),
 };
 
@@ -539,6 +853,14 @@ const Gfx bowser_1_dl_07022CF8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ bowser_1_dl_07022C38),
+    gsSPDisplayList(/* dl */ bowser_1_dl_07022CB0),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCycleType(/* value */ G_CYC_1CYCLE),
+    gsSPSetOtherMode(/* cmd */ G_SETOTHERMODE_L, /* shift */ 0x3, /* len */ 0x1D, /* val */ 0x442078),
+    gsSPClearGeometryMode(/* flags */ G_FOG),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPEndDisplayList(),
 };
 
 const Gfx bowser_1_dl_070231D0[] = {
@@ -558,6 +880,36 @@ const Gfx bowser_1_dl_070231D0[] = {
     gsSPEndDisplayList(),
 };
 
+const Gfx bowser_1_dl_07023268[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0xE),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ bowser_1_texture_09001000_00CD44BD_seg9),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ bowser_1_vertex_07022E80_n15, /* count */ 0xF, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x6, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x8, /* v12 */ 0x9, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x7, /* v01 */ 0xA, /* v02 */ 0x8, /* flag0 */ 0x0, /* v10 */ 0xB, /* v11 */ 0xC, /* v12 */ 0xD, /* flag1 */ 0x0),
+    gsSP1Triangle(/* v0 */ 0xB, /* v1 */ 0xE, /* v2 */ 0xC, /* flag */ 0x0),
+    gsSPVertex(/* vertices */ bowser_1_vertex_07022F70_n15, /* count */ 0xF, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x6, /* v01 */ 0x7, /* v02 */ 0x8, /* flag0 */ 0x0, /* v10 */ 0x6, /* v11 */ 0x9, /* v12 */ 0x7, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0xA, /* v01 */ 0xB, /* v02 */ 0xC, /* flag0 */ 0x0, /* v10 */ 0xA, /* v11 */ 0xC, /* v12 */ 0xD, /* flag1 */ 0x0),
+    gsSP1Triangle(/* v0 */ 0x0, /* v1 */ 0x2, /* v2 */ 0xE, /* flag */ 0x0),
+    gsSPVertex(/* vertices */ bowser_1_vertex_07023060_n15, /* count */ 0xF, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x6, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x8, /* v12 */ 0x9, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0xA, /* v01 */ 0xB, /* v02 */ 0x7, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0xB, /* v12 */ 0x8, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0xA, /* v01 */ 0xC, /* v02 */ 0xB, /* flag0 */ 0x0, /* v10 */ 0x9, /* v11 */ 0x8, /* v12 */ 0xD, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x9, /* v01 */ 0xD, /* v02 */ 0xE, /* flag0 */ 0x0, /* v10 */ 0xE, /* v11 */ 0xC, /* v12 */ 0xA, /* flag1 */ 0x0),
+    gsSP1Triangle(/* v0 */ 0xE, /* v1 */ 0xD, /* v2 */ 0xC, /* flag */ 0x0),
+    gsSPVertex(/* vertices */ bowser_1_vertex_07023150_n8, /* count */ 0x8, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x2, /* v01 */ 0x1, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x6, /* v12 */ 0x4, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x5, /* v01 */ 0x4, /* v02 */ 0x7, /* flag0 */ 0x0, /* v10 */ 0x5, /* v11 */ 0x7, /* v12 */ 0x0, /* flag1 */ 0x0),
+    gsSP1Triangle(/* v0 */ 0x0, /* v1 */ 0x7, /* v2 */ 0x1, /* flag */ 0x0),
+    gsSPEndDisplayList(),
+};
+
 const Gfx bowser_1_dl_070233A8[] = {
     gsDPPipeSync(),
     gsDPSetCycleType(/* value */ G_CYC_2CYCLE),
@@ -573,6 +925,14 @@ const Gfx bowser_1_dl_070233A8[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ bowser_1_dl_070231D0),
+    gsSPDisplayList(/* dl */ bowser_1_dl_07023268),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCycleType(/* value */ G_CYC_1CYCLE),
+    gsSPSetOtherMode(/* cmd */ G_SETOTHERMODE_L, /* shift */ 0x3, /* len */ 0x1D, /* val */ 0x442078),
+    gsSPClearGeometryMode(/* flags */ G_FOG),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPEndDisplayList(),
 };
 
 const Gfx bowser_1_dl_07023558[] = {
@@ -604,6 +964,14 @@ const Gfx bowser_1_dl_070235C0[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ bowser_1_dl_07023558),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCycleType(/* value */ G_CYC_1CYCLE),
+    gsSPSetOtherMode(/* cmd */ G_SETOTHERMODE_L, /* shift */ 0x3, /* len */ 0x1D, /* val */ 0x443078),
+    gsSPClearGeometryMode(/* flags */ G_FOG),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_CULL_BACK|G_LIGHTING),
+    gsSPEndDisplayList(),
 };
 
 const Gfx bowser_1_dl_0700FB48[] = {
@@ -624,6 +992,42 @@ const Gfx bowser_1_dl_0700FB48[] = {
     gsSPEndDisplayList(),
 };
 
+const Gfx bowser_1_dl_0700FBD8[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0xF),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ bowser_1_texture_0700C7A8_00ECCD2F_seg7),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ bowser_1_vertex_0700F908_n16, /* count */ 0x10, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x6, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x8, /* v12 */ 0x9, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x2, /* v02 */ 0xA, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x9, /* v12 */ 0xB, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0xC, /* v01 */ 0xD, /* v02 */ 0xE, /* flag0 */ 0x0, /* v10 */ 0xC, /* v11 */ 0xF, /* v12 */ 0xD, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx bowser_1_dl_0700FC40[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0xF),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ bowser_1_texture_0700E7A8_00ECED2F_seg7),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ bowser_1_vertex_0700FA08_n16, /* count */ 0x10, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x2, /* v12 */ 0x3, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x4, /* v01 */ 0x5, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x4, /* v11 */ 0x6, /* v12 */ 0x7, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x8, /* v01 */ 0x9, /* v02 */ 0xA, /* flag0 */ 0x0, /* v10 */ 0xB, /* v11 */ 0xC, /* v12 */ 0xD, /* flag1 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x8, /* v01 */ 0xA, /* v02 */ 0xE, /* flag0 */ 0x0, /* v10 */ 0xB, /* v11 */ 0xF, /* v12 */ 0xC, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
+const Gfx bowser_1_dl_0700FCA8[] = {
+    gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x3),
+    gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ bowser_1_texture_0700D7A8_00ECDD2F_seg7),
+    gsDPLoadSync(),
+    gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
+    gsSPVertex(/* vertices */ bowser_1_vertex_0700FB08_n4, /* count */ 0x4, /* v0 */ 0x0),
+    gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x2, /* v12 */ 0x3, /* flag1 */ 0x0),
+    gsSPEndDisplayList(),
+};
+
 const Gfx bowser_1_dl_0700FCE0[] = {
     gsDPPipeSync(),
     gsDPSetCombineMode(/* cycle1 */ G_CC_MODULATEI, /* cycle2 */ G_CC_MODULATEI),
@@ -634,6 +1038,17 @@ const Gfx bowser_1_dl_0700FCE0[] = {
     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
     gsSPDisplayList(/* dl */ bowser_1_dl_0700FB48),
+    gsDPTileSync(),
+    gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x6, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
+    gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0xFC),
+    gsSPDisplayList(/* dl */ bowser_1_dl_0700FBD8),
+    gsSPDisplayList(/* dl */ bowser_1_dl_0700FC40),
+    gsSPDisplayList(/* dl */ bowser_1_dl_0700FCA8),
+    gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+    gsDPPipeSync(),
+    gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+    gsSPSetGeometryMode(/* flags */ G_SHADING_SMOOTH),
+    gsSPEndDisplayList(),
 };
 
 ALIGNED8 Texture bowser_1_texture_07001000_00EC1587_seg7 = {
@@ -648,8 +1063,20 @@ ALIGNED8 Texture bowser_1_texture_09000800_00CD3CBD_seg9 = {
 
 
 
+ALIGNED8 Texture bowser_1_texture_0900A800_00CDDCBD_seg9 = {
+#include "bowser_1/bowser_1_texture_0900A800_00CDDCBD_seg9.inc.c"
+};
+
+
+
 ALIGNED8 Texture bowser_1_texture_09002000_00CD54BD_seg9 = {
 #include "bowser_1/bowser_1_texture_09002000_00CD54BD_seg9.inc.c"
+};
+
+
+
+ALIGNED8 Texture bowser_1_texture_07002800_00EC2D87_seg7 = {
+#include "bowser_1/bowser_1_texture_07002800_00EC2D87_seg7.inc.c"
 };
 
 
@@ -660,8 +1087,8 @@ ALIGNED8 Texture bowser_1_texture_07003800_00EC3D87_seg7 = {
 
 
 
-ALIGNED8 Texture bowser_1_texture_0900A800_00CDDCBD_seg9 = {
-#include "bowser_1/bowser_1_texture_0900A800_00CDDCBD_seg9.inc.c"
+ALIGNED8 Texture bowser_1_texture_09001000_00CD44BD_seg9 = {
+#include "bowser_1/bowser_1_texture_09001000_00CD44BD_seg9.inc.c"
 };
 
 
@@ -674,5 +1101,23 @@ ALIGNED8 Texture bowser_1_texture_09008800_00CDBCBD_seg9 = {
 
 ALIGNED8 Texture bowser_1_texture_0700BFA8_00ECC52F_seg7 = {
 #include "bowser_1/bowser_1_texture_0700BFA8_00ECC52F_seg7.inc.c"
+};
+
+
+
+ALIGNED8 Texture bowser_1_texture_0700C7A8_00ECCD2F_seg7 = {
+#include "bowser_1/bowser_1_texture_0700C7A8_00ECCD2F_seg7.inc.c"
+};
+
+
+
+ALIGNED8 Texture bowser_1_texture_0700E7A8_00ECED2F_seg7 = {
+#include "bowser_1/bowser_1_texture_0700E7A8_00ECED2F_seg7.inc.c"
+};
+
+
+
+ALIGNED8 Texture bowser_1_texture_0700D7A8_00ECDD2F_seg7 = {
+#include "bowser_1/bowser_1_texture_0700D7A8_00ECDD2F_seg7.inc.c"
 };
 
