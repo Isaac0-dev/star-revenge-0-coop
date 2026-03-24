@@ -5,7 +5,7 @@ const GeoLayout ccm_area_1_geo_19000000[] = {
 /* 04000000 */                                                 GEO_OPEN_NODE(),
 /* 09000064 */                                                     GEO_NODE_ORTHO(100),
 /* 04000000 */                                                     GEO_OPEN_NODE(),
-/* 19000005 802763D4 */                                                GEO_BACKGROUND(ccm_skybox_ptrlist, geo_skybox_main),
+/* 19000005 802763D4 */                                                GEO_BACKGROUND(0x0005, geo_skybox_main),
 /* 05000000 */                                                         GEO_CLOSE_NODE(),
 /* 05000000 */                                                     GEO_CLOSE_NODE(),
 /* 0C010000 */                                                 GEO_ZBUFFER(1),

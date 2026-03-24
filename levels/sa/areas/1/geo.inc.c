@@ -5,7 +5,7 @@ const GeoLayout sa_area_1_geo_19001700[] = {
 /* 04000000 */                                                 GEO_OPEN_NODE(),
 /* 09000064 */                                                     GEO_NODE_ORTHO(100),
 /* 04000000 */                                                     GEO_OPEN_NODE(),
-/* 19000003 802763D4 */                                                GEO_BACKGROUND(sa_skybox_ptrlist, geo_skybox_main),
+/* 19000003 802763D4 */                                                GEO_BACKGROUND(0x0003, geo_skybox_main),
 /* 05000000 */                                                         GEO_CLOSE_NODE(),
 /* 05000000 */                                                     GEO_CLOSE_NODE(),
 /* 0C010000 */                                                 GEO_ZBUFFER(1),

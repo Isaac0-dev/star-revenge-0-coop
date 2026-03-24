@@ -5,7 +5,7 @@ const GeoLayout castle_inside_area_6_geo_19000370[] = {
 /* 04000000 */                                                 GEO_OPEN_NODE(),
 /* 09000064 */                                                     GEO_NODE_ORTHO(100),
 /* 04000000 */                                                     GEO_OPEN_NODE(),
-/* 1900000A 802763D4 */                                                GEO_BACKGROUND(0x000A, geo_skybox_main),
+/* 1900000A 802763D4 */                                                GEO_BACKGROUND(castle_inside_skybox_ptrlist, geo_skybox_main),
 /* 05000000 */                                                         GEO_CLOSE_NODE(),
 /* 05000000 */                                                     GEO_CLOSE_NODE(),
 /* 0C010000 */                                                 GEO_ZBUFFER(1),
