@@ -12,7 +12,7 @@ const LevelScript level_bowser_2_entry[] = {
 /* 0x004CEAC8 :: 06080000 150008D8 */                                            JUMP_LINK(script_func_global_13),
 /* 0x004CEAD0 :: 22080036 0E000170 */                                            LOAD_MODEL_FROM_GEO(MODEL_BOWSER_2_TILTING_ARENA, bowser_2_geo_0E000170),
 /* 0x004CEAD8 :: 1F080100 0E000188 */                                            AREA(1, bowser_2_area_1_geo_0E000188),
-/* 0x004CEAE0 :: 24181F00 000008B5 00000000 00B40000 000A0000 13002F6C */            OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 2229, /* posZ */ 0, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
+/* 0x004CEAE0 :: 24181F00 000008B5 00000000 00B40000 000A0000 13002F6C */            OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 2229, /* posZ */ 0, /* angleX */ 0, /* angleY */ 180, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSpinAirborneCircleWarp),
 /* 0x004CEAF8 :: 26080A21 010A0000 */                                                WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_BOWSER_2, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
 /* 0x004CEB00 :: 2608F006 03360000 */                                                WARP_NODE(/* id */ 0xf0, /* destLevel */ LEVEL_CASTLE, /* destArea */ 0x03, /* destNode */ 0x36, /* flags */ 0x00),
 /* 0x004CEB08 :: 2608F113 010C0000 */                                                WARP_NODE(/* id */ 0xf1, /* destLevel */ LEVEL_BITFS, /* destArea */ 0x01, /* destNode */ 0x0c, /* flags */ 0x00),

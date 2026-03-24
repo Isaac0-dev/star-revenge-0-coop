@@ -20,7 +20,7 @@ const LevelScript level_bowser_3_entry[] = {
 /* 0x004D16F0 :: 2208003F 0E000368 */                                            LOAD_MODEL_FROM_GEO(MODEL_BOWSER_3_FALLING_PLATFORM_10, bowser_3_geo_0E000368),
 /* 0x004D16F8 :: 22080003 0E000380 */                                            LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_03 /* or MODEL_MAIN_MENU_MARIO_SAVE_BUTTON */, bowser_3_geo_0E000380),
 /* 0x004D1700 :: 1F080100 0E000398 */                                            AREA(1, bowser_3_area_1_geo_0E000398),
-/* 0x004D1708 :: 24181F00 0000051B 00000000 00B70000 000A0000 13002F6C */            OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 1307, /* posZ */ 0, /* angleX */ 0, /* angleY */ 183, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
+/* 0x004D1708 :: 24181F00 0000051B 00000000 00B70000 000A0000 13002F6C */            OBJECT(MODEL_NONE, /* posX */ 0, /* posY */ 1307, /* posZ */ 0, /* angleX */ 0, /* angleY */ 183, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSpinAirborneCircleWarp),
 /* 0x004D1720 :: 26080A22 010A0000 */                                                WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_BOWSER_3, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
 /* 0x004D14F0 :: 24181F36 00000000 00000000 00000000 00010000 13001958 */            OBJECT(MODEL_BOWSER_3_FALLING_PLATFORM_1, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00010000, bhvFallingBowserPlatform),
 /* 0x004D1508 :: 24181F37 00000000 00000000 00000000 00020000 13001958 */            OBJECT(MODEL_BOWSER_3_FALLING_PLATFORM_2, /* posX */ 0, /* posY */ 0, /* posZ */ 0, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00020000, bhvFallingBowserPlatform),

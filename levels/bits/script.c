@@ -69,7 +69,7 @@ const LevelScript level_bits_entry[] = {
 /* 0x02960258 :: 10080000 00000000 */                                            // SKIP_NOP(),
 /* 0x02960260 :: 10080000 00000000 */                                            // SKIP_NOP(),
 /* 0x02960268 :: 1F080100 19001700 */                                            AREA(1, bits_area_1_geo_19001700),
-/* 0x02960270 :: 24181F00 E067FF3E FF380000 005A0000 000A0000 13002F74 */            OBJECT(MODEL_NONE, /* posX */ -8089, /* posY */ -194, /* posZ */ -200, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
+/* 0x02960270 :: 24181F00 E067FF3E FF380000 005A0000 000A0000 13002F74 */            OBJECT(MODEL_NONE, /* posX */ -8089, /* posY */ -194, /* posZ */ -200, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSpinAirborneWarp),
 /* 0x02960288 :: 24181F00 02470A7B FFDA0000 00000000 00000000 130053C4 */            OBJECT(MODEL_NONE, /* posX */ 583, /* posY */ 2683, /* posZ */ -38, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x00000000, bhvPenguinRaceFinishLine),
 /* 0x029602A0 :: 24181F00 1DF3FE8F FFD90000 00000000 0A140000 13000780 */            OBJECT(MODEL_NONE, /* posX */ 7667, /* posY */ -369, /* posZ */ -39, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x0a140000, bhvWarp),
 /* 0x029602B8 :: 24181F00 E62C0400 F2E90000 006B0000 000D0000 1300075C */            OBJECT(MODEL_NONE, /* posX */ -6612, /* posY */ 1024, /* posZ */ -3351, /* angleX */ 0, /* angleY */ 107, /* angleZ */ 0, /* behParam */ 0x000d0000, bhvFadingWarp),

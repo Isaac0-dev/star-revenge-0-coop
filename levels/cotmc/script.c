@@ -15,7 +15,7 @@ const LevelScript level_cotmc_entry[] = {
 /* 0x004BEAC4 :: 06080000 150009DC */                                            JUMP_LINK(script_func_global_18),
 /* 0x004BEACC :: 06080000 15000660 */                                            JUMP_LINK(bbh_script_0x2ac300_entry),
 /* 0x004BEAD4 :: 1F080100 0E0001A0 */                                            AREA(1, cotmc_area_1_geo_0E0001A0),
-/* 0x004BEADC :: 24181F00 EFA703FC FFD10000 005A0000 000A0000 13002F64 */            OBJECT(MODEL_NONE, /* posX */ -4185, /* posY */ 1020, /* posZ */ -47, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
+/* 0x004BEADC :: 24181F00 EFA703FC FFD10000 005A0000 000A0000 13002F64 */            OBJECT(MODEL_NONE, /* posX */ -4185, /* posY */ 1020, /* posZ */ -47, /* angleX */ 0, /* angleY */ 90, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvAirborneWarp),
 /* 0x004BEAF4 :: 26080A1C 010A0000 */                                                WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_COTMC, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
 /* 0x004BEAFC :: 2608F006 03340000 */                                                WARP_NODE(/* id */ 0xf0, /* destLevel */ LEVEL_CASTLE, /* destArea */ 0x03, /* destNode */ 0x34, /* flags */ 0x00),
 /* 0x004BEB04 :: 2608F106 03660000 */                                                WARP_NODE(/* id */ 0xf1, /* destLevel */ LEVEL_CASTLE, /* destArea */ 0x03, /* destNode */ 0x66, /* flags */ 0x00),

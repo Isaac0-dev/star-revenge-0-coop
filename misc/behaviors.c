@@ -41,7 +41,7 @@ const BehaviorScript bhvWarp[] = {
 };
 
 
-const BehaviorScript bhvSwimmingWarp[] = {
+const BehaviorScript bhvAirborneWarp[] = {
     BREAK(),
 };
 
@@ -104,7 +104,7 @@ const BehaviorScript bhvCoinFormation[] = {
 };
 
 
-const BehaviorScript bhvWFRotatingWoodenPlatform[] = {
+const BehaviorScript bhvWFBreakableWallRight[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x03021314),
@@ -115,7 +115,7 @@ const BehaviorScript bhvWFRotatingWoodenPlatform[] = {
 };
 
 
-const BehaviorScript bhv_unknown_130005B4[] = {
+const BehaviorScript bhvRotatingPlatform[] = {
     BEGIN(OBJ_LIST_LEVEL),
     SET_HITBOX(160, 160),
     BEGIN_LOOP(),
@@ -126,7 +126,7 @@ const BehaviorScript bhv_unknown_130005B4[] = {
 };
 
 
-const BehaviorScript bhv_unknown_13000174[] = {
+const BehaviorScript bhvTHIHugeIslandTop[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     SET_HOME(),
@@ -234,7 +234,7 @@ const BehaviorScript bhv_unknown_130002A0[] = {
 };
 
 
-const BehaviorScript bhv_unknown_130005D8[] = {
+const BehaviorScript bhvTower[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005FAF78),
@@ -327,7 +327,7 @@ const BehaviorScript bhvRedCoin[] = {
 };
 
 
-const BehaviorScript bhvTHIHugeIslandTop[] = {
+const BehaviorScript bhvRRCruiserWing[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005F7348),
@@ -337,7 +337,7 @@ const BehaviorScript bhvTHIHugeIslandTop[] = {
 };
 
 
-const BehaviorScript bhvTHIHugeIslandTop[] = {
+const BehaviorScript bhvAnimatesOnFloorSwitchPress[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005F3058),
@@ -347,7 +347,7 @@ const BehaviorScript bhvTHIHugeIslandTop[] = {
 };
 
 
-const BehaviorScript bhvWFRotatingWoodenPlatform[] = {
+const BehaviorScript bhvRRElevatorPlatform[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005FDC38),
@@ -435,7 +435,7 @@ const BehaviorScript bhvHiddenBlueCoin[] = {
 };
 
 
-const BehaviorScript bhvTHIHugeIslandTop[] = {
+const BehaviorScript bhv_unknown_1300064C[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x08024C28),
@@ -458,7 +458,7 @@ const BehaviorScript bhvSnufit[] = {
 };
 
 
-const BehaviorScript bhvSwimmingWarp[] = {
+const BehaviorScript bhvSpinAirborneWarp[] = {
     BREAK(),
 };
 
@@ -491,7 +491,7 @@ const BehaviorScript bhv1Up[] = {
 };
 
 
-const BehaviorScript bhvSwimmingWarp[] = {
+const BehaviorScript bhvAirborneDeathWarp[] = {
     BREAK(),
 };
 
@@ -560,7 +560,7 @@ const BehaviorScript bhvCannonBarrel[] = {
 };
 
 
-const BehaviorScript bhv_unknown_130004A8[] = {
+const BehaviorScript bhvCannon[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, 0x00C9),
     SPAWN_CHILD(0x7F, bhvCannonBarrel),
@@ -585,14 +585,14 @@ const BehaviorScript bhv_unknown_13000920[] = {
 };
 
 
-const BehaviorScript bhv_unknown_1300090C[] = {
+const BehaviorScript bhvOneCoin[] = {
     BEGIN(OBJ_LIST_LEVEL),
     SET_INT(oBhvParams2ndByte, 1),
     GOTO(bhv_unknown_13000920),
 };
 
 
-const BehaviorScript bhv_unknown_1300179C[] = {
+const BehaviorScript bhvBulletBill[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x204B),
     SET_HOME(),
@@ -653,7 +653,7 @@ const BehaviorScript bhvChuckya[] = {
 };
 
 
-const BehaviorScript bhvWFRotatingWoodenPlatform[] = {
+const BehaviorScript bhvBetaChestBottom[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005F9D88),
@@ -717,7 +717,7 @@ const BehaviorScript bhvEnemyLakitu[] = {
 };
 
 
-const BehaviorScript bhvFirePiranhaPlant[] = {
+const BehaviorScript bhvSmallBomp[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x2049),
     DROP_TO_FLOOR(),
@@ -837,7 +837,7 @@ const BehaviorScript bhvThwomp2[] = {
 };
 
 
-const BehaviorScript bhv_unknown_130014E0[] = {
+const BehaviorScript bhvBreakableBox[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x08012D70),
@@ -906,7 +906,7 @@ const BehaviorScript bhvWFSolidTowerPlatform[] = {
 };
 
 
-const BehaviorScript bhv_unknown_130023D0[] = {
+const BehaviorScript bhvShipPart3[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x6449),
     SET_INTERACT_TYPE(0x102A0080),
@@ -974,7 +974,7 @@ const BehaviorScript bhvDoorWarp[] = {
 };
 
 
-const BehaviorScript bhv_unknown_13003324[] = {
+const BehaviorScript bhvSignOnWall[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     SET_INTERACT_TYPE(0x00800000),
@@ -1041,7 +1041,7 @@ const BehaviorScript bhvUnusedFakeStar[] = {
 };
 
 
-const BehaviorScript bhv_unknown_130018CC[] = {
+const BehaviorScript bhvBowserBodyAnchor[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0001),
     SET_HITBOX(100, 300),
@@ -1077,7 +1077,7 @@ const BehaviorScript bhvBowserTailAnchor[] = {
 };
 
 
-const BehaviorScript bhv_unknown_13001850[] = {
+const BehaviorScript bhvBowser[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x24C9),
     SET_INT(oInteractType, 2),
@@ -1085,7 +1085,7 @@ const BehaviorScript bhv_unknown_13001850[] = {
     DROP_TO_FLOOR(),
     SET_HOME(),
     LOAD_ANIMATIONS(oAnimations, 0x060577E0),
-    SPAWN_CHILD(0x00, bhv_unknown_130018CC),
+    SPAWN_CHILD(0x00, bhvBowserBodyAnchor),
     SPAWN_CHILD(0x65, bhvBowserFlameSpawn),
     SPAWN_OBJ(0x00, bhvBowserTailAnchor),
     SET_INT(oNumLootCoins, 50),
@@ -1119,12 +1119,12 @@ const BehaviorScript bhvWaterfallSoundLoop[] = {
 };
 
 
-const BehaviorScript bhvSwimmingWarp[] = {
+const BehaviorScript bhvFlyingWarp[] = {
     BREAK(),
 };
 
 
-const BehaviorScript bhvBitFSSinkingPlatforms[] = {
+const BehaviorScript bhvBetaTrampolineTop[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x05001A28),
@@ -1177,7 +1177,7 @@ const BehaviorScript bhvKingBobomb[] = {
 };
 
 
-const BehaviorScript bhvSwimmingWarp[] = {
+const BehaviorScript bhvSpinAirborneCircleWarp[] = {
     BREAK(),
 };
 

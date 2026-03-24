@@ -23,7 +23,7 @@ const LevelScript level_vcutm_entry[] = {
 /* 0x00461358 :: 22080036 0E0001F0 */                                            LOAD_MODEL_FROM_GEO(MODEL_VCUTM_SEESAW_PLATFORM, vcutm_geo_0E0001F0),
 /* 0x00461360 :: 22080016 16000388 */                                            LOAD_MODEL_FROM_GEO(MODEL_VCUTM_WARP_PIPE, bbh_geo_16000388),
 /* 0x00461368 :: 1F080100 0E000208 */                                            AREA(1, vcutm_area_1_geo_0E000208),
-/* 0x00461370 :: 24181F00 E8011A4E E8010000 00000000 000A0000 13002F64 */            OBJECT(MODEL_NONE, /* posX */ -6143, /* posY */ 6734, /* posZ */ -6143, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvSwimmingWarp),
+/* 0x00461370 :: 24181F00 E8011A4E E8010000 00000000 000A0000 13002F64 */            OBJECT(MODEL_NONE, /* posX */ -6143, /* posY */ 6734, /* posZ */ -6143, /* angleX */ 0, /* angleY */ 0, /* angleZ */ 0, /* behParam */ 0x000a0000, bhvAirborneWarp),
 /* 0x00461388 :: 26080A12 010A0000 */                                                WARP_NODE(/* id */ 0x0a, /* destLevel */ LEVEL_VCUTM, /* destArea */ 0x01, /* destNode */ 0x0a, /* flags */ 0x00),
 /* 0x00461390 :: 2608F310 01070000 */                                                WARP_NODE(/* id */ 0xf3, /* destLevel */ LEVEL_CASTLE_GROUNDS, /* destArea */ 0x01, /* destNode */ 0x07, /* flags */ 0x00),
 /* 0x00461398 :: 2608F010 01080000 */                                                WARP_NODE(/* id */ 0xf0, /* destLevel */ LEVEL_CASTLE_GROUNDS, /* destArea */ 0x01, /* destNode */ 0x08, /* flags */ 0x00),
