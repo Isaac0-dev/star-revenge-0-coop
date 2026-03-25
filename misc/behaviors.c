@@ -1,10 +1,10 @@
 const BehaviorScript bhvMenuButtonManager[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, 0x0821),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_menu_button_manager_init),
     BEGIN_LOOP(),
     SET_INT(oIntangibleTimer, 0),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_menu_button_manager_loop),
     END_LOOP(),
 };
 
@@ -12,10 +12,10 @@ const BehaviorScript bhvMenuButtonManager[] = {
 const BehaviorScript bhvYellowBackgroundInMenu[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, 0x0001),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(beh_yellow_background_menu_init),
     BEGIN_LOOP(),
     SET_INT(oIntangibleTimer, 0),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(beh_yellow_background_menu_loop),
     END_LOOP(),
 };
 
@@ -23,9 +23,9 @@ const BehaviorScript bhvYellowBackgroundInMenu[] = {
 const BehaviorScript bhvActSelector[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     OR_INT(oFlags, 0x0001),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_act_selector_init),
     BEGIN_LOOP(),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_act_selector_loop),
     END_LOOP(),
 };
 
@@ -62,7 +62,7 @@ const BehaviorScript bhv_unknown_13001488[] = {
     LOAD_COLLISION_DATA(collision_bhv_0x0800C7A8),
     BEGIN_LOOP(),
     CALL_NATIVE(bhv_purple_switch_loop),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -109,8 +109,8 @@ const BehaviorScript bhvWFBreakableWallRight[] = {
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x03021314),
     BEGIN_LOOP(),
-    CALL_NATIVE(NULL),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_rotating_platform_loop),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -133,8 +133,8 @@ const BehaviorScript bhvTHIHugeIslandTop[] = {
     LOAD_COLLISION_DATA(collision_bhv_0x08024C28),
     SCALE(oUkikiCageNextAction, 64),
     BEGIN_LOOP(),
-    CALL_NATIVE(NULL),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_thi_huge_island_top_loop),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -217,7 +217,7 @@ const BehaviorScript bhvStarDoor[] = {
     BEGIN_LOOP(),
     CALL_NATIVE(bhv_star_door_loop),
     CALL_NATIVE(bhv_star_door_loop_2),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -294,7 +294,7 @@ const BehaviorScript bhvPenguinRaceFinishLine[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     OR_INT(oFlags, 0x00C1),
     BEGIN_LOOP(),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_penguin_race_finish_line_update),
     END_LOOP(),
 };
 
@@ -332,7 +332,7 @@ const BehaviorScript bhvRRCruiserWing[] = {
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005F7348),
     BEGIN_LOOP(),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_rr_cruiser_wing_init),
     END_LOOP(),
 };
 
@@ -342,7 +342,7 @@ const BehaviorScript bhvAnimatesOnFloorSwitchPress[] = {
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005F3058),
     BEGIN_LOOP(),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_animates_on_floor_switch_press_init),
     END_LOOP(),
 };
 
@@ -353,7 +353,7 @@ const BehaviorScript bhvRRElevatorPlatform[] = {
     LOAD_COLLISION_DATA(collision_bhv_0x005FDC38),
     BEGIN_LOOP(),
     CALL_NATIVE(NULL),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -440,7 +440,7 @@ const BehaviorScript bhv_unknown_1300064C[] = {
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x08024C28),
     BEGIN_LOOP(),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_wf_breakable_wall_loop),
     END_LOOP(),
 };
 
@@ -658,8 +658,8 @@ const BehaviorScript bhvBetaChestBottom[] = {
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005F9D88),
     BEGIN_LOOP(),
-    CALL_NATIVE(NULL),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_elevator_init),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -743,7 +743,7 @@ const BehaviorScript bhvMessagePanel[] = {
     SET_INT(oYoshiBlinkTimer, 0),
     BEGIN_LOOP(),
     SET_INT(oIntangibleTimer, 0),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     SET_INT(oInteractStatus, 0),
     END_LOOP(),
 };
@@ -816,7 +816,7 @@ const BehaviorScript bhvThwomp[] = {
     SET_FLOAT(oDrawingDistance, 4000),
     BEGIN_LOOP(),
     CALL_NATIVE(bhv_grindel_thwomp_loop),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -832,7 +832,7 @@ const BehaviorScript bhvThwomp2[] = {
     SET_FLOAT(oDrawingDistance, 4000),
     BEGIN_LOOP(),
     CALL_NATIVE(bhv_grindel_thwomp_loop),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -845,7 +845,7 @@ const BehaviorScript bhvBreakableBox[] = {
     CALL_NATIVE(bhv_init_room),
     BEGIN_LOOP(),
     CALL_NATIVE(bhv_breakable_box_loop),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -914,7 +914,7 @@ const BehaviorScript bhvShipPart3[] = {
     SET_INT(oDamageOrCoinValue, 2),
     BEGIN_LOOP(),
     SET_INT(oIntangibleTimer, 0),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_ship_part_3_loop),
     SET_INT(oInteractStatus, 0),
     END_LOOP(),
 };
@@ -926,7 +926,7 @@ const BehaviorScript bhvSeesawPlatform[] = {
     CALL_NATIVE(bhv_seesaw_platform_init),
     BEGIN_LOOP(),
     CALL_NATIVE(bhv_seesaw_platform_update),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -946,7 +946,7 @@ const BehaviorScript bhvCapSwitch[] = {
     LOAD_COLLISION_DATA(collision_bhv_0x050033D0),
     BEGIN_LOOP(),
     CALL_NATIVE(bhv_cap_switch_loop),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -1026,7 +1026,7 @@ const BehaviorScript bhvPushableMetalBox[] = {
     SET_HOME(),
     BEGIN_LOOP(),
     CALL_NATIVE(bhv_pushable_loop),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -1130,8 +1130,8 @@ const BehaviorScript bhvBetaTrampolineTop[] = {
     LOAD_COLLISION_DATA(collision_bhv_0x05001A28),
     SET_HOME(),
     BEGIN_LOOP(),
-    CALL_NATIVE(NULL),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(bhv_beta_trampoline_top_loop),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -1192,7 +1192,7 @@ const BehaviorScript bhvTiltingBowserLavaPlatform[] = {
     SET_HOME(),
     BEGIN_LOOP(),
     CALL_NATIVE(cur_obj_rotate_face_angle_using_vel),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
@@ -1205,7 +1205,7 @@ const BehaviorScript bhvFallingBowserPlatform[] = {
     SET_HOME(),
     BEGIN_LOOP(),
     CALL_NATIVE(bhv_falling_bowser_platform_loop),
-    CALL_NATIVE(NULL),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 
