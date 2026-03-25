@@ -104,7 +104,7 @@ const BehaviorScript bhvCoinFormation[] = {
 };
 
 
-const BehaviorScript bhvWFBreakableWallRight[] = {
+const BehaviorScript bhvWfBreakableWallRight[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x03021314),
@@ -126,7 +126,7 @@ const BehaviorScript bhvRotatingPlatform[] = {
 };
 
 
-const BehaviorScript bhvTHIHugeIslandTop[] = {
+const BehaviorScript bhvThiHugeIslandTop[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     SET_HOME(),
@@ -327,7 +327,7 @@ const BehaviorScript bhvRedCoin[] = {
 };
 
 
-const BehaviorScript bhvRRCruiserWing[] = {
+const BehaviorScript bhvRrCruiserWing[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005F7348),
@@ -347,7 +347,7 @@ const BehaviorScript bhvAnimatesOnFloorSwitchPress[] = {
 };
 
 
-const BehaviorScript bhvRRElevatorPlatform[] = {
+const BehaviorScript bhvRrElevatorPlatform[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005FDC38),
@@ -896,7 +896,7 @@ const BehaviorScript bhvDoor[] = {
 };
 
 
-const BehaviorScript bhvWFSolidTowerPlatform[] = {
+const BehaviorScript bhvWfSolidTowerPlatform[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0041),
     SET_INT(oInteractType, 64),
