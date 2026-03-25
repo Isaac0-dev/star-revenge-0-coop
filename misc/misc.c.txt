@@ -748,7 +748,7 @@ const BehaviorScript bhvDoor[] = {
     CALL_NATIVE(bhv_door_loop),
     END_LOOP(),
 };
-const BehaviorScript bhvWfSolidTowerPlatform[] = {
+const BehaviorScript bhv_unknown_13000D50[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0041),
     SET_INT(oInteractType, 64),

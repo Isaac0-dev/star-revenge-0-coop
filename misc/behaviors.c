@@ -896,7 +896,7 @@ const BehaviorScript bhvDoor[] = {
 };
 
 
-const BehaviorScript bhvWfSolidTowerPlatform[] = {
+const BehaviorScript bhv_unknown_13000D50[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0041),
     SET_INT(oInteractType, 64),
