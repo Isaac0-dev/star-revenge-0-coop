@@ -104,7 +104,7 @@ const BehaviorScript bhvCoinFormation[] = {
 };
 
 
-const BehaviorScript bhvWfBreakableWallRight[] = {
+const BehaviorScript bhvShrink_Platform_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x03021314),
@@ -115,7 +115,7 @@ const BehaviorScript bhvWfBreakableWallRight[] = {
 };
 
 
-const BehaviorScript bhvRotatingPlatform[] = {
+const BehaviorScript bhvSpring_MOP[] = {
     BEGIN(OBJ_LIST_LEVEL),
     SET_HITBOX(160, 160),
     BEGIN_LOOP(),
@@ -126,7 +126,7 @@ const BehaviorScript bhvRotatingPlatform[] = {
 };
 
 
-const BehaviorScript bhvThiHugeIslandTop[] = {
+const BehaviorScript bhvNoteblock_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     SET_HOME(),
@@ -226,7 +226,7 @@ const BehaviorScript editor_Scroll_Texture[] = {
 };
 
 
-const BehaviorScript bhv_unknown_130002A0[] = {
+const BehaviorScript bhvFlipswitch_Panel_StarSpawn_MOP[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     BEGIN_LOOP(),
     CALL_NATIVE(NULL),
@@ -234,7 +234,7 @@ const BehaviorScript bhv_unknown_130002A0[] = {
 };
 
 
-const BehaviorScript bhvTower[] = {
+const BehaviorScript bhvFlipswitch_Panel_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005FAF78),
@@ -327,7 +327,7 @@ const BehaviorScript bhvRedCoin[] = {
 };
 
 
-const BehaviorScript bhvRrCruiserWing[] = {
+const BehaviorScript bhvSwitchblock_Switch_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005F7348),
@@ -337,7 +337,7 @@ const BehaviorScript bhvRrCruiserWing[] = {
 };
 
 
-const BehaviorScript bhvAnimatesOnFloorSwitchPress[] = {
+const BehaviorScript bhvSwitchblock_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005F3058),
@@ -347,7 +347,7 @@ const BehaviorScript bhvAnimatesOnFloorSwitchPress[] = {
 };
 
 
-const BehaviorScript bhvRrElevatorPlatform[] = {
+const BehaviorScript bhvGreen_Switchboard_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005FDC38),
@@ -435,7 +435,7 @@ const BehaviorScript bhvHiddenBlueCoin[] = {
 };
 
 
-const BehaviorScript bhv_unknown_1300064C[] = {
+const BehaviorScript bhvSandBlock_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x08024C28),
@@ -653,7 +653,7 @@ const BehaviorScript bhvChuckya[] = {
 };
 
 
-const BehaviorScript bhvBetaChestBottom[] = {
+const BehaviorScript bhvFlipswap_Platform_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x005F9D88),
@@ -791,7 +791,7 @@ const BehaviorScript bhvHiddenStarTrigger[] = {
 };
 
 
-const BehaviorScript bhv_unknown_130050D0[] = {
+const BehaviorScript bhvFlipBlock_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     SET_FLOAT(oDrawingDistance, 7167),
     OR_INT(oFlags, 0x0041),
@@ -896,7 +896,7 @@ const BehaviorScript bhvDoor[] = {
 };
 
 
-const BehaviorScript bhv_unknown_13000D50[] = {
+const BehaviorScript bhvCheckpoint_Flag_MOP[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0041),
     SET_INT(oInteractType, 64),
@@ -906,7 +906,7 @@ const BehaviorScript bhv_unknown_13000D50[] = {
 };
 
 
-const BehaviorScript bhvShipPart3[] = {
+const BehaviorScript bhvBeta_Blarrg_MOP[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x6449),
     SET_INTERACT_TYPE(0x102A0080),
