@@ -1,82 +1,3 @@
-// bhvFlipswitch_Panel_MOP
-
-const BehaviorScript bhvFlipswitch_Panel_MOP[] = {
-    BEGIN(OBJ_LIST_SURFACE),
-    ID(id_bhvNewId),
-    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
-    LOAD_COLLISION_DATA(col_Flipswitch_Panel_MOP_0x7daf78),
-    SET_FLOAT(oCollisionDistance, 1024),
-    CALL_NATIVE(bhv_flipswitch_panel_init),
-    BEGIN_LOOP(),
-    CALL_NATIVE(bhv_flipswitch_panel_loop),
-    CALL_NATIVE(load_object_collision_model),
-    END_LOOP(),
-};
-
-
-// bhvShrink_Platform_MOP
-
-const BehaviorScript bhvShrink_Platform_MOP[] = {
-    BEGIN(OBJ_LIST_SURFACE),
-    ID(id_bhvNewId),
-    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
-    LOAD_COLLISION_DATA(col_Shrink_Platform_MOP_0xad3720),
-    SET_FLOAT(oCollisionDistance, 1024),
-    CALL_NATIVE(bhv_Shrink_Platform_init),
-    BEGIN_LOOP(),
-    CALL_NATIVE(load_object_collision_model),
-    END_LOOP(),
-};
-
-
-// bhvSwitchblock_MOP
-
-const BehaviorScript bhvSwitchblock_MOP[] = {
-    BEGIN(OBJ_LIST_SURFACE),
-    ID(id_bhvNewId),
-    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
-    LOAD_COLLISION_DATA(col_Switchblock_MOP_0x7d3058),
-    SET_FLOAT(oCollisionDistance, 512),
-    CALL_NATIVE(bhv_Switchblock_init),
-    BEGIN_LOOP(),
-    CALL_NATIVE(bhv_Switchblock_loop),
-    END_LOOP(),
-};
-
-
-// bhvSpring_MOP
-
-const BehaviorScript bhvSpring_MOP[] = {
-    BEGIN(OBJ_LIST_LEVEL),
-    ID(id_bhvNewId),
-    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
-    SET_HITBOX(160, 160),
-    SET_INTERACT_TYPE(INTERACT_COIN),
-    SET_INT(oIntangibleTimer, 0),
-    CALL_NATIVE(bhv_Spring_init),
-    BEGIN_LOOP(),
-    CALL_NATIVE(bhv_Spring_loop),
-    END_LOOP(),
-};
-
-
-// bhvFlipBlock_MOP
-
-const BehaviorScript bhvFlipBlock_MOP[] = {
-    BEGIN(OBJ_LIST_SURFACE),
-    ID(id_bhvNewId),
-    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
-    SET_INT(oAction, 0),
-    SET_FLOAT(oCollisionDistance, 500),
-    LOAD_COLLISION_DATA(col_FlipBlock_MOP_0x7d1a98),
-    CALL_NATIVE(bhv_flip_block_init),
-    BEGIN_LOOP(),
-    CALL_NATIVE(bhv_flip_block_loop),
-    SET_INT(oInteractStatus, 0),
-    END_LOOP(),
-};
-
-
 // bhvNoteblock_MOP
 
 const BehaviorScript bhvNoteblock_MOP[] = {
@@ -127,6 +48,21 @@ const BehaviorScript bhvFlipswap_Platform_MOP[] = {
 };
 
 
+// bhvSandBlock_MOP
+
+const BehaviorScript bhvSandBlock_MOP[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    ID(id_bhvNewId),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    SET_HOME(),
+    LOAD_COLLISION_DATA(col_Sandblock_MOP_0xaa6444),
+    CALL_NATIVE(bhv_sandblock_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_sandblock_loop),
+    END_LOOP(),
+};
+
+
 // bhvCheckpoint_Flag_MOP
 
 const BehaviorScript bhvCheckpoint_Flag_MOP[] = {
@@ -143,17 +79,81 @@ const BehaviorScript bhvCheckpoint_Flag_MOP[] = {
 };
 
 
-// bhvSandBlock_MOP
+// bhvShrink_Platform_MOP
 
-const BehaviorScript bhvSandBlock_MOP[] = {
+const BehaviorScript bhvShrink_Platform_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     ID(id_bhvNewId),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
-    SET_HOME(),
-    LOAD_COLLISION_DATA(col_Sandblock_MOP_0xaa6444),
-    CALL_NATIVE(bhv_sandblock_init),
+    LOAD_COLLISION_DATA(col_Shrink_Platform_MOP_0xad3720),
+    SET_FLOAT(oCollisionDistance, 1024),
+    CALL_NATIVE(bhv_Shrink_Platform_init),
     BEGIN_LOOP(),
-    CALL_NATIVE(bhv_sandblock_loop),
+    CALL_NATIVE(load_object_collision_model),
+    END_LOOP(),
+};
+
+
+// bhvFlipswitch_Panel_MOP
+
+const BehaviorScript bhvFlipswitch_Panel_MOP[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    ID(id_bhvNewId),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    LOAD_COLLISION_DATA(col_Flipswitch_Panel_MOP_0x7daf78),
+    SET_FLOAT(oCollisionDistance, 1024),
+    CALL_NATIVE(bhv_flipswitch_panel_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_flipswitch_panel_loop),
+    CALL_NATIVE(load_object_collision_model),
+    END_LOOP(),
+};
+
+
+// bhvFlipBlock_MOP
+
+const BehaviorScript bhvFlipBlock_MOP[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    ID(id_bhvNewId),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    SET_INT(oAction, 0),
+    SET_FLOAT(oCollisionDistance, 500),
+    LOAD_COLLISION_DATA(col_FlipBlock_MOP_0x7d1a98),
+    CALL_NATIVE(bhv_flip_block_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_flip_block_loop),
+    SET_INT(oInteractStatus, 0),
+    END_LOOP(),
+};
+
+
+// bhvSwitchblock_MOP
+
+const BehaviorScript bhvSwitchblock_MOP[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    ID(id_bhvNewId),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    LOAD_COLLISION_DATA(col_Switchblock_MOP_0x7d3058),
+    SET_FLOAT(oCollisionDistance, 512),
+    CALL_NATIVE(bhv_Switchblock_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_Switchblock_loop),
+    END_LOOP(),
+};
+
+
+// bhvSpring_MOP
+
+const BehaviorScript bhvSpring_MOP[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    ID(id_bhvNewId),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    SET_HITBOX(160, 160),
+    SET_INTERACT_TYPE(INTERACT_COIN),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_Spring_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_Spring_loop),
     END_LOOP(),
 };
 
@@ -190,6 +190,19 @@ const BehaviorScript bhvFlipswitch_Panel_StarSpawn_MOP[] = {
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
     BEGIN_LOOP(),
     CALL_NATIVE(bhv_flipswitch_panel_starspawn_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvFlipswitch_Panel_MOP[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    ID(id_bhvNewId),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE ),
+    LOAD_COLLISION_DATA(col_Flipswitch_Panel_MOP_0x7daf78),
+    SET_FLOAT(oCollisionDistance,1024),
+    CALL_NATIVE(bhv_flipswitch_panel_init),
+    BEGIN_LOOP(),
+    CALL_NATIVE(bhv_flipswitch_panel_loop),
+    CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 

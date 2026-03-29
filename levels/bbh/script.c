@@ -33,14 +33,6 @@ const LevelScript bbh_script_0xad4ac0_entry[] = {
 };
 
 
-// level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bbh -> bbh_script_0x1200210 -> bbh_script_0x2ac300
-const LevelScript bbh_script_0x2ac300_entry[] = {
-/* 0x002AC300 :: 2208008C 0F000000 */                                            LOAD_MODEL_FROM_GEO(MODEL_BLUE_COIN_SWITCH, bbh_geo_0F000000),
-/* 0x002AC308 :: 220800C2 0F000028 */                                            LOAD_MODEL_FROM_GEO(MODEL_AMP, bbh_geo_0F000028),
-/* 0x002AC310 :: 07040000 */                                                     JUMP(bbh_script_0xad4ac0_entry),
-};
-
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bbh -> bbh_script_0x1200210
 const LevelScript level_bbh_entry[] = {
 /* 0x01200210 :: 1B040000 */                                                     INIT_LEVEL(),
@@ -58,7 +50,29 @@ const LevelScript level_bbh_entry[] = {
 /* 0x01200298 :: 170C000F 002008D0 00201410 */                                   // LOAD_RAW(/* seg */ 0x000f, /* start */ 0x002008d0, /* end */ 0x00201410),
 /* 0x012002A4 :: 1D040000 */                                                     ALLOC_LEVEL_POOL(),
 /* 0x012002A8 :: 250C0001 00000001 13002EC0 */                                   MARIO(/* model */ 0x01, /* behParam */ 0x00000001, bhvMario),
-/* 0x012002B4 :: 07040000 */                                                     JUMP_LINK(bbh_script_0x2ac300_entry),
+/* 0x002AC300 :: 2208008C 0F000000 */                                            LOAD_MODEL_FROM_GEO(MODEL_BLUE_COIN_SWITCH, bbh_geo_0F000000),
+/* 0x002AC308 :: 220800C2 0F000028 */                                            LOAD_MODEL_FROM_GEO(MODEL_AMP, bbh_geo_0F000028),
+/* 0x00AD4AC8 :: 2208009D 0F000B08 */                                            LOAD_MODEL_FROM_GEO(0x9d, bbh_geo_0F000B08),
+/* 0x00AD4AD0 :: 220800CF 0F0004CC */                                            LOAD_MODEL_FROM_GEO(MODEL_PURPLE_SWITCH, bbh_geo_0F0004CC),
+/* 0x002AC320 :: 22080081 0F0005D0 */                                            LOAD_MODEL_FROM_GEO(MODEL_BREAKABLE_BOX, bbh_geo_0F0005D0),
+/* 0x002AC328 :: 22080082 0F000610 */                                            LOAD_MODEL_FROM_GEO(MODEL_BREAKABLE_BOX_SMALL, bbh_geo_0F000610),
+/* 0x002AC330 :: 22080083 0F000A58 */                                            LOAD_MODEL_FROM_GEO(MODEL_EXCLAMATION_BOX_OUTLINE, bbh_geo_0F000A58),
+/* 0x002AC338 :: 22080089 0F000694 */                                            LOAD_MODEL_FROM_GEO(MODEL_EXCLAMATION_BOX, bbh_geo_0F000694),
+/* 0x002AC340 :: 220800C0 0F0006E4 */                                            LOAD_MODEL_FROM_GEO(MODEL_GOOMBA, bbh_geo_0F0006E4),
+/* 0x002AC348 :: 21084084 08025F08 */                                            // LOAD_MODEL_FROM_DL(MODEL_EXCLAMATION_POINT, bbh_dl_08025F08, 0x04),
+/* 0x002AC350 :: 220800BE 0F000AB0 */                                            LOAD_MODEL_FROM_GEO(MODEL_KOOPA_SHELL, bbh_geo_0F000AB0),
+/* 0x002AC358 :: 220800D9 0F000A30 */                                            LOAD_MODEL_FROM_GEO(MODEL_METAL_BOX, bbh_geo_0F000A30),
+/* 0x002AC360 :: 210810DA 08024BB8 */                                            // LOAD_MODEL_FROM_DL(MODEL_METAL_BOX_DL, bbh_dl_08024BB8, 0x01),
+/* 0x002AC368 :: 220800BC 0F0007B8 */                                            LOAD_MODEL_FROM_GEO(MODEL_BLACK_BOBOMB, bbh_geo_0F0007B8),
+/* 0x002AC370 :: 220800C3 0F0008F4 */                                            LOAD_MODEL_FROM_GEO(MODEL_BOBOMB_BUDDY, bbh_geo_0F0008F4),
+/* 0x002AC378 :: 210810C9 080048E0 */                                            // LOAD_MODEL_FROM_DL(MODEL_DL_CANNON_LID, bbh_dl_080048E0, 0x01),
+/* 0x002AC380 :: 220800B4 0F000640 */                                            LOAD_MODEL_FROM_GEO(MODEL_BOWLING_BALL, bbh_geo_0F000640),
+/* 0x002AC388 :: 2208007F 0F0001C0 */                                            LOAD_MODEL_FROM_GEO(MODEL_CANNON_BARREL, bbh_geo_0F0001C0),
+/* 0x002AC390 :: 22080080 0F0001A8 */                                            LOAD_MODEL_FROM_GEO(MODEL_CANNON_BASE, bbh_geo_0F0001A8),
+/* 0x002AC398 :: 22080078 0F0004FC */                                            LOAD_MODEL_FROM_GEO(MODEL_HEART, bbh_geo_0F0004FC),
+/* 0x002AC3A0 :: 220800DC 0F000518 */                                            LOAD_MODEL_FROM_GEO(MODEL_FLYGUY, bbh_geo_0F000518),
+/* 0x002AC3A8 :: 220800DF 0F0001D8 */                                            LOAD_MODEL_FROM_GEO(MODEL_CHUCKYA, bbh_geo_0F0001D8),
+/* 0x002AC3B0 :: 220800E1 0F00066C */                                            LOAD_MODEL_FROM_GEO(MODEL_TRAJECTORY_MARKER_BALL, bbh_geo_0F00066C),
 /* 0x012002BC :: 07040000 */                                                     JUMP_LINK(script_func_global_10),
 /* 0x012002C4 :: 07040000 */                                                     JUMP_LINK(script_func_global_15),
 /* 0x012002CC :: 2208001D 16000720 */                                            LOAD_MODEL_FROM_GEO(MODEL_BBH_HAUNTED_DOOR, bbh_geo_16000720),

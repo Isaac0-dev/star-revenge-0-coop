@@ -79,7 +79,7 @@ const LevelScript level_script_0x2abed8_entry[] = {
 
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abee8
 const LevelScript level_script_0x2abee8_entry[] = {
-/* 0x002ABEE8 :: 01100014 00269EA0 0026A3A0 14000078 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269f18_entry),
+/* 0x002ABEE8 :: 01100014 00269EA0 0026A3A0 14000078 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, NULL),
 };
 
 
@@ -91,7 +91,7 @@ const LevelScript level_script_0x269fa4_entry[] = {
 /* 0x00269FBC :: 19040003 */                                                     LOAD_MARIO_HEAD(/* sethead */ 0x0003),
 /* 0x00269FC0 :: 170C0013 00219E00 0021F4C0 */                                   // LOAD_RAW(/* seg */ 0x0013, /* start */ 0x00219e00, /* end */ 0x0021f4c0),
 /* 0x00269FCC :: 1A0C000A 00B105FC 00B178B5 */                                   LOAD_MIO0_TEXTURE(/* seg */ 0x0a, /* start */ 0x00b105fc, /* end */ 0x00b178b5),
-/* 0x00269FD8 :: 01100014 00269EA0 0026A3A0 1400020C */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x26a0ac_entry),
+/* 0x00269FD8 :: 01100014 00269EA0 0026A3A0 1400020C */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, NULL),
 };
 
 
@@ -103,7 +103,7 @@ const LevelScript level_script_0x2abef8_entry[] = {
 
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abec8
 const LevelScript level_script_0x2abec8_entry[] = {
-/* 0x002ABEC8 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269ea0_entry),
+/* 0x002ABEC8 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, NULL),
 };
 
 
@@ -114,7 +114,7 @@ const LevelScript level_script_0x26a148_entry[] = {
 /* 0x0026A154 :: 03040010 */                                                     SLEEP(/* frames */ 0x0010),
 /* 0x0026A158 :: 1C040000 */                                                     CLEAR_LEVEL(),
 /* 0x0026A15C :: 03040002 */                                                     SLEEP(/* frames */ 0x0002),
-/* 0x0026A160 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269ea0_entry),
+/* 0x0026A160 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, NULL),
 };
 
 
@@ -125,7 +125,7 @@ const LevelScript level_script_0x26a0fc_entry[] = {
 /* 0x0026A108 :: 03040010 */                                                     SLEEP(/* frames */ 0x0010),
 /* 0x0026A10C :: 1C040000 */                                                     CLEAR_LEVEL(),
 /* 0x0026A110 :: 03040002 */                                                     SLEEP(/* frames */ 0x0002),
-/* 0x0026A114 :: 01100015 002ABCA0 002AC6B0 15000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0015, /* start */ 0x002abca0, /* end */ 0x002ac6b0, level_script_0x2abca0_entry),
+/* 0x0026A114 :: 01100015 002ABCA0 002AC6B0 15000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0015, /* start */ 0x002abca0, /* end */ 0x002ac6b0, NULL),
 };
 
 
@@ -170,7 +170,7 @@ const LevelScript level_script_0x2abe58_entry[] = {
 /* 0x002ABEA4 :: 01100014 00269EA0 0026A3A0 1400020C */                          JUMP_IF(/* op */ 0x02, /* arg */ 0xfffffffd, level_script_0x2abef8_entry),
 /* 0x002ABEB0 :: 01100014 00269EA0 0026A3A0 14000000 */                          JUMP_IF(/* op */ 0x02, /* arg */ 0xfffffff8, level_script_0x2abec8_entry),
 /* 0x002ABEBC :: 01100015 002ABCA0 002AC6B0 15000000 */                          JUMP_IF(/* op */ 0x02, /* arg */ 0xfffffff7, level_script_0x2abf08_entry),
-/* 0x002ABEC8 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269ea0_entry),
+/* 0x002ABEC8 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, NULL),
 };
 
 

@@ -1,7 +1,7 @@
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> ending -> ending_script_0x4ac4b0 -> ending_script_0x4ac4f4
 const LevelScript ending_script_0x4ac4f4_entry[] = {
 /* 0x004AC4F4 :: 03040001 */                                                     SLEEP(/* frames */ 0x0001),
-/* 0x004AC4F8 :: 05080000 0E000044 */                                            JUMP(ending_script_0x4ac4f4_entry),
+/* 0x004AC4F8 :: 05080000 0E000044 */                                            JUMP(NULL),
 };
 
 
