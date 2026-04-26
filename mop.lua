@@ -211,26 +211,6 @@ hook_event(HOOK_ON_LEVEL_INIT, function ()
     switch_block_state = START_STATE
     StarSpawned = false
 end)
--- bhvCheckpoint_Flag_MOP
-
-local E_MODEL_CHECKPOINT = smlua_model_util_get_id("Checkpoint_Flag_MOP")
-
-function bhv_checkpoint_flag_init(obj)
-    obj_set_model_extended(obj, E_MODEL_CHECKPOINT)
-end
-
-function bhv_checkpoint_flag_loop(obj)
-    local m = gMarioStates[0]
-    if obj.oAction == 0 then
-        if obj_check_if_collided_with_object(obj, m.marioObj) ~= 0 then
-            m.spawnInfo.startPos.x, m.spawnInfo.startPos.y, m.spawnInfo.startPos.z = obj.oPosX, obj.oPosY, obj.oPosZ
-            m.spawnInfo.startAngle.y = obj.oFaceAngleYaw
-            cur_obj_play_sound_1(SOUND_GENERAL_COLLECT_1UP)
-            obj.oAction = 1
-        end
-    end
-end
-
 -- bhvFlipBlock_MOP
 
 local E_MODEL_FLIPBLOCK = smlua_model_util_get_id("FlipBlock_MOP")
@@ -293,32 +273,95 @@ function bhv_flip_block_loop(obj)
     end
 end
 
--- bhvFlipswitch_Panel_MOP
+-- bhvNoteblock_MOP
 
-local E_MODEL_FLIPSWITCH_PANEL = smlua_model_util_get_id("Flipswitch_Panel_MOP")
+local E_MODEL_NOTEBLOCK = smlua_model_util_get_id("Noteblock_MOP")
+local NOTEBLOCK_ACT_IDLE = 0
+local NOTEBLOCK_ACT_BOUNCING = 1
 
-function bhv_flipswitch_panel_init(obj)
-    obj_set_model_extended(obj, E_MODEL_FLIPSWITCH_PANEL)
-    network_init_object(obj, false, { "oAction", "oAnimState" })
+function bhv_noteblock_init(obj)
+    obj_set_model_extended(obj, E_MODEL_NOTEBLOCK)
 end
 
-function bhv_flipswitch_panel_loop(obj)
-    if StarSpawned then
-        obj.oAnimState = 2
-    else
-        if obj.oAction == 0 then
-            if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
-                obj.oAnimState = obj.oAnimState ~ 1
-                cur_obj_play_sound_1(SOUND_GENERAL_BIG_CLOCK)
-                obj.oAction = 1
-                network_send_object(obj, true)
-            end
-        elseif obj.oAction == 1 then
-            local cp = nearest_player_to_object(obj)
-            if not cp or (cur_obj_is_mario_on_platform() == 0 and cp.platform ~= obj) then
-                obj.oAction = 0
+function bhv_noteblock_loop(obj)
+    local m = gMarioStates[0]
+    local y_spd = 64
+
+    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(m) then
+        -- Jump. If A is pressed during the jump, increase y_spd.
+        if m.controller.buttonPressed & A_BUTTON ~= 0 then
+            y_spd = y_spd + 12
+            spawn_mist_particles()
+        end
+        set_mario_action(m, ACT_DOUBLE_JUMP, 0)
+
+        -- Calculates y speed
+        local intermediate_y_spd = repack(y_spd, "f", "I")
+		intermediate_y_spd = intermediate_y_spd + (obj.oBehParams2ndByte << 16)
+		y_spd = repack(intermediate_y_spd, "I", "f")
+		m.vel.y = y_spd
+
+        obj.oAction = NOTEBLOCK_ACT_BOUNCING
+    end
+
+    if obj.oAction == NOTEBLOCK_ACT_BOUNCING then
+        if obj.oTimer == 4 then
+            obj.oAction = NOTEBLOCK_ACT_IDLE
+            obj.oPosY = obj.oHomeY
+        else
+            -- Moves the noteblock slightly up and down, to give it a "bounce"
+            if obj.oTimer > 2 then
+                obj.oPosY = obj.oHomeY + (obj.oTimer % 3) * 6
+            else
+                obj.oPosY = obj.oHomeY - obj.oTimer * 6
             end
         end
+    end
+end
+
+-- bhvSandBlock_MOP
+
+local E_MODEL_SANDBLOCK = smlua_model_util_get_id("SandBlock_MOP")
+local SANDBLOCK_ACT_IDLE = 0
+local SANDBLOCK_ACT_FADING = 1
+local SANDBLOCK_ACT_DISAPPEARED = 2
+local FADE_TIMER = 300
+
+function bhv_sandblock_init(obj)
+    obj_set_model_extended(obj, E_MODEL_SANDBLOCK)
+end
+
+function bhv_sandblock_loop(obj)
+    -- Only activate collision if the sandblock has not disappeared
+    if obj.oAction < SANDBLOCK_ACT_DISAPPEARED then
+        load_object_collision_model()
+    end
+    -- Disappearing
+    local action = obj.oAction
+    if action == SANDBLOCK_ACT_FADING then
+        if obj.oTimer == FADE_TIMER then
+            obj.oAction = SANDBLOCK_ACT_DISAPPEARED
+        end
+        -- Causes the sandblock to become smaller and smaller on the y axis
+        obj.header.gfx.scale.y = ((300 - obj.oTimer) / 300.0)
+        -- Makes the sandblock not move the player vertically as it's breaking
+        obj.oPosY = obj.oPosY + 1.025
+
+        -- Spawn effects
+        spawn_non_sync_object(id_bhvDirtParticleSpawner, E_MODEL_NONE, obj.oPosX, obj.oPosY, obj.oPosZ, nil)
+        cur_obj_play_sound_1(SOUND_ENV_MOVINGSAND)
+    elseif action == SANDBLOCK_ACT_DISAPPEARED then
+        cur_obj_hide()
+        if obj.oTimer == FADE_TIMER + 1 then
+            obj.oPosY = obj.oHomeY
+            obj.oAction = SANDBLOCK_ACT_IDLE
+            obj.header.gfx.scale.y = 1.0
+            cur_obj_unhide()
+        end
+    end
+
+    if cur_obj_is_mario_on_platform() == 1 and obj.oAction == SANDBLOCK_ACT_IDLE and not is_bubbled(gMarioStates[0]) then
+        obj.oAction = SANDBLOCK_ACT_FADING
     end
 end
 
@@ -363,6 +406,120 @@ function bhv_Spring_loop(obj)
             obj.oAction = SPRING_ACT_READY
         end
     end
+end
+
+-- bhvShrink_Platform_MOP
+
+local E_MODEL_SHRINK_PLATFORM = smlua_model_util_get_id("Shrink_Platform_MOP")
+local E_MODEL_SHRINK_PLATFORM_BORDER = smlua_model_util_get_id("Shrink_Platform_Border_MOP")
+local SHRINK_PLATFORM_ACT_IDLE = 0
+local SHRINK_PLATFORM_ACT_SHRINKING = 1
+local SHRINK_PLATFORM_ACT_DISAPPEARED = 2
+local SHRINK_TIME = 150
+
+function bhv_Shrink_Platform_init(obj)
+    obj_set_model_extended(obj, E_MODEL_SHRINK_PLATFORM)
+    spawn_object(obj, E_MODEL_SHRINK_PLATFORM_BORDER, id_bhvShrink_Platform_Border_MOP)
+end
+
+function bhv_Shrink_Platform_loop(obj)
+    -- Only activate collision if the model is still visible
+    if obj.oAction < SHRINK_PLATFORM_ACT_DISAPPEARED then
+        load_object_collision_model()
+    end
+
+    local action = obj.oAction
+    --disappearing
+    if action == SHRINK_PLATFORM_ACT_SHRINKING then
+        if obj.oTimer == SHRINK_TIME then
+            obj.oAction = SHRINK_PLATFORM_ACT_DISAPPEARED
+        end
+
+        -- Slowly shrinks the size of the platform horizontally
+        obj.header.gfx.scale.x = (SHRINK_TIME - obj.oTimer) / SHRINK_TIME
+        obj.header.gfx.scale.z = (SHRINK_TIME - obj.oTimer) / SHRINK_TIME
+    elseif action == SHRINK_PLATFORM_ACT_DISAPPEARED then
+        -- Reset after the platform has fully disappeared
+        cur_obj_hide()
+        if obj.oTimer == SHRINK_TIME + 1 then
+            obj.oAction = SHRINK_PLATFORM_ACT_IDLE
+            obj.header.gfx.scale.x = 1.0
+            obj.header.gfx.scale.z = 1.0
+            cur_obj_unhide()
+        end
+    end
+
+    -- Start disappearing once Mario gets on it
+    if cur_obj_is_mario_on_platform() == 1 and obj.oAction == SHRINK_PLATFORM_ACT_IDLE and not is_bubbled(gMarioStates[0]) then
+        obj.oAction = SHRINK_PLATFORM_ACT_SHRINKING
+        cur_obj_play_sound_1(SOUND_OBJ_UNK23)
+    end
+end
+
+-- bhvSwitchblock_MOP
+
+local E_MODEL_SWITCHBLOCK = smlua_model_util_get_id("Switchblock_MOP")
+local SWITCHBLOCK_ACT_ACTIVE = 0
+local SWITCHBLOCK_ACT_INACTIVE = 1
+
+function bhv_Switchblock_init(obj)
+    obj_set_model_extended(obj, E_MODEL_SWITCHBLOCK)
+end
+
+function bhv_Switchblock_loop(obj)
+    -- Determines which block color this becomes
+    obj.oAnimState = obj.oBehParams2ndByte + obj.oAction
+
+    -- Only loads collision if the corresponding switch is pressed
+    if switch_block_state == obj.oBehParams2ndByte >> 1 then
+        load_object_collision_model()
+        obj.oAction = SWITCHBLOCK_ACT_ACTIVE
+    else
+        obj.oAction = SWITCHBLOCK_ACT_INACTIVE
+    end
+end
+
+-- bhvSwitchblock_Switch_MOP
+
+local E_MODEL_SWITCHBLOCK_SWITCH = smlua_model_util_get_id("Switchblock_Switch_MOP")
+
+function bhv_Switchblock_Switch_init(obj)
+    obj_set_model_extended(obj, E_MODEL_SWITCHBLOCK_SWITCH)
+end
+
+function bhv_Switchblock_Switch_loop(obj)
+    obj.oAnimState = obj.oBehParams2ndByte
+    local old_state = switch_block_state
+    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
+        switch_block_state = obj.oBehParams2ndByte
+    end
+
+    local scalar = 0
+    if switch_block_state ~= obj.oBehParams2ndByte then
+        scalar = 1
+    end
+
+    -- Whenever the switch block state changes
+    if old_state ~= switch_block_state then
+        scalar_timer = 0
+        local np = gNetworkPlayers
+        for i = 1, MAX_PLAYERS - 1, 1 do
+            if is_current_area_sync_valid() and np[0].currLevelNum == np[i].currLevelNum then
+                network_send_to(i, true, { timer = 0, state = switch_block_state })
+            end
+        end
+    end
+
+    -- Slowly raise and lower the switch
+    if scalar_timer < 100 then
+        scalar_timer = scalar_timer + 1
+    end
+
+    local result = scalar * 0.9 + 0.1
+    local current_scale = obj.header.gfx.scale.y
+
+    -- Make smaller if the switch is pressed
+    obj.header.gfx.scale.y = lerp(current_scale, result, scalar_timer * 0.01)
 end
 
 -- bhvFlipswap_Platform_MOP
@@ -410,97 +567,6 @@ function bhv_Flipswap_Platform_loop(obj)
         elseif m.action & ACT_GROUP_MASK ~= ACT_GROUP_AIRBORNE then
             obj.oAction = FLIPSWAP_PLATFORM_ACT_IDLE
         end
-    end
-end
-
--- bhvFlipswitch_Panel_StarSpawn_MOP
-
-function bhv_flipswitch_panel_starspawn_loop(obj)
-    if not StarSpawned then
-        local flipswitches_count = count_objects_with_behavior(id_bhvFlipswitch_Panel_MOP)
-        local flipswitches_active = 0
-
-        local curr_obj = obj_get_first_with_behavior_id(id_bhvFlipswitch_Panel_MOP)
-        while curr_obj do
-            if curr_obj.oAnimState == 1 then
-                flipswitches_active = flipswitches_active + 1
-            end
-            curr_obj = obj_get_next_with_behavior_id(curr_obj, id_bhvFlipswitch_Panel_MOP)
-        end
-
-        if flipswitches_active == flipswitches_count and flipswitches_count > 0 then
-            spawn_red_coin_cutscene_star(obj.oPosX, obj.oPosY, obj.oPosZ)
-            StarSpawned = true
-        end
-    end
-end
-
--- bhvNoteblock_MOP
-
-local E_MODEL_NOTEBLOCK = smlua_model_util_get_id("Noteblock_MOP")
-local NOTEBLOCK_ACT_IDLE = 0
-local NOTEBLOCK_ACT_BOUNCING = 1
-
-function bhv_noteblock_init(obj)
-    obj_set_model_extended(obj, E_MODEL_NOTEBLOCK)
-end
-
-function bhv_noteblock_loop(obj)
-    local m = gMarioStates[0]
-    local y_spd = 64
-
-    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(m) then
-        -- Jump. If A is pressed during the jump, increase y_spd.
-        if m.controller.buttonPressed & A_BUTTON ~= 0 then
-            y_spd = y_spd + 12
-            spawn_mist_particles()
-        end
-        set_mario_action(m, ACT_DOUBLE_JUMP, 0)
-
-        -- Calculates y speed
-        local intermediate_y_spd = repack(y_spd, "f", "I")
-		intermediate_y_spd = intermediate_y_spd + (obj.oBehParams2ndByte << 16)
-		y_spd = repack(intermediate_y_spd, "I", "f")
-		m.vel.y = y_spd
-
-        obj.oAction = NOTEBLOCK_ACT_BOUNCING
-    end
-
-    if obj.oAction == NOTEBLOCK_ACT_BOUNCING then
-        if obj.oTimer == 4 then
-            obj.oAction = NOTEBLOCK_ACT_IDLE
-            obj.oPosY = obj.oHomeY
-        else
-            -- Moves the noteblock slightly up and down, to give it a "bounce"
-            if obj.oTimer > 2 then
-                obj.oPosY = obj.oHomeY + (obj.oTimer % 3) * 6
-            else
-                obj.oPosY = obj.oHomeY - obj.oTimer * 6
-            end
-        end
-    end
-end
-
--- bhvSwitchblock_MOP
-
-local E_MODEL_SWITCHBLOCK = smlua_model_util_get_id("Switchblock_MOP")
-local SWITCHBLOCK_ACT_ACTIVE = 0
-local SWITCHBLOCK_ACT_INACTIVE = 1
-
-function bhv_Switchblock_init(obj)
-    obj_set_model_extended(obj, E_MODEL_SWITCHBLOCK)
-end
-
-function bhv_Switchblock_loop(obj)
-    -- Determines which block color this becomes
-    obj.oAnimState = obj.oBehParams2ndByte + obj.oAction
-
-    -- Only loads collision if the corresponding switch is pressed
-    if switch_block_state == obj.oBehParams2ndByte >> 1 then
-        load_object_collision_model()
-        obj.oAction = SWITCHBLOCK_ACT_ACTIVE
-    else
-        obj.oAction = SWITCHBLOCK_ACT_INACTIVE
     end
 end
 
@@ -552,140 +618,74 @@ function bhv_Green_Switchboard_Gears_loop(obj)
     obj.oFaceAnglePitch = obj.oFaceAnglePitch + parent.oForwardVel * 64
 end
 
--- bhvShrink_Platform_MOP
+-- bhvCheckpoint_Flag_MOP
 
-local E_MODEL_SHRINK_PLATFORM = smlua_model_util_get_id("Shrink_Platform_MOP")
-local E_MODEL_SHRINK_PLATFORM_BORDER = smlua_model_util_get_id("Shrink_Platform_Border_MOP")
-local SHRINK_PLATFORM_ACT_IDLE = 0
-local SHRINK_PLATFORM_ACT_SHRINKING = 1
-local SHRINK_PLATFORM_ACT_DISAPPEARED = 2
-local SHRINK_TIME = 150
+local E_MODEL_CHECKPOINT = smlua_model_util_get_id("Checkpoint_Flag_MOP")
 
-function bhv_Shrink_Platform_init(obj)
-    obj_set_model_extended(obj, E_MODEL_SHRINK_PLATFORM)
-    spawn_object(obj, E_MODEL_SHRINK_PLATFORM_BORDER, id_bhvShrink_Platform_Border_MOP)
+function bhv_checkpoint_flag_init(obj)
+    obj_set_model_extended(obj, E_MODEL_CHECKPOINT)
 end
 
-function bhv_Shrink_Platform_loop(obj)
-    -- Only activate collision if the model is still visible
-    if obj.oAction < SHRINK_PLATFORM_ACT_DISAPPEARED then
-        load_object_collision_model()
-    end
-
-    local action = obj.oAction
-    --disappearing
-    if action == SHRINK_PLATFORM_ACT_SHRINKING then
-        if obj.oTimer == SHRINK_TIME then
-            obj.oAction = SHRINK_PLATFORM_ACT_DISAPPEARED
-        end
-
-        -- Slowly shrinks the size of the platform horizontally
-        obj.header.gfx.scale.x = (SHRINK_TIME - obj.oTimer) / SHRINK_TIME
-        obj.header.gfx.scale.z = (SHRINK_TIME - obj.oTimer) / SHRINK_TIME
-    elseif action == SHRINK_PLATFORM_ACT_DISAPPEARED then
-        -- Reset after the platform has fully disappeared
-        cur_obj_hide()
-        if obj.oTimer == SHRINK_TIME + 1 then
-            obj.oAction = SHRINK_PLATFORM_ACT_IDLE
-            obj.header.gfx.scale.x = 1.0
-            obj.header.gfx.scale.z = 1.0
-            cur_obj_unhide()
+function bhv_checkpoint_flag_loop(obj)
+    local m = gMarioStates[0]
+    if obj.oAction == 0 then
+        if obj_check_if_collided_with_object(obj, m.marioObj) ~= 0 then
+            m.spawnInfo.startPos.x, m.spawnInfo.startPos.y, m.spawnInfo.startPos.z = obj.oPosX, obj.oPosY, obj.oPosZ
+            m.spawnInfo.startAngle.y = obj.oFaceAngleYaw
+            cur_obj_play_sound_1(SOUND_GENERAL_COLLECT_1UP)
+            obj.oAction = 1
         end
     end
-
-    -- Start disappearing once Mario gets on it
-    if cur_obj_is_mario_on_platform() == 1 and obj.oAction == SHRINK_PLATFORM_ACT_IDLE and not is_bubbled(gMarioStates[0]) then
-        obj.oAction = SHRINK_PLATFORM_ACT_SHRINKING
-        cur_obj_play_sound_1(SOUND_OBJ_UNK23)
-    end
 end
 
--- bhvSandBlock_MOP
+-- bhvFlipswitch_Panel_MOP
 
-local E_MODEL_SANDBLOCK = smlua_model_util_get_id("SandBlock_MOP")
-local SANDBLOCK_ACT_IDLE = 0
-local SANDBLOCK_ACT_FADING = 1
-local SANDBLOCK_ACT_DISAPPEARED = 2
-local FADE_TIMER = 300
+local E_MODEL_FLIPSWITCH_PANEL = smlua_model_util_get_id("Flipswitch_Panel_MOP")
 
-function bhv_sandblock_init(obj)
-    obj_set_model_extended(obj, E_MODEL_SANDBLOCK)
+function bhv_flipswitch_panel_init(obj)
+    obj_set_model_extended(obj, E_MODEL_FLIPSWITCH_PANEL)
+    network_init_object(obj, false, { "oAction", "oAnimState" })
 end
 
-function bhv_sandblock_loop(obj)
-    -- Only activate collision if the sandblock has not disappeared
-    if obj.oAction < SANDBLOCK_ACT_DISAPPEARED then
-        load_object_collision_model()
-    end
-    -- Disappearing
-    local action = obj.oAction
-    if action == SANDBLOCK_ACT_FADING then
-        if obj.oTimer == FADE_TIMER then
-            obj.oAction = SANDBLOCK_ACT_DISAPPEARED
-        end
-        -- Causes the sandblock to become smaller and smaller on the y axis
-        obj.header.gfx.scale.y = ((300 - obj.oTimer) / 300.0)
-        -- Makes the sandblock not move the player vertically as it's breaking
-        obj.oPosY = obj.oPosY + 1.025
-
-        -- Spawn effects
-        spawn_non_sync_object(id_bhvDirtParticleSpawner, E_MODEL_NONE, obj.oPosX, obj.oPosY, obj.oPosZ, nil)
-        cur_obj_play_sound_1(SOUND_ENV_MOVINGSAND)
-    elseif action == SANDBLOCK_ACT_DISAPPEARED then
-        cur_obj_hide()
-        if obj.oTimer == FADE_TIMER + 1 then
-            obj.oPosY = obj.oHomeY
-            obj.oAction = SANDBLOCK_ACT_IDLE
-            obj.header.gfx.scale.y = 1.0
-            cur_obj_unhide()
-        end
-    end
-
-    if cur_obj_is_mario_on_platform() == 1 and obj.oAction == SANDBLOCK_ACT_IDLE and not is_bubbled(gMarioStates[0]) then
-        obj.oAction = SANDBLOCK_ACT_FADING
-    end
-end
-
--- bhvSwitchblock_Switch_MOP
-
-local E_MODEL_SWITCHBLOCK_SWITCH = smlua_model_util_get_id("Switchblock_Switch_MOP")
-
-function bhv_Switchblock_Switch_init(obj)
-    obj_set_model_extended(obj, E_MODEL_SWITCHBLOCK_SWITCH)
-end
-
-function bhv_Switchblock_Switch_loop(obj)
-    obj.oAnimState = obj.oBehParams2ndByte
-    local old_state = switch_block_state
-    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
-        switch_block_state = obj.oBehParams2ndByte
-    end
-
-    local scalar = 0
-    if switch_block_state ~= obj.oBehParams2ndByte then
-        scalar = 1
-    end
-
-    -- Whenever the switch block state changes
-    if old_state ~= switch_block_state then
-        scalar_timer = 0
-        local np = gNetworkPlayers
-        for i = 1, MAX_PLAYERS - 1, 1 do
-            if is_current_area_sync_valid() and np[0].currLevelNum == np[i].currLevelNum then
-                network_send_to(i, true, { timer = 0, state = switch_block_state })
+function bhv_flipswitch_panel_loop(obj)
+    if StarSpawned then
+        obj.oAnimState = 2
+    else
+        if obj.oAction == 0 then
+            if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
+                obj.oAnimState = obj.oAnimState ~ 1
+                cur_obj_play_sound_1(SOUND_GENERAL_BIG_CLOCK)
+                obj.oAction = 1
+                network_send_object(obj, true)
+            end
+        elseif obj.oAction == 1 then
+            local cp = nearest_player_to_object(obj)
+            if not cp or (cur_obj_is_mario_on_platform() == 0 and cp.platform ~= obj) then
+                obj.oAction = 0
             end
         end
     end
+end
 
-    -- Slowly raise and lower the switch
-    if scalar_timer < 100 then
-        scalar_timer = scalar_timer + 1
+-- bhvFlipswitch_Panel_StarSpawn_MOP
+
+function bhv_flipswitch_panel_starspawn_loop(obj)
+    if not StarSpawned then
+        local flipswitches_count = count_objects_with_behavior(id_bhvFlipswitch_Panel_MOP)
+        local flipswitches_active = 0
+
+        local curr_obj = obj_get_first_with_behavior_id(id_bhvFlipswitch_Panel_MOP)
+        while curr_obj do
+            if curr_obj.oAnimState == 1 then
+                flipswitches_active = flipswitches_active + 1
+            end
+            curr_obj = obj_get_next_with_behavior_id(curr_obj, id_bhvFlipswitch_Panel_MOP)
+        end
+
+        if flipswitches_active == flipswitches_count and flipswitches_count > 0 then
+            spawn_red_coin_cutscene_star(obj.oPosX, obj.oPosY, obj.oPosZ)
+            StarSpawned = true
+        end
     end
-
-    local result = scalar * 0.9 + 0.1
-    local current_scale = obj.header.gfx.scale.y
-
-    -- Make smaller if the switch is pressed
-    obj.header.gfx.scale.y = lerp(current_scale, result, scalar_timer * 0.01)
 end
 
