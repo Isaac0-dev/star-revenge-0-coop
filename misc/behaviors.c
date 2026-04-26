@@ -12,10 +12,10 @@ const BehaviorScript bhvMenuButtonManager[] = {
 const BehaviorScript bhvYellowBackgroundInMenu[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, 0x0001),
-    CALL_NATIVE(beh_yellow_background_menu_init),
+    CALL_NATIVE(NULL),
     BEGIN_LOOP(),
     SET_INT(oIntangibleTimer, 0),
-    CALL_NATIVE(beh_yellow_background_menu_loop),
+    CALL_NATIVE(NULL),
     END_LOOP(),
 };
 

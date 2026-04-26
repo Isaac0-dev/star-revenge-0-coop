@@ -211,6 +211,26 @@ hook_event(HOOK_ON_LEVEL_INIT, function ()
     switch_block_state = START_STATE
     StarSpawned = false
 end)
+-- bhvCheckpoint_Flag_MOP
+
+local E_MODEL_CHECKPOINT = smlua_model_util_get_id("Checkpoint_Flag_MOP")
+
+function bhv_checkpoint_flag_init(obj)
+    obj_set_model_extended(obj, E_MODEL_CHECKPOINT)
+end
+
+function bhv_checkpoint_flag_loop(obj)
+    local m = gMarioStates[0]
+    if obj.oAction == 0 then
+        if obj_check_if_collided_with_object(obj, m.marioObj) ~= 0 then
+            m.spawnInfo.startPos.x, m.spawnInfo.startPos.y, m.spawnInfo.startPos.z = obj.oPosX, obj.oPosY, obj.oPosZ
+            m.spawnInfo.startAngle.y = obj.oFaceAngleYaw
+            cur_obj_play_sound_1(SOUND_GENERAL_COLLECT_1UP)
+            obj.oAction = 1
+        end
+    end
+end
+
 -- bhvFlipBlock_MOP
 
 local E_MODEL_FLIPBLOCK = smlua_model_util_get_id("FlipBlock_MOP")
@@ -269,6 +289,78 @@ function bhv_flip_block_loop(obj)
             obj.oFaceAnglePitch = obj.oMoveAnglePitch
             obj.header.gfx.scale.y = 1
             load_object_collision_model()
+        end
+    end
+end
+
+-- bhvFlipswitch_Panel_MOP
+
+local E_MODEL_FLIPSWITCH_PANEL = smlua_model_util_get_id("Flipswitch_Panel_MOP")
+
+function bhv_flipswitch_panel_init(obj)
+    obj_set_model_extended(obj, E_MODEL_FLIPSWITCH_PANEL)
+    network_init_object(obj, false, { "oAction", "oAnimState" })
+end
+
+function bhv_flipswitch_panel_loop(obj)
+    if StarSpawned then
+        obj.oAnimState = 2
+    else
+        if obj.oAction == 0 then
+            if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
+                obj.oAnimState = obj.oAnimState ~ 1
+                cur_obj_play_sound_1(SOUND_GENERAL_BIG_CLOCK)
+                obj.oAction = 1
+                network_send_object(obj, true)
+            end
+        elseif obj.oAction == 1 then
+            local cp = nearest_player_to_object(obj)
+            if not cp or (cur_obj_is_mario_on_platform() == 0 and cp.platform ~= obj) then
+                obj.oAction = 0
+            end
+        end
+    end
+end
+
+-- bhvSpring_MOP
+
+local E_MODEL_SPRING = smlua_model_util_get_id("Spring_MOP")
+local SPRING_ACT_READY = 0
+local SPRING_ACT_USED = 1
+
+function bhv_Spring_init(obj)
+    obj_set_model_extended(obj, E_MODEL_SPRING)
+end
+
+function bhv_Spring_loop(obj)
+    local m = gMarioStates[0]
+    if is_bubbled(m) then return end
+
+    -- Initial y speed
+    local Yspd = 56.0
+    local y_vel = nil
+    local forward_vel = nil
+
+    if obj.oAction == SPRING_ACT_READY then
+        if obj_check_if_collided_with_object(obj, m.marioObj) ~= 0 then
+            set_mario_action(m, ACT_DOUBLE_JUMP, 0)
+            m.faceAngle.y = obj.oFaceAngleYaw
+
+            y_vel = repack(Yspd, "f", "I")
+            -- Calculates how fast Mario should go using oBehParams2ndByte
+            forward_vel = repack(y_vel + (obj.oBehParams & 0x00FF0000), "I", "f")
+            m.forwardVel = forward_vel
+
+            -- Calculates how high Mario should go using the 1st byte
+            y_vel = y_vel + (((obj.oBehParams >> 24) & 0xFF) << 16)
+            bounce_off_object(m, obj, repack(y_vel, "I", "f"))
+
+            -- Prevent interaction for some time
+            obj.oAction = SPRING_ACT_USED
+        end
+    else
+        if obj.oTimer == 15 then
+            obj.oAction = SPRING_ACT_READY
         end
     end
 end
@@ -343,49 +435,6 @@ function bhv_flipswitch_panel_starspawn_loop(obj)
     end
 end
 
--- bhvCheckpoint_Flag_MOP
-
-local E_MODEL_CHECKPOINT = smlua_model_util_get_id("Checkpoint_Flag_MOP")
-
-function bhv_checkpoint_flag_init(obj)
-    obj_set_model_extended(obj, E_MODEL_CHECKPOINT)
-end
-
-function bhv_checkpoint_flag_loop(obj)
-    local m = gMarioStates[0]
-    if obj.oAction == 0 then
-        if obj_check_if_collided_with_object(obj, m.marioObj) ~= 0 then
-            m.spawnInfo.startPos.x, m.spawnInfo.startPos.y, m.spawnInfo.startPos.z = obj.oPosX, obj.oPosY, obj.oPosZ
-            m.spawnInfo.startAngle.y = obj.oFaceAngleYaw
-            cur_obj_play_sound_1(SOUND_GENERAL_COLLECT_1UP)
-            obj.oAction = 1
-        end
-    end
-end
-
--- bhvSwitchblock_MOP
-
-local E_MODEL_SWITCHBLOCK = smlua_model_util_get_id("Switchblock_MOP")
-local SWITCHBLOCK_ACT_ACTIVE = 0
-local SWITCHBLOCK_ACT_INACTIVE = 1
-
-function bhv_Switchblock_init(obj)
-    obj_set_model_extended(obj, E_MODEL_SWITCHBLOCK)
-end
-
-function bhv_Switchblock_loop(obj)
-    -- Determines which block color this becomes
-    obj.oAnimState = obj.oBehParams2ndByte + obj.oAction
-
-    -- Only loads collision if the corresponding switch is pressed
-    if switch_block_state == obj.oBehParams2ndByte >> 1 then
-        load_object_collision_model()
-        obj.oAction = SWITCHBLOCK_ACT_ACTIVE
-    else
-        obj.oAction = SWITCHBLOCK_ACT_INACTIVE
-    end
-end
-
 -- bhvNoteblock_MOP
 
 local E_MODEL_NOTEBLOCK = smlua_model_util_get_id("Noteblock_MOP")
@@ -432,32 +481,26 @@ function bhv_noteblock_loop(obj)
     end
 end
 
--- bhvFlipswitch_Panel_MOP
+-- bhvSwitchblock_MOP
 
-local E_MODEL_FLIPSWITCH_PANEL = smlua_model_util_get_id("Flipswitch_Panel_MOP")
+local E_MODEL_SWITCHBLOCK = smlua_model_util_get_id("Switchblock_MOP")
+local SWITCHBLOCK_ACT_ACTIVE = 0
+local SWITCHBLOCK_ACT_INACTIVE = 1
 
-function bhv_flipswitch_panel_init(obj)
-    obj_set_model_extended(obj, E_MODEL_FLIPSWITCH_PANEL)
-    network_init_object(obj, false, { "oAction", "oAnimState" })
+function bhv_Switchblock_init(obj)
+    obj_set_model_extended(obj, E_MODEL_SWITCHBLOCK)
 end
 
-function bhv_flipswitch_panel_loop(obj)
-    if StarSpawned then
-        obj.oAnimState = 2
+function bhv_Switchblock_loop(obj)
+    -- Determines which block color this becomes
+    obj.oAnimState = obj.oBehParams2ndByte + obj.oAction
+
+    -- Only loads collision if the corresponding switch is pressed
+    if switch_block_state == obj.oBehParams2ndByte >> 1 then
+        load_object_collision_model()
+        obj.oAction = SWITCHBLOCK_ACT_ACTIVE
     else
-        if obj.oAction == 0 then
-            if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
-                obj.oAnimState = obj.oAnimState ~ 1
-                cur_obj_play_sound_1(SOUND_GENERAL_BIG_CLOCK)
-                obj.oAction = 1
-                network_send_object(obj, true)
-            end
-        elseif obj.oAction == 1 then
-            local cp = nearest_player_to_object(obj)
-            if not cp or (cur_obj_is_mario_on_platform() == 0 and cp.platform ~= obj) then
-                obj.oAction = 0
-            end
-        end
+        obj.oAction = SWITCHBLOCK_ACT_INACTIVE
     end
 end
 
@@ -509,49 +552,6 @@ function bhv_Green_Switchboard_Gears_loop(obj)
     obj.oFaceAnglePitch = obj.oFaceAnglePitch + parent.oForwardVel * 64
 end
 
--- bhvSwitchblock_Switch_MOP
-
-local E_MODEL_SWITCHBLOCK_SWITCH = smlua_model_util_get_id("Switchblock_Switch_MOP")
-
-function bhv_Switchblock_Switch_init(obj)
-    obj_set_model_extended(obj, E_MODEL_SWITCHBLOCK_SWITCH)
-end
-
-function bhv_Switchblock_Switch_loop(obj)
-    obj.oAnimState = obj.oBehParams2ndByte
-    local old_state = switch_block_state
-    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
-        switch_block_state = obj.oBehParams2ndByte
-    end
-
-    local scalar = 0
-    if switch_block_state ~= obj.oBehParams2ndByte then
-        scalar = 1
-    end
-
-    -- Whenever the switch block state changes
-    if old_state ~= switch_block_state then
-        scalar_timer = 0
-        local np = gNetworkPlayers
-        for i = 1, MAX_PLAYERS - 1, 1 do
-            if is_current_area_sync_valid() and np[0].currLevelNum == np[i].currLevelNum then
-                network_send_to(i, true, { timer = 0, state = switch_block_state })
-            end
-        end
-    end
-
-    -- Slowly raise and lower the switch
-    if scalar_timer < 100 then
-        scalar_timer = scalar_timer + 1
-    end
-
-    local result = scalar * 0.9 + 0.1
-    local current_scale = obj.header.gfx.scale.y
-
-    -- Make smaller if the switch is pressed
-    obj.header.gfx.scale.y = lerp(current_scale, result, scalar_timer * 0.01)
-end
-
 -- bhvShrink_Platform_MOP
 
 local E_MODEL_SHRINK_PLATFORM = smlua_model_util_get_id("Shrink_Platform_MOP")
@@ -600,49 +600,6 @@ function bhv_Shrink_Platform_loop(obj)
     end
 end
 
--- bhvSpring_MOP
-
-local E_MODEL_SPRING = smlua_model_util_get_id("Spring_MOP")
-local SPRING_ACT_READY = 0
-local SPRING_ACT_USED = 1
-
-function bhv_Spring_init(obj)
-    obj_set_model_extended(obj, E_MODEL_SPRING)
-end
-
-function bhv_Spring_loop(obj)
-    local m = gMarioStates[0]
-    if is_bubbled(m) then return end
-
-    -- Initial y speed
-    local Yspd = 56.0
-    local y_vel = nil
-    local forward_vel = nil
-
-    if obj.oAction == SPRING_ACT_READY then
-        if obj_check_if_collided_with_object(obj, m.marioObj) ~= 0 then
-            set_mario_action(m, ACT_DOUBLE_JUMP, 0)
-            m.faceAngle.y = obj.oFaceAngleYaw
-
-            y_vel = repack(Yspd, "f", "I")
-            -- Calculates how fast Mario should go using oBehParams2ndByte
-            forward_vel = repack(y_vel + (obj.oBehParams & 0x00FF0000), "I", "f")
-            m.forwardVel = forward_vel
-
-            -- Calculates how high Mario should go using the 1st byte
-            y_vel = y_vel + (((obj.oBehParams >> 24) & 0xFF) << 16)
-            bounce_off_object(m, obj, repack(y_vel, "I", "f"))
-
-            -- Prevent interaction for some time
-            obj.oAction = SPRING_ACT_USED
-        end
-    else
-        if obj.oTimer == 15 then
-            obj.oAction = SPRING_ACT_READY
-        end
-    end
-end
-
 -- bhvSandBlock_MOP
 
 local E_MODEL_SANDBLOCK = smlua_model_util_get_id("SandBlock_MOP")
@@ -687,5 +644,48 @@ function bhv_sandblock_loop(obj)
     if cur_obj_is_mario_on_platform() == 1 and obj.oAction == SANDBLOCK_ACT_IDLE and not is_bubbled(gMarioStates[0]) then
         obj.oAction = SANDBLOCK_ACT_FADING
     end
+end
+
+-- bhvSwitchblock_Switch_MOP
+
+local E_MODEL_SWITCHBLOCK_SWITCH = smlua_model_util_get_id("Switchblock_Switch_MOP")
+
+function bhv_Switchblock_Switch_init(obj)
+    obj_set_model_extended(obj, E_MODEL_SWITCHBLOCK_SWITCH)
+end
+
+function bhv_Switchblock_Switch_loop(obj)
+    obj.oAnimState = obj.oBehParams2ndByte
+    local old_state = switch_block_state
+    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
+        switch_block_state = obj.oBehParams2ndByte
+    end
+
+    local scalar = 0
+    if switch_block_state ~= obj.oBehParams2ndByte then
+        scalar = 1
+    end
+
+    -- Whenever the switch block state changes
+    if old_state ~= switch_block_state then
+        scalar_timer = 0
+        local np = gNetworkPlayers
+        for i = 1, MAX_PLAYERS - 1, 1 do
+            if is_current_area_sync_valid() and np[0].currLevelNum == np[i].currLevelNum then
+                network_send_to(i, true, { timer = 0, state = switch_block_state })
+            end
+        end
+    end
+
+    -- Slowly raise and lower the switch
+    if scalar_timer < 100 then
+        scalar_timer = scalar_timer + 1
+    end
+
+    local result = scalar * 0.9 + 0.1
+    local current_scale = obj.header.gfx.scale.y
+
+    -- Make smaller if the switch is pressed
+    obj.header.gfx.scale.y = lerp(current_scale, result, scalar_timer * 0.01)
 end
 
