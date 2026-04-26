@@ -11947,7 +11947,7 @@ const Gfx dl_005F1710[] = {
 const Gfx dl_005F70B0[] = {
     gsSPCullDisplayList(/* v0 */ 0x2, /* vn */ 0x18),
     gsSP1Triangle(/* v0 */ 0x2, /* v1 */ 0x18, /* v2 */ 0x11, /* flag */ 0xFD),
-    gsDPSetKeyGB(/* cG */ 0x51, /* sG */ 0x35, /* wG */ 0x9D, /* cB */ 0xD0, /* sB */ 0x50, /* wB */ 0x6F),
+    // gsDPSetKeyGB(/* cG */ 0x51, /* sG */ 0x35, /* wG */ 0x9D, /* cB */ 0xD0, /* sB */ 0x50, /* wB */ 0x6F),
     // UnknownGfx(),
 };
 
