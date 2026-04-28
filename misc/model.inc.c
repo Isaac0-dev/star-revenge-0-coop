@@ -11935,7 +11935,7 @@ const Gfx dl_005F3220[] = {
 };
 
 const Gfx dl_005F5DF0[] = {
-    // gsDPLoadTLUT(/* tile */ 1, /* count */ 0x34D),
+    gsDPLoadTLUTCmd(/* tile */ 1, /* count */ 0x34D),
     // UnknownGfx(),
 };
 
