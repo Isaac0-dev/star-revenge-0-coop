@@ -206,3 +206,19 @@ const BehaviorScript bhvFlipswitch_Panel_MOP[] = {
     END_LOOP(),
 };
 
+
+// bhvBlargg
+
+const BehaviorScript bhvBlargg[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    ID(id_bhvNewId),
+    OR_INT(oFlags, (OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    LOAD_ANIMATIONS(oAnimations, blargg_seg5_anims_0500616C),
+    DROP_TO_FLOOR(),
+    SET_HOME(),
+    CALL_NATIVE(bhv_blargg_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_blargg_loop),
+    END_LOOP(),
+};
+

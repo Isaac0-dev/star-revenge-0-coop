@@ -906,7 +906,7 @@ const BehaviorScript bhvCheckpoint_Flag_MOP[] = {
 };
 
 
-const BehaviorScript bhvBeta_Blarrg_MOP[] = {
+const BehaviorScript bhvBlargg[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x6449),
     SET_INTERACT_TYPE(0x102A0080),

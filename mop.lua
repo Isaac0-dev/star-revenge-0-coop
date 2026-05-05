@@ -687,3 +687,101 @@ function bhv_flipswitch_panel_starspawn_loop(obj)
         end
     end
 end
+
+-- bhvBlargg
+
+local E_MODEL_BLARGG = smlua_model_util_get_id("blargg_geo")
+local sBlarggHitbox = {
+    interactType = INTERACT_MR_BLIZZARD,
+    downOffset = 0,
+    damageOrCoinValue = 1,
+    health = 1,
+    numLootCoins = 0,
+    radius = 150,
+    height = 250,
+    hurtboxRadius = 150,
+    hurtboxHeight = 250,
+}
+
+local function blargg_check_mario_collision(obj)
+    if obj.oDistanceToMario < 300 and math.abs(obj.oPosY - gMarioStates[0].pos.y) < 300 then
+        if (obj.oAction == BLARGG_ACT_CHASE or obj.oAction == BLARGG_ACT_SWIM) then
+            if gMarioStates[0].action & ACT_FLAG_AIR == 0 then
+                obj.oAction = BLARGG_ACT_KNOCKBACK
+                cur_obj_init_animation(ANM_attack)
+                cur_obj_play_sound_2(SOUND_OBJ2_PIRANHA_PLANT_BITE)
+            end
+        end
+    end
+end
+
+local function blargg_act_swim(obj, m)
+    obj.oForwardVel = 5.0
+    if obj_return_home_if_safe(obj, obj.oHomeX, obj.oPosY, obj.oHomeZ, 800) == 1 and m.floor.type ~= SURFACE_DEFAULT then
+        obj.oAction = BLARGG_ACT_CHASE
+    end
+end
+
+local function blargg_act_chase_mario(obj, m)
+    obj.oFlags = obj.oFlags | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
+    obj_turn_toward_object(obj, m.marioObj, 16, 4096)
+    obj.oForwardVel = 10
+    if is_point_within_radius_of_mario(obj.oHomeX, obj.oHomeY, obj.oHomeZ, 5000) == 0 or m.floor.type == SURFACE_DEFAULT then
+        obj.oAction = BLARGG_ACT_SWIM
+        cur_obj_init_animation(ANM_swim)
+    end
+end
+
+local function blargg_act_knockback(obj, m)
+    if obj.oBullyKBTimerAndMinionKOCounter == 18 then
+        obj.oAction = BLARGG_ACT_CHASE
+        obj.oBullyKBTimerAndMinionKOCounter = 0
+        cur_obj_init_animation(ANM_attack)
+        cur_obj_play_sound_2(SOUND_OBJ2_PIRANHA_PLANT_BITE)
+    else
+        obj.oBullyKBTimerAndMinionKOCounter = obj.oBullyKBTimerAndMinionKOCounter + 1
+        obj_turn_toward_object(obj, m.marioObj, 16, 1280)
+    end
+end
+
+local function blargg_act_back_up(obj)
+    if obj.oTimer == 0 then
+        obj.oFlags = obj.oFlags & ~OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
+        obj.oMoveAngleYaw = obj.oMoveAngleYaw + 0x8000
+    end
+    obj.oForwardVel = 5.0
+    if obj.oTimer == 15 then
+        obj.oMoveAngleYaw = obj.oFaceAngleYaw
+        obj.oFlags = obj.oFlags | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
+        obj.oAction = BLARGG_ACT_SWIM
+    end
+end
+
+local function blargg_step(obj)
+    local collisionFlags = object_step()
+    if collisionFlags & (OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW) == 0 and obj.oAction ~= BLARGG_ACT_KNOCKBACK then
+        obj.oAction = BLARGG_ACT_BACKUP
+    end
+end
+
+function bhv_blargg_init(obj)
+    cur_obj_init_animation(ANM_swim)
+    obj_set_model_extended(obj, E_MODEL_BLARGG)
+    obj.oGravity = 4.0
+    obj.oFriction = 0.91
+    obj.oBuoyancy = 1.3
+    obj_set_hitbox(obj, sBlarggHitbox)
+    network_init_object(obj, true, nil)
+end
+
+function bhv_blargg_loop(obj)
+    obj.oIntangibleTimer = 0
+    blargg_check_mario_collision(obj)
+    local m = gMarioStates[0]
+    switch (obj.oAction, {
+        [BLARGG_ACT_SWIM] = function () blargg_act_swim(obj, m) blargg_step(obj) end,
+        [BLARGG_ACT_CHASE] = function () blargg_act_chase_mario(obj, m) blargg_step(obj) end,
+        [BLARGG_ACT_KNOCKBACK] = function () blargg_act_knockback(obj, m) blargg_step(obj) end,
+        [BLARGG_ACT_BACKUP] = function () blargg_act_back_up(obj) blargg_step(obj) end,
+    })
+end
