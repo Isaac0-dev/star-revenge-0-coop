@@ -11500,7 +11500,6 @@ const Gfx bitfs_area_5_dl_0E0D2FC0[] = {
 /* 000000B6 00000100 */     gsSPClearGeometryMode(/* flags */ G_FOG),
 /* FFFFFFFC 3C79FEFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
 /* 000000B7 00200200 */     gsSPSetGeometryMode(/* flags */ G_CULL_BACK|G_LIGHTING),
-/* 000000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
 /* 000000B8 00000000 */     gsSPEndDisplayList(),
 };
 
@@ -11708,7 +11707,6 @@ const Gfx bitfs_area_5_dl_0E0D9FB0[] = {
 /* 000000B7 00200200 */     gsSPSetGeometryMode(/* flags */ G_CULL_BACK|G_LIGHTING),
 /* 000000E7 00000000 */     gsDPPipeSync(),
 /* FF7F12FC 38F8FFFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_MODULATEI, /* cycle2 */ G_CC_PASS2),
-/* 000000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
 /* 000000B8 00000000 */     gsSPEndDisplayList(),
 };
 
@@ -11921,7 +11919,6 @@ const Gfx bitfs_area_5_dl_0E0DA7A0[] = {
 /* 000000B7 00200200 */     gsSPSetGeometryMode(/* flags */ G_CULL_BACK|G_LIGHTING),
 /* 000000E7 00000000 */     gsDPPipeSync(),
 /* FF7F12FC 38F8FFFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_MODULATEI, /* cycle2 */ G_CC_PASS2),
-/* 000000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
 /* 000000B8 00000000 */     gsSPEndDisplayList(),
 };
 

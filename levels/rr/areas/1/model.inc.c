@@ -15549,7 +15549,6 @@ const Gfx rr_area_1_dl_0E038320[] = {
 /* 000000B6 00000100 */     gsSPClearGeometryMode(/* flags */ G_FOG),
 /* FFFFFFFC 3C79FEFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
 /* 000000B7 00200200 */     gsSPSetGeometryMode(/* flags */ G_CULL_BACK|G_LIGHTING),
-/* 000000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
 /* 000000B8 00000000 */     gsSPEndDisplayList(),
 };
 
@@ -15707,7 +15706,6 @@ const Gfx rr_area_1_dl_0E03FD50[] = {
 /* 000000B7 00200200 */     gsSPSetGeometryMode(/* flags */ G_CULL_BACK|G_LIGHTING),
 /* 000000E7 00000000 */     gsDPPipeSync(),
 /* FF7F12FC 38F8FFFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_MODULATEI, /* cycle2 */ G_CC_PASS2),
-/* 000000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
 /* 000000B8 00000000 */     gsSPEndDisplayList(),
 };
 
@@ -15799,7 +15797,6 @@ const Gfx rr_area_1_dl_0E040360[] = {
 /* 000000B7 00200200 */     gsSPSetGeometryMode(/* flags */ G_CULL_BACK|G_LIGHTING),
 /* 000000E7 00000000 */     gsDPPipeSync(),
 /* FF7F12FC 38F8FFFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_MODULATEI, /* cycle2 */ G_CC_PASS2),
-/* 000000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
 /* 000000B8 00000000 */     gsSPEndDisplayList(),
 };
 
