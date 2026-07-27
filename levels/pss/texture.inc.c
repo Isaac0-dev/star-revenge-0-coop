@@ -145,4 +145,3 @@ const Texture *const pss_skybox_ptrlist[] = {
     pss_skybox_texture_00038,
     pss_skybox_texture_00039,
 };
-

@@ -5,8 +5,6 @@ const Vtx totwc_vertex_07007930_n4[] = {
     {{{  1024,   -511,      0}, 0, {   990,    990}, {255, 255, 255, 255}}},
 };
 
-
-
 const Gfx totwc_dl_07007970[] = {
 /* BE000000 00000000 */     gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x3),
 /* 000070FD 00200007 */     gsDPSetTextureImage(/* fmt */ G_IM_FMT_IA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ totwc_texture_07002000_011278AB_seg7),
@@ -37,4 +35,3 @@ const Gfx totwc_dl_070079A8[] = {
 ALIGNED8 Texture totwc_texture_07002000_011278AB_seg7 = {
 #include "totwc/totwc_texture_07002000_011278AB_seg7.inc.c"
 };
-

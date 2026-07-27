@@ -145,4 +145,3 @@ const Texture *const bbh_skybox_ptrlist[] = {
     bbh_skybox_texture_00038,
     bbh_skybox_texture_00039,
 };
-

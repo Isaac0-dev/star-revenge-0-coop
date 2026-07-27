@@ -145,4 +145,3 @@ const Texture *const ssl_skybox_ptrlist[] = {
     ssl_skybox_texture_00038,
     ssl_skybox_texture_00039,
 };
-

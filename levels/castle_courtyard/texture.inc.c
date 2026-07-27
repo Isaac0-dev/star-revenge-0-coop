@@ -145,4 +145,3 @@ const Texture *const castle_courtyard_skybox_ptrlist[] = {
     castle_courtyard_skybox_texture_00038,
     castle_courtyard_skybox_texture_00039,
 };
-

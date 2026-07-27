@@ -50,6 +50,7 @@ local dist_between_objects = dist_between_objects
 local obj_mark_for_deletion = obj_mark_for_deletion
 local mario_stop_riding_object = mario_stop_riding_object
 local obj_get_next_with_behavior_id = obj_get_next_with_behavior_id
+local obj_count_objects_with_behavior_id = obj_count_objects_with_behavior_id
 
 -- Packing and unpacking like this allows for C-like type conversions
 local string_pack = string.pack
@@ -171,6 +172,12 @@ local function lerp(start_point, end_point, time)
     return start_point * (1 - time) + end_point * time
 end
 
+local function bhv_koopa_shell_flame_spawn(obj)
+    for i = 0, 2 do
+        spawn_object(obj, E_MODEL_RED_FLAME, id_bhvKoopaShellFlame)
+    end
+end
+
 --- @param obj Object
 --- @param hitbox ObjectHitbox
 local function obj_set_hitbox(obj, hitbox)
@@ -210,64 +217,45 @@ hook_event(HOOK_ON_LEVEL_INIT, function ()
     switch_block_state = START_STATE
     StarSpawned = false
 end)
--- bhvFlipBlock_MOP
+-- bhvSpring_MOP
 
-local E_MODEL_FLIPBLOCK = smlua_model_util_get_id("FlipBlock_MOP")
-local FLIP_BLOCK_ACT_UNINITIALIZED = 0
-local FLIP_BLOCK_ACT_IDLE = 1
-local FLIP_BLOCK_ACT_FLIPPING = 2
-local FLIP_TIMER = 210
+local E_MODEL_SPRING = smlua_model_util_get_id("Spring_MOP")
+local SPRING_ACT_READY = 0
+local SPRING_ACT_USED = 1
 
-local sFlipBlockHitbox = {
-    interactType = INTERACT_BREAKABLE,
-    downOffset = 0,
-    damageOrCoinValue = 0,
-    health = 0,
-    numLootCoins = 0,
-    radius = 64,
-    height = 64,
-    hurtboxHeight = 0,
-    hurtboxRadius = 0
-}
-
-function bhv_flip_block_init(obj)
-    obj.oMoveAnglePitch = obj.oFaceAnglePitch
-    obj_set_model_extended(obj, E_MODEL_FLIPBLOCK)
+function bhv_Spring_init(obj)
+    obj_set_model_extended(obj, E_MODEL_SPRING)
 end
 
-function bhv_flip_block_loop(obj)
-    obj.oInteractStatus = 0
-    if obj.oTimer == 0 and obj.oAction == FLIP_BLOCK_ACT_UNINITIALIZED then
-        obj_set_hitbox(obj, sFlipBlockHitbox)
-        obj.oAction = FLIP_BLOCK_ACT_IDLE
-    end
-    if obj.oAction == FLIP_BLOCK_ACT_FLIPPING then
-        obj.header.gfx.scale.y = 0.1
-        if obj.oTimer == FLIP_TIMER then
-            obj.oAction = FLIP_BLOCK_ACT_IDLE
-            obj.oSubAction = 0
-            obj.header.gfx.scale.y = 1
-        end
-        obj.oFaceAnglePitch = obj.oFaceAnglePitch + (FLIP_TIMER - obj.oTimer) * 16
-        if ((obj.oFaceAnglePitch / 0x8000) - obj.oSubAction) > 0 then
-            cur_obj_play_sound_1(SOUND_GENERAL_SWISH_WATER)
-            obj.oSubAction = obj.oSubAction + 1
+function bhv_Spring_loop(obj)
+    local m = gMarioStates[0]
+    if is_bubbled(m) then return end
+
+    -- Initial y speed
+    local Yspd = 56.0
+    local y_vel = nil
+    local forward_vel = nil
+
+    if obj.oAction == SPRING_ACT_READY then
+        if obj_check_if_collided_with_object(obj, m.marioObj) ~= 0 then
+            set_mario_action(m, ACT_DOUBLE_JUMP, 0)
+            m.faceAngle.y = obj.oFaceAngleYaw
+
+            y_vel = repack(Yspd, "f", "I")
+            -- Calculates how fast Mario should go using oBehParams2ndByte
+            forward_vel = repack(y_vel + (obj.oBehParams & 0x00FF0000), "I", "f")
+            m.forwardVel = forward_vel
+
+            -- Calculates how high Mario should go using the 1st byte
+            y_vel = y_vel + (((obj.oBehParams >> 24) & 0xFF) << 16)
+            bounce_off_object(m, obj, repack(y_vel, "I", "f"))
+
+            -- Prevent interaction for some time
+            obj.oAction = SPRING_ACT_USED
         end
     else
-        local m = gMarioStates[0]
-        local next_position = m.pos.y + m.vel.y + 160
-        if not is_bubbled(m) and cur_obj_was_attacked_or_ground_pounded() ~= 0
-        or (mario_is_within_rectangle(obj.oPosX-100, obj.oPosX+100, obj.oPosZ-100, obj.oPosZ+100) ~= 0
-            and m.vel.y > 0 and (m.ceil and m.ceil.object) and m.ceil.object == obj
-            and (next_position > m.ceilHeight and next_position < obj.oPosY + 100)) then
-            obj.oAction = FLIP_BLOCK_ACT_FLIPPING
-            obj.oIntangibleTimer = FLIP_TIMER
-            m.vel.y = (m.vel.y > 0) and 0 or m.vel.y
-            cur_obj_play_sound_1(SOUND_GENERAL_SWISH_WATER)
-        else
-            obj.oFaceAnglePitch = obj.oMoveAnglePitch
-            obj.header.gfx.scale.y = 1
-            load_object_collision_model()
+        if obj.oTimer == 15 then
+            obj.oAction = SPRING_ACT_READY
         end
     end
 end
@@ -364,48 +352,46 @@ function bhv_sandblock_loop(obj)
     end
 end
 
--- bhvSpring_MOP
+-- bhvCheckpoint_Flag_MOP
 
-local E_MODEL_SPRING = smlua_model_util_get_id("Spring_MOP")
-local SPRING_ACT_READY = 0
-local SPRING_ACT_USED = 1
+local E_MODEL_CHECKPOINT = smlua_model_util_get_id("Checkpoint_Flag_MOP")
 
-function bhv_Spring_init(obj)
-    obj_set_model_extended(obj, E_MODEL_SPRING)
+local last_touched_checkpoint = nil
+local stored_2nd_byte = 0
+
+function bhv_checkpoint_flag_init(obj)
+    obj_set_model_extended(obj, E_MODEL_CHECKPOINT)
 end
 
-function bhv_Spring_loop(obj)
+function bhv_checkpoint_flag_loop(obj)
     local m = gMarioStates[0]
     if is_bubbled(m) then return end
 
-    -- Initial y speed
-    local Yspd = 56.0
-    local y_vel = nil
-    local forward_vel = nil
+    if lateral_dist_between_objects(obj, m.marioObj) < 100 and obj ~= last_touched_checkpoint then
+        last_touched_checkpoint = obj
+        stored_2nd_byte = obj.oBehParams2ndByte
 
-    if obj.oAction == SPRING_ACT_READY then
-        if obj_check_if_collided_with_object(obj, m.marioObj) ~= 0 then
-            set_mario_action(m, ACT_DOUBLE_JUMP, 0)
-            m.faceAngle.y = obj.oFaceAngleYaw
-
-            y_vel = repack(Yspd, "f", "I")
-            -- Calculates how fast Mario should go using oBehParams2ndByte
-            forward_vel = repack(y_vel + (obj.oBehParams & 0x00FF0000), "I", "f")
-            m.forwardVel = forward_vel
-
-            -- Calculates how high Mario should go using the 1st byte
-            y_vel = y_vel + (((obj.oBehParams >> 24) & 0xFF) << 16)
-            bounce_off_object(m, obj, repack(y_vel, "I", "f"))
-
-            -- Prevent interaction for some time
-            obj.oAction = SPRING_ACT_USED
-        end
-    else
-        if obj.oTimer == 15 then
-            obj.oAction = SPRING_ACT_READY
-        end
+        local ltc = last_touched_checkpoint
+        play_sound(SOUND_MENU_CHANGE_SELECT + (1 << 16), {x = ltc.oPosX, y = ltc.oPosY, z = ltc.oPosZ})
+        spawn_non_sync_object(id_bhvSparkle, E_MODEL_SPARKLES, ltc.oPosX, ltc.oPosY, ltc.oPosZ,
+        function (o)
+            obj_scale(o, 5)
+        end)
     end
 end
+
+hook_event(HOOK_ON_SYNC_VALID,
+function ()
+    if not last_touched_checkpoint then return end
+
+    if obj_count_objects_with_behavior_id(bhvCheckpoint_Flag_MOP) > 0 then
+        local ltc = last_touched_checkpoint
+        local m = gMarioStates[0]
+        if ltc.behavior == bhvCheckpoint_Flag_MOP and ltc.oBehParams2ndByte == stored_2nd_byte then
+            vec3f_set(m.pos, ltc.oPosX, ltc.oPosY, ltc.oPosZ)
+        end
+    end
+end)
 
 -- bhvShrink_Platform_MOP
 
@@ -455,6 +441,130 @@ function bhv_Shrink_Platform_loop(obj)
     end
 end
 
+-- bhvBlargg
+
+local E_MODEL_BLARGG = smlua_model_util_get_id("blargg_geo")
+local sBlarggHitbox = {
+    interactType = INTERACT_DAMAGE,
+    downOffset = 0,
+    damageOrCoinValue = 1,
+    health = 0,
+    numLootCoins = 0,
+    radius = 200,
+    height = 235,
+    hurtboxRadius = 200,
+    hurtboxHeight = 110,
+}
+
+local function blargg_check_mario_collision(obj)
+    if obj.oInteractStatus & INT_STATUS_INTERACTED ~= 0 then
+        cur_obj_play_sound_2(SOUND_MOVING_LAVA_BURN)
+        obj.oInteractStatus = obj.oInteractStatus & ~INT_STATUS_INTERACTED
+        obj.oAction = BLARGG_ACT_KNOCKBACK
+        obj.oFlags = obj.oFlags & ~OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
+        cur_obj_init_animation(ANM_swim)
+        obj.oBullyMarioCollisionAngle = obj.oMoveAngleYaw
+    end
+end
+
+local function blargg_act_swim(obj, m)
+    obj.oForwardVel = 5.0
+    if obj_return_home_if_safe(obj, obj.oHomeX, obj.oPosY, obj.oHomeZ, 800) == 1 and m.floor.type ~= SURFACE_DEFAULT then
+        obj.oAction = BLARGG_ACT_CHASE
+    end
+end
+
+local function blargg_act_chase_mario(obj, m)
+    local homeX = obj.oHomeX
+    local posY = obj.oPosY
+    local homeZ = obj.oHomeZ
+
+    obj.oFlags = obj.oFlags | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
+    obj.oMoveAngleYaw = obj.oFaceAngleYaw
+    obj_turn_toward_object(obj, m.marioObj, 16, 4096)
+
+    obj.oForwardVel = 10
+    bhv_koopa_shell_flame_spawn(obj)
+
+    if is_point_within_radius_of_mario(homeX, posY, homeZ, 5000) == 0 or m.floor.type == SURFACE_DEFAULT then
+        obj.oAction = BLARGG_ACT_SWIM
+        cur_obj_init_animation(ANM_swim)
+    end
+end
+
+local function blargg_act_knockback(obj, m)
+    if obj.oForwardVel < 10.0 and repack(obj.oVelY, "f", "L") == 0 then
+        obj.oForwardVel = 1.0
+        obj.oBullyKBTimerAndMinionKOCounter = obj.oBullyKBTimerAndMinionKOCounter + 1
+        obj.oFlags = obj.oFlags | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
+        obj.oMoveAngleYaw = obj.oFaceAngleYaw
+        obj_turn_toward_object(obj, m.marioObj, 16, 1280)
+    else
+        obj.header.gfx.animInfo.animFrame = 0
+    end
+
+    if obj.oBullyKBTimerAndMinionKOCounter == 18 then
+        obj.oAction = BLARGG_ACT_CHASE
+        obj.oBullyKBTimerAndMinionKOCounter = 0
+        cur_obj_init_animation(ANM_attack)
+        cur_obj_play_sound_2(SOUND_OBJ2_PIRANHA_PLANT_BITE)
+    end
+end
+
+local function blargg_act_back_up(obj)
+    if obj.oTimer == 0 then
+        obj.oFlags = obj.oFlags & ~OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
+        obj.oMoveAngleYaw = obj.oMoveAngleYaw + 0x8000
+    end
+
+    obj.oForwardVel = 5.0
+
+    if obj.oTimer == 15 then
+        obj.oMoveAngleYaw = obj.oFaceAngleYaw
+        obj.oFlags = obj.oFlags | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
+        obj.oAction = BLARGG_ACT_SWIM
+    end
+end
+
+local function blargg_backup_check(obj, collisionFlags)
+    if collisionFlags & OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW == 0 and obj.oAction ~= BLARGG_ACT_KNOCKBACK then
+        obj.oPosX = obj.oBullyPrevX
+        obj.oPosZ = obj.oBullyPrevZ
+        obj.oAction = BLARGG_ACT_BACKUP
+    end
+end
+
+local function blargg_step(obj)
+    local collisionFlags = object_step()
+    blargg_backup_check(obj, collisionFlags)
+end
+
+function bhv_blargg_init(obj)
+    cur_obj_init_animation(ANM_swim)
+    obj_set_model_extended(obj, E_MODEL_BLARGG)
+    obj.oGravity = 4.0
+    obj.oFriction = 0.91
+    obj.oBuoyancy = 1.3
+    obj_set_hitbox(obj, sBlarggHitbox)
+    network_init_object(obj, true, nil)
+end
+
+function bhv_blargg_loop(obj)
+    obj.oIntangibleTimer = 0
+    obj.oBullyPrevX = obj.oPosX
+    obj.oBullyPrevY = obj.oPosY
+    obj.oBullyPrevZ = obj.oPosZ
+    blargg_check_mario_collision(obj)
+    local m = gMarioStates[0]
+    switch (obj.oAction, {
+        [BLARGG_ACT_SWIM] = function () blargg_act_swim(obj, m) blargg_step(obj) end,
+        [BLARGG_ACT_CHASE] = function () blargg_act_chase_mario(obj, m) blargg_step(obj) end,
+        [BLARGG_ACT_KNOCKBACK] = function () blargg_act_knockback(obj, m) blargg_step(obj) end,
+        [BLARGG_ACT_BACKUP] = function () obj.oForwardVel = 10.0 blargg_act_back_up(obj) blargg_step(obj) end,
+        [BULLY_ACT_DEATH_PLANE_DEATH] = function () obj.activeFlags = ACTIVE_FLAG_DEACTIVATED end,
+    })
+end
+
 -- bhvSwitchblock_MOP
 
 local E_MODEL_SWITCHBLOCK = smlua_model_util_get_id("Switchblock_MOP")
@@ -477,6 +587,203 @@ function bhv_Switchblock_loop(obj)
         obj.oAction = SWITCHBLOCK_ACT_INACTIVE
     end
 end
+
+-- bhvFlipswitch_Panel_MOP
+
+local E_MODEL_FLIPSWITCH_PANEL = smlua_model_util_get_id("Flipswitch_Panel_MOP")
+
+function bhv_flipswitch_panel_init(obj)
+    obj_set_model_extended(obj, E_MODEL_FLIPSWITCH_PANEL)
+    network_init_object(obj, false, { "oAction", "oAnimState" })
+end
+
+function bhv_flipswitch_panel_loop(obj)
+    if StarSpawned then
+        obj.oAnimState = 2
+    else
+        if obj.oAction == 0 then
+            if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
+                obj.oAnimState = obj.oAnimState ~ 1
+                cur_obj_play_sound_1(SOUND_GENERAL_BIG_CLOCK)
+                obj.oAction = 1
+                network_send_object(obj, true)
+            end
+        elseif obj.oAction == 1 then
+            local cp = nearest_player_to_object(obj)
+            if not cp or (cur_obj_is_mario_on_platform() == 0 and cp.platform ~= obj) then
+                obj.oAction = 0
+            end
+        end
+    end
+end
+
+-- bhvFlipBlock_MOP
+
+local E_MODEL_FLIPBLOCK = smlua_model_util_get_id("FlipBlock_MOP")
+local FLIP_BLOCK_ACT_UNINITIALIZED = 0
+local FLIP_BLOCK_ACT_IDLE = 1
+local FLIP_BLOCK_ACT_FLIPPING = 2
+local FLIP_TIMER = 210
+
+local sFlipBlockHitbox = {
+    interactType = INTERACT_BREAKABLE,
+    downOffset = 0,
+    damageOrCoinValue = 0,
+    health = 0,
+    numLootCoins = 0,
+    radius = 64,
+    height = 64,
+    hurtboxHeight = 0,
+    hurtboxRadius = 0
+}
+
+function bhv_flip_block_init(obj)
+    obj.oMoveAnglePitch = obj.oFaceAnglePitch
+    obj_set_model_extended(obj, E_MODEL_FLIPBLOCK)
+end
+
+function bhv_flip_block_loop(obj)
+    obj.oInteractStatus = 0
+    if obj.oTimer == 0 and obj.oAction == FLIP_BLOCK_ACT_UNINITIALIZED then
+        obj_set_hitbox(obj, sFlipBlockHitbox)
+        obj.oAction = FLIP_BLOCK_ACT_IDLE
+    end
+    if obj.oAction == FLIP_BLOCK_ACT_FLIPPING then
+        obj.header.gfx.scale.y = 0.1
+        if obj.oTimer == FLIP_TIMER then
+            obj.oAction = FLIP_BLOCK_ACT_IDLE
+            obj.oSubAction = 0
+            obj.header.gfx.scale.y = 1
+        end
+        obj.oFaceAnglePitch = obj.oFaceAnglePitch + (FLIP_TIMER - obj.oTimer) * 16
+        if ((obj.oFaceAnglePitch / 0x8000) - obj.oSubAction) > 0 then
+            cur_obj_play_sound_1(SOUND_GENERAL_SWISH_WATER)
+            obj.oSubAction = obj.oSubAction + 1
+        end
+    else
+        local m = gMarioStates[0]
+        local next_position = m.pos.y + m.vel.y + 160
+        if not is_bubbled(m) and cur_obj_was_attacked_or_ground_pounded() ~= 0
+        or (mario_is_within_rectangle(obj.oPosX-100, obj.oPosX+100, obj.oPosZ-100, obj.oPosZ+100) ~= 0
+            and m.vel.y > 0 and (m.ceil and m.ceil.object) and m.ceil.object == obj
+            and (next_position > m.ceilHeight and next_position < obj.oPosY + 100)) then
+            obj.oAction = FLIP_BLOCK_ACT_FLIPPING
+            obj.oIntangibleTimer = FLIP_TIMER
+            m.vel.y = (m.vel.y > 0) and 0 or m.vel.y
+            cur_obj_play_sound_1(SOUND_GENERAL_SWISH_WATER)
+        else
+            obj.oFaceAnglePitch = obj.oMoveAnglePitch
+            obj.header.gfx.scale.y = 1
+            load_object_collision_model()
+        end
+    end
+end
+
+-- bhvGreen_Switchboard_MOP
+
+local E_MODEL_GREEN_SWITCHBOARD = smlua_model_util_get_id("Green_Switchboard_MOP")
+local E_MODEL_GREEN_SWITCHBOARD_GEARS = smlua_model_util_get_id("Green_Switchboard_Gears_MOP")
+
+function bhv_Green_Switchboard_init(obj)
+    obj_set_model_extended(obj, E_MODEL_GREEN_SWITCHBOARD)
+    obj.oIntroLakituCloud = spawn_object(obj, E_MODEL_GREEN_SWITCHBOARD_GEARS, id_bhvGreen_Switchboard_Gears_MOP)
+end
+
+function bhv_Green_Switchboard_loop(obj)
+    local MAX_SPEED = 20.0
+    local SPEED_INC = 2.0
+    local child = obj.oIntroLakituCloud
+    local dot = 0
+    local dotH = 0
+
+    child.oFaceAnglePitch = child.oFaceAnglePitch + (obj.oForwardVel * 200)
+    obj_copy_pos(child, obj)
+
+    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
+        local m = gMarioStates[0]
+
+        local dx = m.pos.x - obj.oPosX
+        local dz = m.pos.z - obj.oPosZ
+        local dHx = obj.oPosX - obj.oHomeX
+        local dHz = obj.oPosZ - obj.oHomeZ
+        local facingZ = coss(obj.oFaceAngleYaw)
+        local facingX = sins(obj.oFaceAngleYaw)
+
+        dot = facingZ * dz + facingX * dx
+        dotH = facingZ * dHz + facingX * dHx
+
+        if dot > 0 then
+            if dotH < ((obj.oBehParams >> 24) & 0xFF) * 16 then
+                obj.oForwardVel = approach_by_increment(MAX_SPEED, obj.oForwardVel, SPEED_INC)
+            else
+                obj.oForwardVel = 0
+            end
+            obj.oFaceAnglePitch = approach_by_increment(2048.0, obj.oFaceAnglePitch, 128.0)
+        else
+            if dotH > obj.oBehParams2ndByte * -16 then
+                obj.oForwardVel = approach_by_increment(-MAX_SPEED, obj.oForwardVel, SPEED_INC)
+            else
+                obj.oForwardVel = 0
+            end
+            if (obj.oFaceAnglePitch > -2048) then
+                obj.oFaceAnglePitch = approach_by_increment(-2048.0, obj.oFaceAnglePitch, 128.0)
+            end
+        end
+    else
+        obj.oForwardVel = approach_by_increment(0.0, obj.oForwardVel, SPEED_INC)
+        obj.oFaceAnglePitch = approach_by_increment(0.0, obj.oFaceAnglePitch, 128.0)
+    end
+
+    cur_obj_move_using_vel()
+    load_object_collision_model()
+end
+
+function bhv_Green_Switchboard_Gears_loop(obj)
+    local parent = obj.parentObj
+    if not parent then return end
+
+    obj_copy_pos(obj, parent)
+    obj.oFaceAnglePitch = obj.oFaceAnglePitch + parent.oForwardVel * 200
+end
+
+-- bhvFlipswitch_Panel_StarSpawn_MOP
+
+function bhv_flipswitch_panel_starspawn_init(obj)
+    obj.oFlags = OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE
+    obj.oHealth = 0
+end
+
+function bhv_flipswitch_panel_starspawn_loop(obj)
+    local amount_of_panels = obj_count_objects_with_behavior_id(bhvFlipswitch_Panel_MOP)
+    if amount_of_panels > obj.oHealth or obj.oHealth == 0 then
+        obj.oHealth = amount_of_panels
+        return
+    end
+
+    obj.oHiddenStarTriggerCounter = 0
+    local panel = obj_get_first_with_behavior_id(bhvFlipswitch_Panel_MOP)
+    while panel do
+        if panel.oAnimState == 1 then
+            obj.oHiddenStarTriggerCounter = obj.oHiddenStarTriggerCounter + 1
+        end
+        panel = obj_get_next_with_same_behavior_id(panel)
+    end
+
+    if obj.oHiddenStarTriggerCounter == obj.oHealth and not StarSpawned then
+        spawn_red_coin_cutscene_star(obj.oPosX, obj.oPosY, obj.oPosZ)
+        StarSpawned = true
+        obj_mark_for_deletion(obj)
+    end
+end
+
+hook_event(HOOK_ON_OBJECT_UNLOAD,
+function (obj)
+    if obj_has_behavior_id(obj, bhvFlipswitch_Panel_StarSpawn_MOP) == 1 and obj.oHiddenStarTriggerCounter ~= obj.oHealth and not StarSpawned then
+        local starspawn_obj = obj_get_first_with_behavior_id(bhvFlipswitch_Panel_StarSpawn_MOP)
+        spawn_red_coin_cutscene_star(starspawn_obj.oPosX, starspawn_obj.oPosY, starspawn_obj.oPosZ)
+        StarSpawned = true
+    end
+end)
 
 -- bhvSwitchblock_Switch_MOP
 
@@ -567,221 +874,4 @@ function bhv_Flipswap_Platform_loop(obj)
             obj.oAction = FLIPSWAP_PLATFORM_ACT_IDLE
         end
     end
-end
-
--- bhvGreen_Switchboard_MOP
-
-local E_MODEL_GREEN_SWITCHBOARD = smlua_model_util_get_id("Green_Switchboard_MOP")
-local E_MODEL_GREEN_SWITCHBOARD_GEARS = smlua_model_util_get_id("Green_Switchboard_Gears_MOP")
-
-function bhv_Green_Switchboard_init(obj)
-    obj_set_model_extended(obj, E_MODEL_GREEN_SWITCHBOARD)
-    -- Spawns the gears
-    spawn_object(obj, E_MODEL_GREEN_SWITCHBOARD_GEARS, id_bhvGreen_Switchboard_Gears_MOP)
-end
-
-function bhv_Green_Switchboard_loop(obj)
-    local m = gMarioStates[0]
-    local move = 0
-
-    if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(m) then
-        local dx = m.pos.x - obj.oPosX
-        local dz = m.pos.z - obj.oPosZ
-
-        -- Rotates the switchboard based on Mario's position
-        local d_pos = dx * sins(obj.oMoveAngleYaw) + dz * coss(obj.oMoveAngleYaw)
-        obj.oFaceAnglePitch = approach_by_increment(d_pos * -10, obj.oFaceAnglePitch, 128)
-
-        -- Moves the switchboard based on its pitch
-        move = obj.oFaceAnglePitch / -10
-        if move > 10 then
-            obj.oForwardVel = approach_by_increment(move, obj.oForwardVel, 2)
-        elseif move < -10 then
-            obj.oForwardVel = approach_by_increment(move, obj.oForwardVel, 2)
-        end
-    else
-        obj.oForwardVel = approach_by_increment(0, obj.oForwardVel, 0.5)
-        obj.oFaceAnglePitch = approach_by_increment(0, obj.oFaceAnglePitch, 128)
-    end
-
-    cur_obj_move_using_vel()
-    load_object_collision_model()
-end
-
-function bhv_Green_Switchboard_Gears_loop(obj)
-    local parent = obj.parentObj
-    if not parent then return end
-
-    -- Move with our parent and rotate using the parent's forward velocity
-    obj_copy_pos(obj, parent)
-    obj.oFaceAnglePitch = obj.oFaceAnglePitch + parent.oForwardVel * 64
-end
-
--- bhvCheckpoint_Flag_MOP
-
-local E_MODEL_CHECKPOINT = smlua_model_util_get_id("Checkpoint_Flag_MOP")
-
-function bhv_checkpoint_flag_init(obj)
-    obj_set_model_extended(obj, E_MODEL_CHECKPOINT)
-end
-
-function bhv_checkpoint_flag_loop(obj)
-    local m = gMarioStates[0]
-    if obj.oAction == 0 then
-        if obj_check_if_collided_with_object(obj, m.marioObj) ~= 0 then
-            m.spawnInfo.startPos.x, m.spawnInfo.startPos.y, m.spawnInfo.startPos.z = obj.oPosX, obj.oPosY, obj.oPosZ
-            m.spawnInfo.startAngle.y = obj.oFaceAngleYaw
-            cur_obj_play_sound_1(SOUND_GENERAL_COLLECT_1UP)
-            obj.oAction = 1
-        end
-    end
-end
-
--- bhvFlipswitch_Panel_MOP
-
-local E_MODEL_FLIPSWITCH_PANEL = smlua_model_util_get_id("Flipswitch_Panel_MOP")
-
-function bhv_flipswitch_panel_init(obj)
-    obj_set_model_extended(obj, E_MODEL_FLIPSWITCH_PANEL)
-    network_init_object(obj, false, { "oAction", "oAnimState" })
-end
-
-function bhv_flipswitch_panel_loop(obj)
-    if StarSpawned then
-        obj.oAnimState = 2
-    else
-        if obj.oAction == 0 then
-            if cur_obj_is_mario_on_platform() == 1 and not is_bubbled(gMarioStates[0]) then
-                obj.oAnimState = obj.oAnimState ~ 1
-                cur_obj_play_sound_1(SOUND_GENERAL_BIG_CLOCK)
-                obj.oAction = 1
-                network_send_object(obj, true)
-            end
-        elseif obj.oAction == 1 then
-            local cp = nearest_player_to_object(obj)
-            if not cp or (cur_obj_is_mario_on_platform() == 0 and cp.platform ~= obj) then
-                obj.oAction = 0
-            end
-        end
-    end
-end
-
--- bhvFlipswitch_Panel_StarSpawn_MOP
-
-function bhv_flipswitch_panel_starspawn_loop(obj)
-    if not StarSpawned then
-        local flipswitches_count = obj_count_objects_with_behavior_id(bhvFlipswitch_Panel_MOP)
-        local flipswitches_active = 0
-
-        local curr_obj = obj_get_first_with_behavior_id(bhvFlipswitch_Panel_MOP)
-        while curr_obj do
-            if curr_obj.oAnimState == 1 then
-                flipswitches_active = flipswitches_active + 1
-            end
-            curr_obj = obj_get_next_with_same_behavior_id(curr_obj)
-        end
-
-        if flipswitches_active == flipswitches_count and flipswitches_count > 0 then
-            spawn_red_coin_cutscene_star(obj.oPosX, obj.oPosY, obj.oPosZ)
-            StarSpawned = true
-        end
-    end
-end
-
--- bhvBlargg
-
-local E_MODEL_BLARGG = smlua_model_util_get_id("blargg_geo")
-local sBlarggHitbox = {
-    interactType = INTERACT_MR_BLIZZARD,
-    downOffset = 0,
-    damageOrCoinValue = 1,
-    health = 1,
-    numLootCoins = 0,
-    radius = 150,
-    height = 250,
-    hurtboxRadius = 150,
-    hurtboxHeight = 250,
-}
-
-local function blargg_check_mario_collision(obj)
-    if obj.oDistanceToMario < 300 and math.abs(obj.oPosY - gMarioStates[0].pos.y) < 300 then
-        if (obj.oAction == BLARGG_ACT_CHASE or obj.oAction == BLARGG_ACT_SWIM) then
-            if gMarioStates[0].action & ACT_FLAG_AIR == 0 then
-                obj.oAction = BLARGG_ACT_KNOCKBACK
-                cur_obj_init_animation(ANM_attack)
-                cur_obj_play_sound_2(SOUND_OBJ2_PIRANHA_PLANT_BITE)
-            end
-        end
-    end
-end
-
-local function blargg_act_swim(obj, m)
-    obj.oForwardVel = 5.0
-    if obj_return_home_if_safe(obj, obj.oHomeX, obj.oPosY, obj.oHomeZ, 800) == 1 and m.floor.type ~= SURFACE_DEFAULT then
-        obj.oAction = BLARGG_ACT_CHASE
-    end
-end
-
-local function blargg_act_chase_mario(obj, m)
-    obj.oFlags = obj.oFlags | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
-    obj_turn_toward_object(obj, m.marioObj, 16, 4096)
-    obj.oForwardVel = 10
-    if is_point_within_radius_of_mario(obj.oHomeX, obj.oHomeY, obj.oHomeZ, 5000) == 0 or m.floor.type == SURFACE_DEFAULT then
-        obj.oAction = BLARGG_ACT_SWIM
-        cur_obj_init_animation(ANM_swim)
-    end
-end
-
-local function blargg_act_knockback(obj, m)
-    if obj.oBullyKBTimerAndMinionKOCounter == 18 then
-        obj.oAction = BLARGG_ACT_CHASE
-        obj.oBullyKBTimerAndMinionKOCounter = 0
-        cur_obj_init_animation(ANM_attack)
-        cur_obj_play_sound_2(SOUND_OBJ2_PIRANHA_PLANT_BITE)
-    else
-        obj.oBullyKBTimerAndMinionKOCounter = obj.oBullyKBTimerAndMinionKOCounter + 1
-        obj_turn_toward_object(obj, m.marioObj, 16, 1280)
-    end
-end
-
-local function blargg_act_back_up(obj)
-    if obj.oTimer == 0 then
-        obj.oFlags = obj.oFlags & ~OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
-        obj.oMoveAngleYaw = obj.oMoveAngleYaw + 0x8000
-    end
-    obj.oForwardVel = 5.0
-    if obj.oTimer == 15 then
-        obj.oMoveAngleYaw = obj.oFaceAngleYaw
-        obj.oFlags = obj.oFlags | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW
-        obj.oAction = BLARGG_ACT_SWIM
-    end
-end
-
-local function blargg_step(obj)
-    local collisionFlags = object_step()
-    if collisionFlags & (OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW) == 0 and obj.oAction ~= BLARGG_ACT_KNOCKBACK then
-        obj.oAction = BLARGG_ACT_BACKUP
-    end
-end
-
-function bhv_blargg_init(obj)
-    cur_obj_init_animation(ANM_swim)
-    obj_set_model_extended(obj, E_MODEL_BLARGG)
-    obj.oGravity = 4.0
-    obj.oFriction = 0.91
-    obj.oBuoyancy = 1.3
-    obj_set_hitbox(obj, sBlarggHitbox)
-    network_init_object(obj, true, nil)
-end
-
-function bhv_blargg_loop(obj)
-    obj.oIntangibleTimer = 0
-    blargg_check_mario_collision(obj)
-    local m = gMarioStates[0]
-    switch (obj.oAction, {
-        [BLARGG_ACT_SWIM] = function () blargg_act_swim(obj, m) blargg_step(obj) end,
-        [BLARGG_ACT_CHASE] = function () blargg_act_chase_mario(obj, m) blargg_step(obj) end,
-        [BLARGG_ACT_KNOCKBACK] = function () blargg_act_knockback(obj, m) blargg_step(obj) end,
-        [BLARGG_ACT_BACKUP] = function () blargg_act_back_up(obj) blargg_step(obj) end,
-    })
 end

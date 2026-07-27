@@ -145,4 +145,3 @@ const Texture *const bitdw_skybox_ptrlist[] = {
     bitdw_skybox_texture_00038,
     bitdw_skybox_texture_00039,
 };
-

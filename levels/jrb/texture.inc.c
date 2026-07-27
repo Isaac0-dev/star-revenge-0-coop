@@ -142,4 +142,3 @@ const Texture *const jrb_skybox_ptrlist[] = {
     jrb_skybox_texture_00035,
     jrb_skybox_texture_00036,
 };
-

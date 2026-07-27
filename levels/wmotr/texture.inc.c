@@ -142,4 +142,3 @@ const Texture *const wmotr_skybox_ptrlist[] = {
     wmotr_skybox_texture_00035,
     wmotr_skybox_texture_00036,
 };
-

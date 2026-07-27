@@ -114,4 +114,3 @@ const Texture *const wdw_skybox_ptrlist[] = {
     wdw_skybox_texture_0001D,
     wdw_skybox_texture_0001E,
 };
-

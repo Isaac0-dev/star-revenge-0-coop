@@ -145,4 +145,3 @@ const Texture *const bowser_1_skybox_ptrlist[] = {
     bowser_1_skybox_texture_00038,
     bowser_1_skybox_texture_00039,
 };
-

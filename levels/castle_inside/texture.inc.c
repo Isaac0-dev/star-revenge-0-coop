@@ -145,4 +145,3 @@ const Texture *const castle_inside_skybox_ptrlist[] = {
     castle_inside_skybox_texture_00038,
     castle_inside_skybox_texture_00039,
 };
-
