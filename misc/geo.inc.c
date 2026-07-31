@@ -2694,7 +2694,7 @@ const GeoLayout area_2_geo_14000408[] = {
 /* 04000000 */                                                 GEO_OPEN_NODE(),
 /* 09000064 */                                                     GEO_NODE_ORTHO(100),
 /* 04000000 */                                                     GEO_OPEN_NODE(),
-/* 1900FFFF 00000000 */                                                GEO_BACKGROUND_COLOR(0x-001),
+/* 1900FFFF 00000000 */                                                GEO_BACKGROUND_COLOR(0xFFFF),
 /* 05000000 */                                                     GEO_CLOSE_NODE(),
 /* 05000000 */                                                 GEO_CLOSE_NODE(),
 /* 0C010000 */                                                 GEO_ZBUFFER(1),

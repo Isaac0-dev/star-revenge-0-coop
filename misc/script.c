@@ -342,11 +342,6 @@ const LevelScript level_script_0x269ea0_entry[] = {
 };
 
 
-// level_script_0x108a10 -> level_script_0x0
-const LevelScript level_script_0x0_entry[] = {
-};
-
-
 // level_script_0x108a10
 const LevelScript level_script_0x108a10_entry[] = {
 /* 0x00108A10 :: 1B040000 */                                                     INIT_LEVEL(),
@@ -354,5 +349,5 @@ const LevelScript level_script_0x108a10_entry[] = {
 /* 0x00108A18 :: 34040000 */                                                     BLACKOUT(/* active */ 0x00),
 /* 0x00108A1C :: 13040000 */                                                     SET_REG(/* value */ 0x0000),
 /* 0x00108A20 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269ea0_entry),
-/* 0x00108A30 :: 05080000 10000000 */                                            JUMP(level_script_0x0_entry),
+/* 0x00108A30 :: 05080000 10000000 */                                            JUMP(NULL),
 };

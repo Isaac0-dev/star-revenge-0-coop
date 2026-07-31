@@ -223,6 +223,11 @@ const BehaviorScript bhvStarDoor[] = {
 
 
 const BehaviorScript editor_Scroll_Texture[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, 0x2041),
+    BEGIN_LOOP(),
+        CALL_NATIVE(NULL),
+    END_LOOP(),
 };
 
 
