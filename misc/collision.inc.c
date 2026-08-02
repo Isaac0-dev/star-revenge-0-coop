@@ -12,7 +12,6 @@ const Collision area_1_collision_0x0700DE30[] = {
     COL_END(),
 };
 
-
 const Collision collision_bhv_0x0800C7A8[] = {
     COL_INIT(),
     COL_VERTEX_INIT(8),
@@ -38,7 +37,6 @@ const Collision collision_bhv_0x0800C7A8[] = {
     COL_TRI_STOP(),
     COL_END(),
 };
-
 
 const Collision collision_bhv_0x08012D70[] = {
     COL_INIT(),
@@ -68,7 +66,6 @@ const Collision collision_bhv_0x08012D70[] = {
     COL_END(),
 };
 
-
 const Collision collision_bhv_0x03021314[] = {
     COL_INIT(),
     COL_VERTEX_INIT(4),
@@ -82,7 +79,6 @@ const Collision collision_bhv_0x03021314[] = {
     COL_TRI_STOP(),
     COL_END(),
 };
-
 
 const Collision collision_bhv_0x08024C28[] = {
     COL_INIT(),
@@ -112,7 +108,6 @@ const Collision collision_bhv_0x08024C28[] = {
     COL_END(),
 };
 
-
 const Collision collision_bhv_0x08025F78[] = {
     COL_INIT(),
     COL_VERTEX_INIT(8),
@@ -141,26 +136,20 @@ const Collision collision_bhv_0x08025F78[] = {
     COL_END(),
 };
 
-
 const Collision collision_bhv_0x07078E14[] = {
 };
-
 
 const Collision collision_bhv_0x005FAF78[] = {
 };
 
-
 const Collision collision_bhv_0x005F7348[] = {
 };
-
 
 const Collision collision_bhv_0x005F3058[] = {
 };
 
-
 const Collision collision_bhv_0x005FDC38[] = {
 };
-
 
 const Collision collision_bhv_0x08000E98[] = {
     COL_INIT(),
@@ -188,10 +177,8 @@ const Collision collision_bhv_0x08000E98[] = {
     COL_END(),
 };
 
-
 const Collision collision_bhv_0x005F9D88[] = {
 };
-
 
 const Collision collision_bhv_0x0302DD80[] = {
     COL_INIT(),
@@ -221,7 +208,6 @@ const Collision collision_bhv_0x0302DD80[] = {
     COL_END(),
 };
 
-
 const Collision collision_bhv_0x06020A0C[] = {
     COL_INIT(),
     COL_VERTEX_INIT(8),
@@ -250,10 +236,8 @@ const Collision collision_bhv_0x06020A0C[] = {
     COL_END(),
 };
 
-
 const Collision collision_bhv_0x005F1A98[] = {
 };
-
 
 const Collision collision_bhv_0x0500B92C[] = {
     COL_INIT(),
@@ -319,7 +303,6 @@ const Collision collision_bhv_0x0500B92C[] = {
     COL_END(),
 };
 
-
 const Collision collision_bhv_0x0500B7D0[] = {
     COL_INIT(),
     COL_VERTEX_INIT(20),
@@ -384,7 +367,6 @@ const Collision collision_bhv_0x0500B7D0[] = {
     COL_END(),
 };
 
-
 const Collision collision_bhv_0x0301CE78[] = {
     COL_INIT(),
     COL_VERTEX_INIT(8),
@@ -404,7 +386,6 @@ const Collision collision_bhv_0x0301CE78[] = {
     COL_TRI_STOP(),
     COL_END(),
 };
-
 
 const Collision collision_bhv_0x050033D0[] = {
     COL_INIT(),
@@ -431,7 +412,6 @@ const Collision collision_bhv_0x050033D0[] = {
     COL_TRI_STOP(),
     COL_END(),
 };
-
 
 const Collision collision_bhv_0x05001A28[] = {
     COL_INIT(),
@@ -472,7 +452,6 @@ const Collision collision_bhv_0x05001A28[] = {
     COL_TRI_STOP(),
     COL_END(),
 };
-
 
 const Collision collision_bhv_0x07001A68[] = {
     COL_INIT(),
