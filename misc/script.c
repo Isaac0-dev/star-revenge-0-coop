@@ -3,7 +3,6 @@ const LevelScript level_script_0x2a62e0_entry[] = {
 /* 0x002A62E0 :: 02040000 */                                                     EXIT(),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2a6238
 const LevelScript level_script_0x2a6238_entry[] = {
 /* 0x002A6238 :: 11080000 8024BE14 */                                            CALL(/* arg */ 0x0000, /* func */ 0x8024be14),
@@ -31,7 +30,6 @@ const LevelScript level_script_0x2a6238_entry[] = {
 /* 0x002A62DC :: 04040001 */                                                     SLEEP_BEFORE_EXIT(/* frames */ 0x0001),
 /* 0x002A62E0 :: 02040000 */                                                     EXIT(),
 };
-
 
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table
 const LevelScript level_script_0x2abf18_entry[] = {
@@ -70,18 +68,15 @@ const LevelScript level_script_0x2abf18_entry[] = {
 /* 0x002AC090 :: 02040000 */                                                     EXIT(),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abed8
 const LevelScript level_script_0x2abed8_entry[] = {
 /* 0x002ABED8 :: 0110000E 004AC4B0 004AC570 0E000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x000e, /* start */ 0x004ac4b0, /* end */ 0x004ac570, level_ending_entry),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abee8
 const LevelScript level_script_0x2abee8_entry[] = {
 /* 0x002ABEE8 :: 01100014 00269EA0 0026A3A0 14000078 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, NULL),
 };
-
 
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abef8 -> level_script_0x269fa4
 const LevelScript level_script_0x269fa4_entry[] = {
@@ -94,18 +89,15 @@ const LevelScript level_script_0x269fa4_entry[] = {
 /* 0x00269FD8 :: 01100014 00269EA0 0026A3A0 1400020C */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, NULL),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abef8
 const LevelScript level_script_0x2abef8_entry[] = {
 /* 0x002ABEF8 :: 01100014 00269EA0 0026A3A0 1400020C */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269fa4_entry),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abec8
 const LevelScript level_script_0x2abec8_entry[] = {
 /* 0x002ABEC8 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, NULL),
 };
-
 
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abf08 -> level_script_0x26a030 -> level_script_0x26a148
 const LevelScript level_script_0x26a148_entry[] = {
@@ -117,7 +109,6 @@ const LevelScript level_script_0x26a148_entry[] = {
 /* 0x0026A160 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, NULL),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abf08 -> level_script_0x26a030 -> level_script_0x26a0fc
 const LevelScript level_script_0x26a0fc_entry[] = {
 /* 0x0026A0FC :: 380400BE */                                                     STOP_MUSIC(/* fadeOutTime */ 0x00be),
@@ -127,7 +118,6 @@ const LevelScript level_script_0x26a0fc_entry[] = {
 /* 0x0026A110 :: 03040002 */                                                     SLEEP(/* frames */ 0x0002),
 /* 0x0026A114 :: 01100015 002ABCA0 002AC6B0 15000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0015, /* start */ 0x002abca0, /* end */ 0x002ac6b0, NULL),
 };
-
 
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abf08 -> level_script_0x26a030
 const LevelScript level_script_0x26a030_entry[] = {
@@ -149,12 +139,10 @@ const LevelScript level_script_0x26a030_entry[] = {
 /* 0x0026A0A4 :: 01100015 002ABCA0 002AC6B0 15000000 */                          JUMP(level_script_0x26a0fc_entry),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> level_script_0x2abf08
 const LevelScript level_script_0x2abf08_entry[] = {
 /* 0x002ABF08 :: 01100015 002ABCA0 002AC6B0 15000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x26a030_entry),
 };
-
 
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58
 const LevelScript level_script_0x2abe58_entry[] = {
@@ -172,7 +160,6 @@ const LevelScript level_script_0x2abe58_entry[] = {
 /* 0x002ABEBC :: 01100015 002ABCA0 002AC6B0 15000000 */                          JUMP_IF(/* op */ 0x02, /* arg */ 0xfffffff7, level_script_0x2abf08_entry),
 /* 0x002ABEC8 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, NULL),
 };
-
 
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20
 const LevelScript level_script_0xad4a20_entry[] = {
@@ -197,7 +184,6 @@ const LevelScript level_script_0xad4a20_entry[] = {
 /* 0x00AD4AB0 :: 10080000 00000000 */                                            // SKIP_NOP(),
 /* 0x00AD4AB8 :: 01100014 00269EA0 0026A3A0 14000000 */                          JUMP(level_script_0x2abe58_entry),
 };
-
 
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0
 const LevelScript level_script_0x2abca0_entry[] = {
@@ -256,7 +242,6 @@ const LevelScript level_script_0x2abca0_entry[] = {
 /* 0x002ABE50 :: 01100014 00269EA0 0026A3A0 14000000 */                          JUMP(level_script_0xad4a20_entry),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120
 const LevelScript level_script_0x2a6120_entry[] = {
 /* 0x002A6120 :: 1B040000 */                                                     INIT_LEVEL(),
@@ -295,7 +280,6 @@ const LevelScript level_script_0x2a6120_entry[] = {
 /* 0x002A6228 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0015, /* start */ 0x002abca0, /* end */ 0x002ac6b0, level_script_0x2abca0_entry),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac
 const LevelScript level_script_0x26a0ac_entry[] = {
 /* 0x0026A0AC :: 380400BE */                                                     STOP_MUSIC(/* fadeOutTime */ 0x00be),
@@ -307,7 +291,6 @@ const LevelScript level_script_0x26a0ac_entry[] = {
 /* 0x0026A0C8 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x002a6120, /* end */ 0x002a65b0, level_script_0x2a6120_entry),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18
 const LevelScript level_script_0x269f18_entry[] = {
 /* 0x00269F18 :: 1B040000 */                                                     INIT_LEVEL(),
@@ -318,7 +301,6 @@ const LevelScript level_script_0x269f18_entry[] = {
 /* 0x00269F40 :: 1A0C000A 00B105FC 00B178B5 */                                   LOAD_MIO0_TEXTURE(/* seg */ 0x0a, /* start */ 0x00b105fc, /* end */ 0x00b178b5),
 /* 0x00269F4C :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x26a0ac_entry),
 };
-
 
 // level_script_0x108a10 -> level_script_0x269ea0
 const LevelScript level_script_0x269ea0_entry[] = {
@@ -340,7 +322,6 @@ const LevelScript level_script_0x269ea0_entry[] = {
 /* 0x00269F04 :: 03040002 */                                                     SLEEP(/* frames */ 0x0002),
 /* 0x00269F08 :: 01100014 00269EA0 0026A3A0 14000000 */                          EXIT_AND_EXECUTE(/* seg */ 0x0014, /* start */ 0x00269ea0, /* end */ 0x0026a3a0, level_script_0x269f18_entry),
 };
-
 
 // level_script_0x108a10
 const LevelScript level_script_0x108a10_entry[] = {

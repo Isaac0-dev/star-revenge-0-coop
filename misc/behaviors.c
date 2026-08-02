@@ -8,7 +8,6 @@ const BehaviorScript bhvMenuButtonManager[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvYellowBackgroundInMenu[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, 0x0001),
@@ -19,7 +18,6 @@ const BehaviorScript bhvYellowBackgroundInMenu[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvActSelector[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     OR_INT(oFlags, 0x0001),
@@ -28,7 +26,6 @@ const BehaviorScript bhvActSelector[] = {
         CALL_NATIVE(bhv_act_selector_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvWarp[] = {
     BEGIN(OBJ_LIST_LEVEL),
@@ -40,11 +37,9 @@ const BehaviorScript bhvWarp[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvAirborneWarp[] = {
     BREAK(),
 };
-
 
 const BehaviorScript bhvStar[] = {
     BEGIN(OBJ_LIST_LEVEL),
@@ -56,7 +51,6 @@ const BehaviorScript bhvStar[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhv_unknown_13001488[] = {
     OR_INT(oFlags, 0x0001),
     LOAD_COLLISION_DATA(collision_bhv_0x0800C7A8),
@@ -66,13 +60,11 @@ const BehaviorScript bhv_unknown_13001488[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvFloorSwitchHiddenObjects[] = {
     BEGIN(OBJ_LIST_SURFACE),
     SET_INT(oBhvParams2ndByte, 2),
     GOTO(bhv_unknown_13001488),
 };
-
 
 const BehaviorScript bhvRecoveryHeart[] = {
     BEGIN(OBJ_LIST_LEVEL),
@@ -81,7 +73,6 @@ const BehaviorScript bhvRecoveryHeart[] = {
         CALL_NATIVE(bhv_recovery_heart_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvHiddenObject[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -93,7 +84,6 @@ const BehaviorScript bhvHiddenObject[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvCoinFormation[] = {
     BEGIN(OBJ_LIST_SPAWNER),
     OR_INT(oFlags, 0x0041),
@@ -102,7 +92,6 @@ const BehaviorScript bhvCoinFormation[] = {
         CALL_NATIVE(bhv_coin_formation_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvShrink_Platform_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -114,7 +103,6 @@ const BehaviorScript bhvShrink_Platform_MOP[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSpring_MOP[] = {
     BEGIN(OBJ_LIST_LEVEL),
     SET_HITBOX(160, 160),
@@ -124,7 +112,6 @@ const BehaviorScript bhvSpring_MOP[] = {
         SET_INT(oInteractStatus, 0),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvNoteblock_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -137,7 +124,6 @@ const BehaviorScript bhvNoteblock_MOP[] = {
         CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvCoinInsideBoo[] = {
     BEGIN(OBJ_LIST_LEVEL),
@@ -152,7 +138,6 @@ const BehaviorScript bhvCoinInsideBoo[] = {
         ADD_INT(oAnimState, 1),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhv_unknown_13002808[] = {
     OR_INT(oFlags, 0x2049),
@@ -171,13 +156,11 @@ const BehaviorScript bhv_unknown_13002808[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvBoo[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     SET_INT(oBhvParams2ndByte, 1),
     GOTO(bhv_unknown_13002808),
 };
-
 
 const BehaviorScript bhvFireSpitter[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -188,7 +171,6 @@ const BehaviorScript bhvFireSpitter[] = {
         CALL_NATIVE(bhv_fire_spitter_update),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvExclamationBox[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -201,7 +183,6 @@ const BehaviorScript bhvExclamationBox[] = {
         CALL_NATIVE(bhv_exclamation_box_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvStarDoor[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -221,7 +202,6 @@ const BehaviorScript bhvStarDoor[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript editor_Scroll_Texture[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x2041),
@@ -230,14 +210,12 @@ const BehaviorScript editor_Scroll_Texture[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvFlipswitch_Panel_StarSpawn_MOP[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     BEGIN_LOOP(),
         CALL_NATIVE(NULL),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvFlipswitch_Panel_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -248,7 +226,6 @@ const BehaviorScript bhvFlipswitch_Panel_MOP[] = {
         CALL_NATIVE(NULL),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvFlyGuy[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -265,7 +242,6 @@ const BehaviorScript bhvFlyGuy[] = {
         CALL_NATIVE(bhv_fly_guy_update),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvBobombBuddy[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -284,7 +260,6 @@ const BehaviorScript bhvBobombBuddy[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvHiddenRedCoinStar[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, 0x4001),
@@ -294,7 +269,6 @@ const BehaviorScript bhvHiddenRedCoinStar[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvPenguinRaceFinishLine[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     OR_INT(oFlags, 0x00C1),
@@ -302,7 +276,6 @@ const BehaviorScript bhvPenguinRaceFinishLine[] = {
         CALL_NATIVE(bhv_penguin_race_finish_line_update),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvPoleGrabbing[] = {
     BEGIN(OBJ_LIST_POLELIKE),
@@ -315,7 +288,6 @@ const BehaviorScript bhvPoleGrabbing[] = {
         CALL_NATIVE(bhv_pole_base_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvRedCoin[] = {
     BEGIN(OBJ_LIST_LEVEL),
@@ -331,7 +303,6 @@ const BehaviorScript bhvRedCoin[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSwitchblock_Switch_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
@@ -341,7 +312,6 @@ const BehaviorScript bhvSwitchblock_Switch_MOP[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSwitchblock_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
@@ -350,7 +320,6 @@ const BehaviorScript bhvSwitchblock_MOP[] = {
         CALL_NATIVE(bhv_animates_on_floor_switch_press_init),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvControllablePlatformSub[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -362,7 +331,6 @@ const BehaviorScript bhvControllablePlatformSub[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvPokey[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x2041),
@@ -373,7 +341,6 @@ const BehaviorScript bhvPokey[] = {
         CALL_NATIVE(bhv_pokey_update),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvGoomba[] = {
     BEGIN(OBJ_LIST_PUSHABLE),
@@ -388,7 +355,6 @@ const BehaviorScript bhvGoomba[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvGoombaTripletSpawner[] = {
     BEGIN(OBJ_LIST_PUSHABLE),
     OR_INT(oFlags, 0x0041),
@@ -397,7 +363,6 @@ const BehaviorScript bhvGoombaTripletSpawner[] = {
         CALL_NATIVE(bhv_goomba_triplet_spawner_update),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvBobomb[] = {
     BEGIN(OBJ_LIST_DESTRUCTIVE),
@@ -413,7 +378,6 @@ const BehaviorScript bhvBobomb[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvBlueCoinSwitch[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
@@ -422,7 +386,6 @@ const BehaviorScript bhvBlueCoinSwitch[] = {
         CALL_NATIVE(bhv_blue_coin_switch_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvHiddenBlueCoin[] = {
     BEGIN(OBJ_LIST_LEVEL),
@@ -439,7 +402,6 @@ const BehaviorScript bhvHiddenBlueCoin[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSandBlock_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
@@ -448,7 +410,6 @@ const BehaviorScript bhvSandBlock_MOP[] = {
         CALL_NATIVE(bhv_wf_breakable_wall_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvSnufit[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -462,11 +423,9 @@ const BehaviorScript bhvSnufit[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSpinAirborneWarp[] = {
     BREAK(),
 };
-
 
 const BehaviorScript bhvCirclingAmp[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -481,7 +440,6 @@ const BehaviorScript bhvCirclingAmp[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhv1Up[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, 0x0001),
@@ -495,11 +453,9 @@ const BehaviorScript bhv1Up[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvAirborneDeathWarp[] = {
     BREAK(),
 };
-
 
 const BehaviorScript bhvFadingWarp[] = {
     BEGIN(OBJ_LIST_LEVEL),
@@ -512,7 +468,6 @@ const BehaviorScript bhvFadingWarp[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvHeaveHoThrowMario[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0009),
@@ -521,7 +476,6 @@ const BehaviorScript bhvHeaveHoThrowMario[] = {
         CALL_NATIVE(bhv_heave_ho_throw_mario_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvHeaveHo[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -540,7 +494,6 @@ const BehaviorScript bhvHeaveHo[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvHomingAmp[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x204B),
@@ -554,7 +507,6 @@ const BehaviorScript bhvHomingAmp[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvCannonBarrel[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     OR_INT(oFlags, 0x00C9),
@@ -563,7 +515,6 @@ const BehaviorScript bhvCannonBarrel[] = {
         CALL_NATIVE(bhv_cannon_barrel_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvCannon[] = {
     BEGIN(OBJ_LIST_LEVEL),
@@ -579,7 +530,6 @@ const BehaviorScript bhvCannon[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhv_unknown_13000920[] = {
     BILLBOARD(),
     OR_INT(oFlags, 0x0041),
@@ -589,13 +539,11 @@ const BehaviorScript bhv_unknown_13000920[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvOneCoin[] = {
     BEGIN(OBJ_LIST_LEVEL),
     SET_INT(oBhvParams2ndByte, 1),
     GOTO(bhv_unknown_13000920),
 };
-
 
 const BehaviorScript bhvBulletBill[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -613,7 +561,6 @@ const BehaviorScript bhvBulletBill[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSmallBully[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0009),
@@ -627,7 +574,6 @@ const BehaviorScript bhvSmallBully[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvChuckyaAnchorMario[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0009),
@@ -638,7 +584,6 @@ const BehaviorScript bhvChuckyaAnchorMario[] = {
         CALL_NATIVE(bhv_chuckya_anchor_mario_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvChuckya[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -657,7 +602,6 @@ const BehaviorScript bhvChuckya[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvFlipswap_Platform_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
@@ -667,7 +611,6 @@ const BehaviorScript bhvFlipswap_Platform_MOP[] = {
         CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvScuttlebug[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -682,7 +625,6 @@ const BehaviorScript bhvScuttlebug[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSwoop[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x2049),
@@ -696,7 +638,6 @@ const BehaviorScript bhvSwoop[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSkeeter[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x2049),
@@ -707,7 +648,6 @@ const BehaviorScript bhvSkeeter[] = {
         CALL_NATIVE(bhv_skeeter_update),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvEnemyLakitu[] = {
     BEGIN(OBJ_LIST_PUSHABLE),
@@ -720,7 +660,6 @@ const BehaviorScript bhvEnemyLakitu[] = {
         CALL_NATIVE(bhv_enemy_lakitu_update),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvFirePiranhaPlant[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -735,7 +674,6 @@ const BehaviorScript bhvFirePiranhaPlant[] = {
         CALL_NATIVE(bhv_fire_piranha_plant_update),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvMessagePanel[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -753,7 +691,6 @@ const BehaviorScript bhvMessagePanel[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvHiddenStar[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, 0x4001),
@@ -762,7 +699,6 @@ const BehaviorScript bhvHiddenStar[] = {
         CALL_NATIVE(bhv_hidden_star_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhv_unknown_13002BD4[] = {
     OR_INT(oFlags, 0x2049),
@@ -776,14 +712,12 @@ const BehaviorScript bhv_unknown_13002BD4[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvWhompKingBoss[] = {
     BEGIN(OBJ_LIST_SURFACE),
     SET_INT(oBhvParams2ndByte, 1),
     SET_INT(oHealth, 3),
     GOTO(bhv_unknown_13002BD4),
 };
-
 
 const BehaviorScript bhvHiddenStarTrigger[] = {
     BEGIN(OBJ_LIST_LEVEL),
@@ -794,7 +728,6 @@ const BehaviorScript bhvHiddenStarTrigger[] = {
         CALL_NATIVE(bhv_hidden_star_trigger_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvFlipBlock_MOP[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -808,7 +741,6 @@ const BehaviorScript bhvFlipBlock_MOP[] = {
         SET_INT(oInteractStatus, 0),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvThwomp[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -825,7 +757,6 @@ const BehaviorScript bhvThwomp[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvThwomp2[] = {
     BEGIN(OBJ_LIST_SURFACE),
     LOAD_COLLISION_DATA(collision_bhv_0x0500B7D0),
@@ -841,7 +772,6 @@ const BehaviorScript bhvThwomp2[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvBreakableBox[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
@@ -854,7 +784,6 @@ const BehaviorScript bhvBreakableBox[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvBubba[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x2049),
@@ -865,7 +794,6 @@ const BehaviorScript bhvBubba[] = {
         CALL_NATIVE(bhv_bubba_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvToadMessage[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -881,7 +809,6 @@ const BehaviorScript bhvToadMessage[] = {
         CALL_NATIVE(bhv_toad_message_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvDoor[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -900,7 +827,6 @@ const BehaviorScript bhvDoor[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvCheckpoint_Flag_MOP[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0041),
@@ -909,7 +835,6 @@ const BehaviorScript bhvCheckpoint_Flag_MOP[] = {
         CALL_NATIVE(NULL),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvBlargg[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -924,7 +849,6 @@ const BehaviorScript bhvBlargg[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSeesawPlatform[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x2049),
@@ -935,7 +859,6 @@ const BehaviorScript bhvSeesawPlatform[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvCheckerboardElevatorGroup[] = {
     BEGIN(OBJ_LIST_SPAWNER),
     OR_INT(oFlags, 0x0001),
@@ -943,7 +866,6 @@ const BehaviorScript bhvCheckerboardElevatorGroup[] = {
     DELAY(1),
     DEACTIVATE(),
 };
-
 
 const BehaviorScript bhvCapSwitch[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -954,7 +876,6 @@ const BehaviorScript bhvCapSwitch[] = {
         CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhv_unknown_13000B14[] = {
     OR_INT(oFlags, 0x00C9),
@@ -971,13 +892,11 @@ const BehaviorScript bhv_unknown_13000B14[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvDoorWarp[] = {
     BEGIN(OBJ_LIST_SURFACE),
     SET_INT(oInteractType, 2048),
     GOTO(bhv_unknown_13000B14),
 };
-
 
 const BehaviorScript bhvSignOnWall[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -992,7 +911,6 @@ const BehaviorScript bhvSignOnWall[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSpindrift[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0049),
@@ -1005,7 +923,6 @@ const BehaviorScript bhvSpindrift[] = {
         CALL_NATIVE(bhv_spindrift_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvMrBlizzard[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -1022,7 +939,6 @@ const BehaviorScript bhvMrBlizzard[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvPushableMetalBox[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
@@ -1035,7 +951,6 @@ const BehaviorScript bhvPushableMetalBox[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvUnusedFakeStar[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     OR_INT(oFlags, 0x0001),
@@ -1044,7 +959,6 @@ const BehaviorScript bhvUnusedFakeStar[] = {
         ADD_INT(0x13, 256),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvBowserBodyAnchor[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -1060,7 +974,6 @@ const BehaviorScript bhvBowserBodyAnchor[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvBowserFlameSpawn[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     OR_INT(oFlags, 0x0001),
@@ -1069,7 +982,6 @@ const BehaviorScript bhvBowserFlameSpawn[] = {
         CALL_NATIVE(bhv_bowser_flame_spawn_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvBowserTailAnchor[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -1080,7 +992,6 @@ const BehaviorScript bhvBowserTailAnchor[] = {
         CALL_NATIVE(bhv_bowser_tail_anchor_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvBowser[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -1102,7 +1013,6 @@ const BehaviorScript bhvBowser[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvBowserBomb[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x0001),
@@ -1115,7 +1025,6 @@ const BehaviorScript bhvBowserBomb[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvWaterfallSoundLoop[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     BEGIN_LOOP(),
@@ -1123,11 +1032,9 @@ const BehaviorScript bhvWaterfallSoundLoop[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvFlyingWarp[] = {
     BREAK(),
 };
-
 
 const BehaviorScript bhvBetaTrampolineTop[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -1140,7 +1047,6 @@ const BehaviorScript bhvBetaTrampolineTop[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvEyerokBoss[] = {
     BEGIN(OBJ_LIST_GENACTOR),
     OR_INT(oFlags, 0x2041),
@@ -1149,7 +1055,6 @@ const BehaviorScript bhvEyerokBoss[] = {
         CALL_NATIVE(bhv_eyerok_boss_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvBobombAnchorMario[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -1161,7 +1066,6 @@ const BehaviorScript bhvBobombAnchorMario[] = {
         CALL_NATIVE(bhv_bobomb_anchor_mario_loop),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvKingBobomb[] = {
     BEGIN(OBJ_LIST_GENACTOR),
@@ -1181,11 +1085,9 @@ const BehaviorScript bhvKingBobomb[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvSpinAirborneCircleWarp[] = {
     BREAK(),
 };
-
 
 const BehaviorScript bhvTiltingBowserLavaPlatform[] = {
     BEGIN(OBJ_LIST_SURFACE),
@@ -1201,7 +1103,6 @@ const BehaviorScript bhvTiltingBowserLavaPlatform[] = {
     END_LOOP(),
 };
 
-
 const BehaviorScript bhvFallingBowserPlatform[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, 0x0001),
@@ -1213,7 +1114,6 @@ const BehaviorScript bhvFallingBowserPlatform[] = {
         CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
-
 
 const BehaviorScript bhvWaterBombSpawner[] = {
     BEGIN(OBJ_LIST_GENACTOR),

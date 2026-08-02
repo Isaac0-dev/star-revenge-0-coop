@@ -9,7 +9,6 @@ const GeoLayout hmc_geo_0C000264[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout hmc_geo_0C000000[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -17,7 +16,6 @@ const GeoLayout hmc_geo_0C000000[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout hmc_geo_0C000018[] = {
 /* 16000001 00FF0064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 255, 100),
@@ -81,7 +79,6 @@ const GeoLayout hmc_geo_0C000018[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout hmc_geo_0C0001E4[] = {
 /* 1D000000 00004000 */                                    GEO_SCALE(LAYER_FORCE, 0x00004000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -100,7 +97,6 @@ const GeoLayout hmc_geo_0C0001E4[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout hmc_geo_0C000248[] = {
 /* 1600000B 00B4012C */                                    GEO_SHADOW(SHADOW_SQUARE_SCALABLE, 180, 300),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -108,7 +104,6 @@ const GeoLayout hmc_geo_0C000248[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout hmc_geo_0C00028C[] = {
 /* 16000001 00C80064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 200, 100),
@@ -170,7 +165,6 @@ const GeoLayout hmc_geo_0C00028C[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout hmc_geo_06003754[] = {
 /* 16000001 00C80046 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 200, 70),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -215,7 +209,6 @@ const GeoLayout hmc_geo_06003754[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout hmc_geo_06003874[] = {
 /* 16000001 00C800D2 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 200, 210),
@@ -262,7 +255,6 @@ const GeoLayout hmc_geo_06003874[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout hmc_geo_0D000000[] = {
 /* 13010000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, NULL),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -281,7 +273,6 @@ const GeoLayout hmc_geo_0D000000[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout hmc_geo_0D000078[] = {
 /* 13010000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, NULL),
@@ -302,7 +293,6 @@ const GeoLayout hmc_geo_0D000078[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout hmc_geo_0D0000F0[] = {
 /* 16000001 00C80064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 200, 100),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -320,7 +310,6 @@ const GeoLayout hmc_geo_0D0000F0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout hmc_geo_12000390[] = {
 /* 2000015E */                                             GEO_CULLING_RADIUS(350),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -329,7 +318,6 @@ const GeoLayout hmc_geo_12000390[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout hmc_geo_12000360[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -337,7 +325,6 @@ const GeoLayout hmc_geo_12000360[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout hmc_geo_12000378[] = {
 /* 0B000000 */                                             GEO_NODE_START(),

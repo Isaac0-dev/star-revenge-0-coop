@@ -8,7 +8,6 @@ const GeoLayout ttm_geo_0C000308[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ttm_geo_0C000328[] = {
 /* 20000096 */                                             GEO_CULLING_RADIUS(150),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -16,7 +15,6 @@ const GeoLayout ttm_geo_0C000328[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ttm_geo_0C000000[] = {
 /* 16000001 0096012C */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 300),

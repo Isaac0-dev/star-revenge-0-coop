@@ -20,7 +20,6 @@ const GeoLayout bob_geo_0D00038C[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bob_geo_0D000450[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -29,7 +28,6 @@ const GeoLayout bob_geo_0D000450[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bob_geo_0D000468[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -37,7 +35,6 @@ const GeoLayout bob_geo_0D000468[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bob_geo_0D000324[] = {
 /* 1D000000 00004000 */                                    GEO_SCALE(LAYER_FORCE, 0x00004000),
@@ -57,7 +54,6 @@ const GeoLayout bob_geo_0D000324[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bob_geo_0D000414[] = {
 /* 1D000000 00008000 */                                    GEO_SCALE(LAYER_FORCE, 0x00008000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -70,7 +66,6 @@ const GeoLayout bob_geo_0D000414[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bob_geo_0D0002F4[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -82,7 +77,6 @@ const GeoLayout bob_geo_0D0002F4[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bob_geo_0D000284[] = {
 /* 1D000000 00004000 */                                    GEO_SCALE(LAYER_FORCE, 0x00004000),
@@ -103,7 +97,6 @@ const GeoLayout bob_geo_0D000284[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bob_geo_0D000000[] = {
 /* 16000001 00960064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 100),

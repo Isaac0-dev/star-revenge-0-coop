@@ -18,7 +18,6 @@ const GeoLayout ssl_geo_0C000240[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ssl_geo_0C000000[] = {
 /* 16000001 00C80046 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 200, 70),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -63,7 +62,6 @@ const GeoLayout ssl_geo_0C000000[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ssl_geo_0C000120[] = {
 /* 16000001 00C800D2 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 200, 210),

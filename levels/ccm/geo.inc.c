@@ -10,7 +10,6 @@ const GeoLayout ccm_geo_0C000610[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_0C000644[] = {
 /* 16000001 00960032 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 50),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -19,7 +18,6 @@ const GeoLayout ccm_geo_0C000644[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_05014630[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -27,7 +25,6 @@ const GeoLayout ccm_geo_05014630[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_0C000000[] = {
 /* 16000001 009600FA */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 250),
@@ -124,7 +121,6 @@ const GeoLayout ccm_geo_0C000000[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_0C0002AC[] = {
 /* 13010000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, NULL),
@@ -231,7 +227,6 @@ const GeoLayout ccm_geo_0C0002AC[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout ccm_geo_0C0005A8[] = {
 /* 1600000B 00B4012C */                                    GEO_SHADOW(SHADOW_SQUARE_SCALABLE, 180, 300),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -245,7 +240,6 @@ const GeoLayout ccm_geo_0C0005A8[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_0C0005E4[] = {
 /* 1600000B 00B4012C */                                    GEO_SHADOW(SHADOW_SQUARE_SCALABLE, 180, 300),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -256,7 +250,6 @@ const GeoLayout ccm_geo_0C0005E4[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_0D0000DC[] = {
 /* 16000001 00960064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 100),
@@ -289,7 +282,6 @@ const GeoLayout ccm_geo_0D0000DC[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_0D000394[] = {
 /* 16000001 00960064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 100),
@@ -409,7 +401,6 @@ const GeoLayout ccm_geo_0D000394[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_0D00001C[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -440,7 +431,6 @@ const GeoLayout ccm_geo_0D00001C[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_0D000000[] = {
 /* 16000001 009B00C8 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 155, 200),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -448,7 +438,6 @@ const GeoLayout ccm_geo_0D000000[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_0D000230[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
@@ -504,7 +493,6 @@ const GeoLayout ccm_geo_0D000230[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_0D0001A0[] = {
 /* 16000001 00960064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 100),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -532,7 +520,6 @@ const GeoLayout ccm_geo_0D0001A0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_12000660[] = {
 /* 20000BB8 */                                             GEO_CULLING_RADIUS(3000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -540,7 +527,6 @@ const GeoLayout ccm_geo_12000660[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000678[] = {
 /* 200003E8 */                                             GEO_CULLING_RADIUS(1000),
@@ -550,7 +536,6 @@ const GeoLayout ccm_geo_12000678[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_12000690[] = {
 /* 20000BB8 */                                             GEO_CULLING_RADIUS(3000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -558,7 +543,6 @@ const GeoLayout ccm_geo_12000690[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_120006A8[] = {
 /* 20000BB8 */                                             GEO_CULLING_RADIUS(3000),
@@ -568,7 +552,6 @@ const GeoLayout ccm_geo_120006A8[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_120006C0[] = {
 /* 20000DAC */                                             GEO_CULLING_RADIUS(3500),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -576,7 +559,6 @@ const GeoLayout ccm_geo_120006C0[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_120006D8[] = {
 /* 20000DAC */                                             GEO_CULLING_RADIUS(3500),
@@ -586,7 +568,6 @@ const GeoLayout ccm_geo_120006D8[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_120006F0[] = {
 /* 20000AF0 */                                             GEO_CULLING_RADIUS(2800),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -594,7 +575,6 @@ const GeoLayout ccm_geo_120006F0[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000708[] = {
 /* 20000FA0 */                                             GEO_CULLING_RADIUS(4000),
@@ -604,7 +584,6 @@ const GeoLayout ccm_geo_12000708[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_12000720[] = {
 /* 20000BB8 */                                             GEO_CULLING_RADIUS(3000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -612,7 +591,6 @@ const GeoLayout ccm_geo_12000720[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000738[] = {
 /* 20000FA0 */                                             GEO_CULLING_RADIUS(4000),
@@ -623,7 +601,6 @@ const GeoLayout ccm_geo_12000738[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_12000758[] = {
 /* 200005DC */                                             GEO_CULLING_RADIUS(1500),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -631,7 +608,6 @@ const GeoLayout ccm_geo_12000758[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000770[] = {
 /* 200005DC */                                             GEO_CULLING_RADIUS(1500),
@@ -641,7 +617,6 @@ const GeoLayout ccm_geo_12000770[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_12000788[] = {
 /* 20000FA0 */                                             GEO_CULLING_RADIUS(4000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -649,7 +624,6 @@ const GeoLayout ccm_geo_12000788[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_120007A0[] = {
 /* 20000DAC */                                             GEO_CULLING_RADIUS(3500),
@@ -659,7 +633,6 @@ const GeoLayout ccm_geo_120007A0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_120007B8[] = {
 /* 20000640 */                                             GEO_CULLING_RADIUS(1600),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -667,7 +640,6 @@ const GeoLayout ccm_geo_120007B8[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_120007D0[] = {
 /* 20000ED8 */                                             GEO_CULLING_RADIUS(3800),
@@ -677,7 +649,6 @@ const GeoLayout ccm_geo_120007D0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_120007E8[] = {
 /* 200009C4 */                                             GEO_CULLING_RADIUS(2500),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -685,7 +656,6 @@ const GeoLayout ccm_geo_120007E8[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000800[] = {
 /* 20001194 */                                             GEO_CULLING_RADIUS(4500),
@@ -695,7 +665,6 @@ const GeoLayout ccm_geo_12000800[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_12000818[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -703,7 +672,6 @@ const GeoLayout ccm_geo_12000818[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000830[] = {
 /* 20000BB8 */                                             GEO_CULLING_RADIUS(3000),
@@ -713,7 +681,6 @@ const GeoLayout ccm_geo_12000830[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_120008C0[] = {
 /* 200002BC */                                             GEO_CULLING_RADIUS(700),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -721,7 +688,6 @@ const GeoLayout ccm_geo_120008C0[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000848[] = {
 /* 200001F4 */                                             GEO_CULLING_RADIUS(500),
@@ -731,7 +697,6 @@ const GeoLayout ccm_geo_12000848[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_120008A8[] = {
 /* 20000514 */                                             GEO_CULLING_RADIUS(1300),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -739,7 +704,6 @@ const GeoLayout ccm_geo_120008A8[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000878[] = {
 /* 200005DC */                                             GEO_CULLING_RADIUS(1500),
@@ -749,7 +713,6 @@ const GeoLayout ccm_geo_12000878[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_120008D8[] = {
 /* 200002BC */                                             GEO_CULLING_RADIUS(700),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -757,7 +720,6 @@ const GeoLayout ccm_geo_120008D8[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000890[] = {
 /* 200004B0 */                                             GEO_CULLING_RADIUS(1200),
@@ -767,7 +729,6 @@ const GeoLayout ccm_geo_12000890[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_12000908[] = {
 /* 200003E8 */                                             GEO_CULLING_RADIUS(1000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -775,7 +736,6 @@ const GeoLayout ccm_geo_12000908[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000940[] = {
 /* 2000044C */                                             GEO_CULLING_RADIUS(1100),
@@ -785,7 +745,6 @@ const GeoLayout ccm_geo_12000940[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_12000860[] = {
 /* 20000514 */                                             GEO_CULLING_RADIUS(1300),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -793,7 +752,6 @@ const GeoLayout ccm_geo_12000860[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000920[] = {
 /* 200001A4 */                                             GEO_CULLING_RADIUS(420),
@@ -804,7 +762,6 @@ const GeoLayout ccm_geo_12000920[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_120008F0[] = {
 /* 200001F4 */                                             GEO_CULLING_RADIUS(500),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -812,7 +769,6 @@ const GeoLayout ccm_geo_120008F0[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000958[] = {
 /* 200005DC */                                             GEO_CULLING_RADIUS(1500),
@@ -822,7 +778,6 @@ const GeoLayout ccm_geo_12000958[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_12000970[] = {
 /* 200005DC */                                             GEO_CULLING_RADIUS(1500),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -830,7 +785,6 @@ const GeoLayout ccm_geo_12000970[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_12000988[] = {
 /* 200005DC */                                             GEO_CULLING_RADIUS(1500),
@@ -840,7 +794,6 @@ const GeoLayout ccm_geo_12000988[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout ccm_geo_120009A0[] = {
 /* 200005DC */                                             GEO_CULLING_RADIUS(1500),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -848,7 +801,6 @@ const GeoLayout ccm_geo_120009A0[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout ccm_geo_120009B8[] = {
 /* 200005DC */                                             GEO_CULLING_RADIUS(1500),

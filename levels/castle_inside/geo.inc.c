@@ -23,7 +23,6 @@ const GeoLayout castle_inside_geo_0C000000[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout castle_inside_geo_0C000098[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -86,7 +85,6 @@ const GeoLayout castle_inside_geo_0C000098[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout castle_inside_geo_0C000254[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -151,7 +149,6 @@ const GeoLayout castle_inside_geo_0C000254[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout castle_inside_geo_0C000410[] = {
 /* 16000000 00960064 */                                    GEO_SHADOW(SHADOW_CIRCLE_9_VERTS, 150, 100),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -167,7 +164,6 @@ const GeoLayout castle_inside_geo_0C000410[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout castle_inside_geo_0C000468[] = {
 /* 16000001 00C80064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 200, 100),
@@ -246,7 +242,6 @@ const GeoLayout castle_inside_geo_0C000468[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout castle_inside_geo_0D000448[] = {
 /* 16000001 00960064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 100),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -301,7 +296,6 @@ const GeoLayout castle_inside_geo_0D000448[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout castle_inside_geo_0D0005B0[] = {
 /* 16000001 00960046 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 70),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -318,7 +312,6 @@ const GeoLayout castle_inside_geo_0D0005B0[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout castle_inside_geo_0D000000[] = {
 /* 16000001 00960064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 100),
@@ -362,7 +355,6 @@ const GeoLayout castle_inside_geo_0D000000[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout castle_inside_geo_0D000114[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -417,7 +409,6 @@ const GeoLayout castle_inside_geo_0D000114[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout castle_inside_geo_0D00027C[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -470,7 +461,6 @@ const GeoLayout castle_inside_geo_0D00027C[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout castle_inside_geo_0D0003E4[] = {
 /* 200003E8 */                                             GEO_CULLING_RADIUS(1000),

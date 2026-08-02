@@ -26,7 +26,6 @@ const GeoLayout area_1_geo_140002D0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_140001D0[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -39,7 +38,6 @@ const GeoLayout geo_140001D0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_14000290[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -50,7 +48,6 @@ const GeoLayout geo_14000290[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_140002B8[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -63,7 +60,6 @@ const GeoLayout geo_140002B8[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_140002E0[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -75,7 +71,6 @@ const GeoLayout geo_140002E0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_14000308[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -86,7 +81,6 @@ const GeoLayout geo_14000308[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_14000200[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -100,7 +94,6 @@ const GeoLayout geo_14000200[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_14000230[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -112,7 +105,6 @@ const GeoLayout geo_14000230[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_14000260[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -126,7 +118,6 @@ const GeoLayout geo_14000260[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_14000330[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -138,7 +129,6 @@ const GeoLayout geo_14000330[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_14000358[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -149,7 +139,6 @@ const GeoLayout geo_14000358[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout area_1_geo_14000380[] = {
 /* 0800000A 00A00078 00A00078 */                           GEO_NODE_SCREEN_AREA(10, 160, 120, 160, 120),
@@ -178,7 +167,6 @@ const GeoLayout area_1_geo_14000380[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_170002E0[] = {
 /* 18000000 802773A4 */                                    GEO_ASM(0, geo_mario_head_rotation),
@@ -229,7 +217,6 @@ const GeoLayout geo_170002E0[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_1700041C[] = {
 /* 0E000001 802774F4 */                                    GEO_SWITCH_CASE(1, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -248,7 +235,6 @@ const GeoLayout geo_1700041C[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17000494[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -275,7 +261,6 @@ const GeoLayout geo_17000494[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_1700053C[] = {
 /* 13010000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, NULL),
@@ -346,7 +331,6 @@ const GeoLayout geo_1700053C[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17000DEC[] = {
 /* 18000000 802773A4 */                                    GEO_ASM(0, geo_mario_head_rotation),
 /* 12000000 00000000 */                                    GEO_ROTATION_NODE(LAYER_FORCE, 0, 0, 0),
@@ -396,7 +380,6 @@ const GeoLayout geo_17000DEC[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17000F28[] = {
 /* 0E000001 802774F4 */                                    GEO_SWITCH_CASE(1, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -415,7 +398,6 @@ const GeoLayout geo_17000F28[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17000FA0[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -442,7 +424,6 @@ const GeoLayout geo_17000FA0[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17001048[] = {
 /* 13050000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, NULL),
@@ -513,7 +494,6 @@ const GeoLayout geo_17001048[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_170018F8[] = {
 /* 18000000 802773A4 */                                    GEO_ASM(0, geo_mario_head_rotation),
 /* 12000000 00000000 */                                    GEO_ROTATION_NODE(LAYER_FORCE, 0, 0, 0),
@@ -543,7 +523,6 @@ const GeoLayout geo_170018F8[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_170019A4[] = {
 /* 0E000001 802774F4 */                                    GEO_SWITCH_CASE(1, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -562,7 +541,6 @@ const GeoLayout geo_170019A4[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17001A1C[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -589,7 +567,6 @@ const GeoLayout geo_17001A1C[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17001AC4[] = {
 /* 13010000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, NULL),
@@ -660,7 +637,6 @@ const GeoLayout geo_17001AC4[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_170022E4[] = {
 /* 18000000 802773A4 */                                    GEO_ASM(0, geo_mario_head_rotation),
 /* 12000000 00000000 */                                    GEO_ROTATION_NODE(LAYER_FORCE, 0, 0, 0),
@@ -690,7 +666,6 @@ const GeoLayout geo_170022E4[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17002390[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -709,7 +684,6 @@ const GeoLayout geo_17002390[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17002408[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -736,7 +710,6 @@ const GeoLayout geo_17002408[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_170024B0[] = {
 /* 13050000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, NULL),
@@ -807,7 +780,6 @@ const GeoLayout geo_170024B0[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17002CE0[] = {
 /* 0E000000 802776D8 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_cap_effect),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -818,7 +790,6 @@ const GeoLayout geo_17002CE0[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_170006F8[] = {
 /* 0E000001 802774F4 */                                    GEO_SWITCH_CASE(1, geo_switch_mario_hand),
@@ -838,7 +809,6 @@ const GeoLayout geo_170006F8[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17000770[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -865,7 +835,6 @@ const GeoLayout geo_17000770[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17000818[] = {
 /* 13010000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, NULL),
@@ -936,7 +905,6 @@ const GeoLayout geo_17000818[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17001204[] = {
 /* 0E000001 802774F4 */                                    GEO_SWITCH_CASE(1, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -955,7 +923,6 @@ const GeoLayout geo_17001204[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_1700127C[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -982,7 +949,6 @@ const GeoLayout geo_1700127C[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17001324[] = {
 /* 13050000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, NULL),
@@ -1053,7 +1019,6 @@ const GeoLayout geo_17001324[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17001C80[] = {
 /* 0E000001 802774F4 */                                    GEO_SWITCH_CASE(1, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -1072,7 +1037,6 @@ const GeoLayout geo_17001C80[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17001CF8[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -1099,7 +1063,6 @@ const GeoLayout geo_17001CF8[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17001DA0[] = {
 /* 13010000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, NULL),
@@ -1170,7 +1133,6 @@ const GeoLayout geo_17001DA0[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_1700266C[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -1189,7 +1151,6 @@ const GeoLayout geo_1700266C[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_170026E4[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -1216,7 +1177,6 @@ const GeoLayout geo_170026E4[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_1700278C[] = {
 /* 13050000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, NULL),
@@ -1290,7 +1250,6 @@ const GeoLayout geo_1700278C[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17002D14[] = {
 /* 0E000000 802776D8 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_cap_effect),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -1301,7 +1260,6 @@ const GeoLayout geo_17002D14[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_170009D4[] = {
 /* 18000000 802773A4 */                                    GEO_ASM(0, geo_mario_head_rotation),
@@ -1352,7 +1310,6 @@ const GeoLayout geo_170009D4[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17000B10[] = {
 /* 0E000001 802774F4 */                                    GEO_SWITCH_CASE(1, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -1371,7 +1328,6 @@ const GeoLayout geo_17000B10[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17000B88[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -1398,7 +1354,6 @@ const GeoLayout geo_17000B88[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17000C30[] = {
 /* 13010000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, NULL),
@@ -1469,7 +1424,6 @@ const GeoLayout geo_17000C30[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_170014E0[] = {
 /* 18000000 802773A4 */                                    GEO_ASM(0, geo_mario_head_rotation),
 /* 12000000 00000000 */                                    GEO_ROTATION_NODE(LAYER_FORCE, 0, 0, 0),
@@ -1519,7 +1473,6 @@ const GeoLayout geo_170014E0[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_1700161C[] = {
 /* 0E000001 802774F4 */                                    GEO_SWITCH_CASE(1, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -1538,7 +1491,6 @@ const GeoLayout geo_1700161C[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17001694[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -1565,7 +1517,6 @@ const GeoLayout geo_17001694[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_1700173C[] = {
 /* 13050000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, NULL),
@@ -1636,7 +1587,6 @@ const GeoLayout geo_1700173C[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17001F5C[] = {
 /* 18000000 802773A4 */                                    GEO_ASM(0, geo_mario_head_rotation),
 /* 12000000 00000000 */                                    GEO_ROTATION_NODE(LAYER_FORCE, 0, 0, 0),
@@ -1666,7 +1616,6 @@ const GeoLayout geo_17001F5C[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17002008[] = {
 /* 0E000001 802774F4 */                                    GEO_SWITCH_CASE(1, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -1685,7 +1634,6 @@ const GeoLayout geo_17002008[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17002080[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -1712,7 +1660,6 @@ const GeoLayout geo_17002080[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17002128[] = {
 /* 13010000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, NULL),
@@ -1783,7 +1730,6 @@ const GeoLayout geo_17002128[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17002958[] = {
 /* 18000000 802773A4 */                                    GEO_ASM(0, geo_mario_head_rotation),
 /* 12000000 00000000 */                                    GEO_ROTATION_NODE(LAYER_FORCE, 0, 0, 0),
@@ -1813,7 +1759,6 @@ const GeoLayout geo_17002958[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17002A04[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -1832,7 +1777,6 @@ const GeoLayout geo_17002A04[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17002A7C[] = {
 /* 0E000000 802774F4 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_hand),
@@ -1859,7 +1803,6 @@ const GeoLayout geo_17002A7C[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17002B24[] = {
 /* 13050000 00000000 00000000 */                           GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, NULL),
@@ -1930,7 +1873,6 @@ const GeoLayout geo_17002B24[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17002D48[] = {
 /* 0E000000 802776D8 */                                    GEO_SWITCH_CASE(0, geo_switch_mario_cap_effect),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -1941,7 +1883,6 @@ const GeoLayout geo_17002D48[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 03000000 */                                             GEO_RETURN(),
 };
-
 
 const GeoLayout geo_17002D7C[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -1962,7 +1903,6 @@ const GeoLayout geo_17002D7C[] = {
 /* 03000000 */                                             GEO_RETURN(),
 };
 
-
 const GeoLayout geo_17002DD4[] = {
 /* 16000001 00960064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 150, 100),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -1981,7 +1921,6 @@ const GeoLayout geo_17002DD4[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_17000038[] = {
 /* 0E000007 8029DB48 */                                    GEO_SWITCH_CASE(7, geo_switch_anim_state),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -1995,7 +1934,6 @@ const GeoLayout geo_17000038[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_170001BC[] = {
 /* 0E00000C 8029DB48 */                                    GEO_SWITCH_CASE(12, geo_switch_anim_state),
@@ -2016,7 +1954,6 @@ const GeoLayout geo_170001BC[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_17000000[] = {
 /* 0E000001 8029DB48 */                                    GEO_SWITCH_CASE(1, geo_switch_anim_state),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2024,7 +1961,6 @@ const GeoLayout geo_17000000[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_1700009C[] = {
 /* 0E000006 8029DB48 */                                    GEO_SWITCH_CASE(6, geo_switch_anim_state),
@@ -2039,7 +1975,6 @@ const GeoLayout geo_1700009C[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_17000124[] = {
 /* 0E000006 8029DB48 */                                    GEO_SWITCH_CASE(6, geo_switch_anim_state),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2052,7 +1987,6 @@ const GeoLayout geo_17000124[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_17000230[] = {
 /* 0E000008 8029DB48 */                                    GEO_SWITCH_CASE(8, geo_switch_anim_state),
@@ -2069,7 +2003,6 @@ const GeoLayout geo_17000230[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_17000168[] = {
 /* 0E000008 8029DB48 */                                    GEO_SWITCH_CASE(8, geo_switch_anim_state),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2084,7 +2017,6 @@ const GeoLayout geo_17000168[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_1600013C[] = {
 /* 16000001 00B40032 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 180, 50),
@@ -2104,7 +2036,6 @@ const GeoLayout geo_1600013C[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000EA0[] = {
 /* 16000001 009B0064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 155, 100),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2117,7 +2048,6 @@ const GeoLayout geo_16000EA0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000F6C[] = {
 /* 16000001 009B0064 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 155, 100),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2128,7 +2058,6 @@ const GeoLayout geo_16000F6C[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_16000FB4[] = {
 /* 16000001 00C8003C */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 200, 60),
@@ -2141,7 +2070,6 @@ const GeoLayout geo_16000FB4[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_16000B2C[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -2161,7 +2089,6 @@ const GeoLayout geo_16000B2C[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000B8C[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2180,7 +2107,6 @@ const GeoLayout geo_16000B8C[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_17000084[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2188,7 +2114,6 @@ const GeoLayout geo_17000084[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_16000C8C[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -2198,7 +2123,6 @@ const GeoLayout geo_16000C8C[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_1700001C[] = {
 /* 0E000001 8029DB48 */                                    GEO_SWITCH_CASE(1, geo_switch_anim_state),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2206,7 +2130,6 @@ const GeoLayout geo_1700001C[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_16000C44[] = {
 /* 1D000000 00004000 */                                    GEO_SCALE(LAYER_FORCE, 0x00004000),
@@ -2221,7 +2144,6 @@ const GeoLayout geo_16000C44[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_16000BEC[] = {
 /* 16000001 009B0032 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 155, 50),
@@ -2240,7 +2162,6 @@ const GeoLayout geo_16000BEC[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_17000284[] = {
 /* 0E000009 8029DB48 */                                    GEO_SWITCH_CASE(9, geo_switch_anim_state),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2256,7 +2177,6 @@ const GeoLayout geo_17000284[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_160000A8[] = {
 /* 16000001 00B40019 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 180, 25),
@@ -2284,7 +2204,6 @@ const GeoLayout geo_160000A8[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000000[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2293,7 +2212,6 @@ const GeoLayout geo_16000000[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_16000020[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -2304,7 +2222,6 @@ const GeoLayout geo_16000020[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000F98[] = {
 /* 16000001 00B40032 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 180, 50),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2312,7 +2229,6 @@ const GeoLayout geo_16000F98[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_160001A0[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -2332,7 +2248,6 @@ const GeoLayout geo_160001A0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000200[] = {
 /* 16000001 00B40050 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 180, 80),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2351,7 +2266,6 @@ const GeoLayout geo_16000200[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000264[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2369,7 +2283,6 @@ const GeoLayout geo_16000264[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_16000DA8[] = {
 /* 16000000 00B4004B */                                    GEO_SHADOW(SHADOW_CIRCLE_9_VERTS, 180, 75),
@@ -2394,7 +2307,6 @@ const GeoLayout geo_16000DA8[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000CF0[] = {
 /* 16000000 00B4004B */                                    GEO_SHADOW(SHADOW_CIRCLE_9_VERTS, 180, 75),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2410,7 +2322,6 @@ const GeoLayout geo_16000CF0[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_16000D3C[] = {
 /* 16000000 00B4004B */                                    GEO_SHADOW(SHADOW_CIRCLE_9_VERTS, 180, 75),
@@ -2435,7 +2346,6 @@ const GeoLayout geo_16000D3C[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000CA4[] = {
 /* 16000000 00B4004B */                                    GEO_SHADOW(SHADOW_CIRCLE_9_VERTS, 180, 75),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2451,7 +2361,6 @@ const GeoLayout geo_16000CA4[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_16000AB0[] = {
 /* 1D000000 00004000 */                                    GEO_SCALE(LAYER_FORCE, 0x00004000),
@@ -2472,7 +2381,6 @@ const GeoLayout geo_16000AB0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000A84[] = {
 /* 16000001 009B012C */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 155, 300),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2484,7 +2392,6 @@ const GeoLayout geo_16000A84[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000B10[] = {
 /* 16000001 00500014 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 80, 20),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2493,7 +2400,6 @@ const GeoLayout geo_16000B10[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000E84[] = {
 /* 16000001 00B40050 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 180, 80),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2501,7 +2407,6 @@ const GeoLayout geo_16000E84[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_160002C4[] = {
 /* 16000001 00B40050 */                                    GEO_SHADOW(SHADOW_CIRCLE_4_VERTS, 180, 80),
@@ -2521,7 +2426,6 @@ const GeoLayout geo_160002C4[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000328[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2539,7 +2443,6 @@ const GeoLayout geo_16000328[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_16000E14[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
@@ -2561,7 +2464,6 @@ const GeoLayout geo_16000E14[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000040[] = {
 /* 0B000000 */                                             GEO_NODE_START(),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2581,7 +2483,6 @@ const GeoLayout geo_16000040[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000ED4[] = {
 /* 2000012C */                                             GEO_CULLING_RADIUS(300),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2598,7 +2499,6 @@ const GeoLayout geo_16000ED4[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_16000F24[] = {
 /* 2000012C */                                             GEO_CULLING_RADIUS(300),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2614,7 +2514,6 @@ const GeoLayout geo_16000F24[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_0301DBF8[] = {
 /* 1600000A 00B40106 */                                    GEO_SHADOW(SHADOW_SQUARE_PERMANENT, 180, 262),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2626,7 +2525,6 @@ const GeoLayout geo_0301DBF8[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_030212F4[] = {
 /* 1600000A 00000106 */                                    GEO_SHADOW(SHADOW_SQUARE_PERMANENT, 0, 262),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2634,7 +2532,6 @@ const GeoLayout geo_030212F4[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_030225E4[] = {
 /* 1600000A 00000106 */                                    GEO_SHADOW(SHADOW_SQUARE_PERMANENT, 0, 262),
@@ -2647,7 +2544,6 @@ const GeoLayout geo_030225E4[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_030226D4[] = {
 /* 0E000004 8029DB48 */                                    GEO_SWITCH_CASE(4, geo_switch_anim_state),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2659,7 +2555,6 @@ const GeoLayout geo_030226D4[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_0302272C[] = {
 /* 1600000A 00B40080 */                                    GEO_SHADOW(SHADOW_SQUARE_PERMANENT, 180, 128),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -2667,7 +2562,6 @@ const GeoLayout geo_0302272C[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout geo_03022708[] = {
 /* 0E000002 8029DB48 */                                    GEO_SWITCH_CASE(2, geo_switch_anim_state),
@@ -2678,14 +2572,11 @@ const GeoLayout geo_03022708[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout geo_005F9FE0[] = {
 };
 
-
 const GeoLayout geo_00603670[] = {
 };
-
 
 const GeoLayout area_2_geo_14000408[] = {
 /* 0800000A 00A00078 00A00078 */                           GEO_NODE_SCREEN_AREA(10, 160, 120, 160, 120),
@@ -2714,7 +2605,6 @@ const GeoLayout area_2_geo_14000408[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout area_1_geo_14000414[] = {
 /* 08000000 00A00078 00A00078 */                           GEO_NODE_SCREEN_AREA(0, 160, 120, 160, 120),

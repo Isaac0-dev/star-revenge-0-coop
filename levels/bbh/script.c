@@ -23,7 +23,6 @@ const LevelScript bbh_script_0x2ac318_entry[] = {
 /* 0x002AC3B8 :: 07040000 */                                                     RETURN(),
 };
 
-
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bbh -> bbh_script_0x1200210 -> bbh_script_0x2ac300 -> bbh_script_0xad4ac0
 const LevelScript bbh_script_0xad4ac0_entry[] = {
 /* 0x00AD4AC0 :: 2208009B 0F000ADC */                                            LOAD_MODEL_FROM_GEO(0x9b, bbh_geo_0F000ADC),
@@ -31,7 +30,6 @@ const LevelScript bbh_script_0xad4ac0_entry[] = {
 /* 0x00AD4AD0 :: 220800CF 0F0004CC */                                            LOAD_MODEL_FROM_GEO(MODEL_PURPLE_SWITCH, bbh_geo_0F0004CC),
 /* 0x00AD4AD8 :: 07040000 */                                                     JUMP(bbh_script_0x2ac318_entry),
 };
-
 
 // level_script_0x108a10 -> level_script_0x269ea0 -> level_script_0x269f18 -> level_script_0x26a0ac -> level_script_0x2a6120 -> level_script_0x2abca0 -> level_script_0xad4a20 -> level_script_0x2abe58 -> script_exec_level_table -> bbh -> bbh_script_0x1200210
 const LevelScript level_bbh_entry[] = {

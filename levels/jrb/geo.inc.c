@@ -58,7 +58,6 @@ const GeoLayout jrb_geo_05008D14[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout jrb_geo_0C00010C[] = {
 /* 200007D0 */                                             GEO_CULLING_RADIUS(2000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -114,7 +113,6 @@ const GeoLayout jrb_geo_0C00010C[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout jrb_geo_0C000068[] = {
 /* 20000320 */                                             GEO_CULLING_RADIUS(800),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -142,7 +140,6 @@ const GeoLayout jrb_geo_0C000068[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout jrb_geo_0C000000[] = {
 /* 0B000000 */                                             GEO_NODE_START(),

@@ -6,7 +6,6 @@ const GeoLayout bowser_1_geo_120005C0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bowser_1_geo_120005D8[] = {
 /* 200007D0 */                                             GEO_CULLING_RADIUS(2000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -22,7 +21,6 @@ const GeoLayout bowser_1_geo_120005D8[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bowser_1_geo_12000618[] = {
 /* 200003E8 */                                             GEO_CULLING_RADIUS(1000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -30,7 +28,6 @@ const GeoLayout bowser_1_geo_12000618[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bowser_1_geo_12000734[] = {
 /* 200002BC */                                             GEO_CULLING_RADIUS(700),
@@ -44,7 +41,6 @@ const GeoLayout bowser_1_geo_12000734[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bowser_1_geo_12000764[] = {
 /* 20000226 */                                             GEO_CULLING_RADIUS(550),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -57,7 +53,6 @@ const GeoLayout bowser_1_geo_12000764[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bowser_1_geo_12000794[] = {
 /* 200002BC */                                             GEO_CULLING_RADIUS(700),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -65,7 +60,6 @@ const GeoLayout bowser_1_geo_12000794[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bowser_1_geo_120007AC[] = {
 /* 20000384 */                                             GEO_CULLING_RADIUS(900),
@@ -75,7 +69,6 @@ const GeoLayout bowser_1_geo_120007AC[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bowser_1_geo_12000630[] = {
 /* 20000FA0 */                                             GEO_CULLING_RADIUS(4000),

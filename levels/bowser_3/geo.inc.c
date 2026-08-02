@@ -6,7 +6,6 @@ const GeoLayout bowser_3_geo_0E000290[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bowser_3_geo_0E0002A8[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -14,7 +13,6 @@ const GeoLayout bowser_3_geo_0E0002A8[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bowser_3_geo_0E0002C0[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
@@ -24,7 +22,6 @@ const GeoLayout bowser_3_geo_0E0002C0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bowser_3_geo_0E0002D8[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -32,7 +29,6 @@ const GeoLayout bowser_3_geo_0E0002D8[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bowser_3_geo_0E0002F0[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
@@ -42,7 +38,6 @@ const GeoLayout bowser_3_geo_0E0002F0[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bowser_3_geo_0E000308[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -50,7 +45,6 @@ const GeoLayout bowser_3_geo_0E000308[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bowser_3_geo_0E000320[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
@@ -60,7 +54,6 @@ const GeoLayout bowser_3_geo_0E000320[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bowser_3_geo_0E000338[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -68,7 +61,6 @@ const GeoLayout bowser_3_geo_0E000338[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bowser_3_geo_0E000350[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
@@ -78,7 +70,6 @@ const GeoLayout bowser_3_geo_0E000350[] = {
 /* 01000000 */                                             GEO_END(),
 };
 
-
 const GeoLayout bowser_3_geo_0E000368[] = {
 /* 20001388 */                                             GEO_CULLING_RADIUS(5000),
 /* 04000000 */                                             GEO_OPEN_NODE(),
@@ -86,7 +77,6 @@ const GeoLayout bowser_3_geo_0E000368[] = {
 /* 05000000 */                                             GEO_CLOSE_NODE(),
 /* 01000000 */                                             GEO_END(),
 };
-
 
 const GeoLayout bowser_3_geo_0E000380[] = {
 /* 200002BC */                                             GEO_CULLING_RADIUS(700),
