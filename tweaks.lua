@@ -3,6 +3,7 @@ vec3f_set(gLevelValues.starPositions.KoopaThiStarPos, 7100, -1300, -6000)
 vec3f_set(gLevelValues.starPositions.KingBobombStarPos, 9474.0, 2131.0, -3102.0)
 vec3f_set(gLevelValues.starPositions.KingWhompStarPos, 4259.0, 548.0, 4634.0)
 vec3f_set(gLevelValues.starPositions.EyerockStarPos, 0.0, 300.0, 0.0)
+gLevelValues.coinsRequiredForCoinStar = 80
 gBehaviorValues.ToadStar1Requirement = 0
 gBehaviorValues.ToadStar2Requirement = 0
 gBehaviorValues.ToadStar3Requirement = 0
