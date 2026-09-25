@@ -2573,9 +2573,28 @@ const GeoLayout geo_03022708[] = {
 };
 
 const GeoLayout geo_005F9FE0[] = {
+/* 20000FA0 */                                             GEO_CULLING_RADIUS(4000),
+/* 04000000 */                                             GEO_OPEN_NODE(),
+/* 0E000003 8029DB48 */                                        GEO_SWITCH_CASE(3, geo_switch_anim_state),
+/* 04000000 */                                                 GEO_OPEN_NODE(),
+/* 15010000 005FADD0 */                                            GEO_DISPLAY_LIST(LAYER_OPAQUE, dl_005FADD0),
+/* 15010000 005FB0B0 */                                            GEO_DISPLAY_LIST(LAYER_OPAQUE, dl_005FB0B0),
+/* 15010000 005FB110 */                                            GEO_DISPLAY_LIST(LAYER_OPAQUE, dl_005FB110),
+/* 05000000 */                                                 GEO_CLOSE_NODE(),
+/* 05000000 */                                             GEO_CLOSE_NODE(),
+/* 01000000 */                                             GEO_END(),
 };
 
 const GeoLayout geo_00603670[] = {
+/* 20000FA0 */                                             GEO_CULLING_RADIUS(4000),
+/* 04000000 */                                             GEO_OPEN_NODE(),
+/* 0E000002 8029DB48 */                                        GEO_SWITCH_CASE(2, geo_switch_anim_state),
+/* 04000000 */                                                 GEO_OPEN_NODE(),
+/* 15010000 00603610 */                                            GEO_DISPLAY_LIST(LAYER_OPAQUE, dl_00603610),
+/* 15010000 00603000 */                                            GEO_DISPLAY_LIST(LAYER_OPAQUE, dl_00603000),
+/* 05000000 */                                                 GEO_CLOSE_NODE(),
+/* 05000000 */                                             GEO_CLOSE_NODE(),
+/* 01000000 */                                             GEO_END(),
 };
 
 const GeoLayout area_2_geo_14000408[] = {

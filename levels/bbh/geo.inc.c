@@ -1083,6 +1083,7 @@ const GeoLayout bbh_geo_16001048[] = {
 /* 16000000 009B0190 */                                    GEO_SHADOW(SHADOW_CIRCLE_9_VERTS, 155, 400),
 /* 02010000 0301CF78 */                                    GEO_BRANCH(1, bbh_geo_0301CF78),
 /* 00000000 00000000 */                                    GEO_BRANCH_AND_LINK(NULL),
+/* 01000000 */                                             GEO_END(),
 };
 
 const GeoLayout bbh_geo_160005F8[] = {
