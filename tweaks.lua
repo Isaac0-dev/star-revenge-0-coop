@@ -9,3 +9,5 @@ gBehaviorValues.ToadStar2Requirement = 0
 gBehaviorValues.ToadStar3Requirement = 0
 gBehaviorValues.MipsStar1Requirement = 0
 gBehaviorValues.MipsStar2Requirement = 0
+gBehaviorValues.trajectories.BowlingBallThiLargeTrajectory = get_trajectory("sThiHugeMetalBallTraj")
+gBehaviorValues.trajectories.BowlingBallThiSmallTrajectory = get_trajectory("sThiTinyMetalBallTraj")

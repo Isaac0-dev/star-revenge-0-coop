@@ -1,3 +1,123 @@
+const Vtx vertex_0302B6F0_n12[] = {
+    {{{     0,      8,    -89}, 0, {     0,      0}, { 0,  7, 130, 255}}},
+    {{{   190,   -201,      0}, 0, {     0,      0}, {85, 163,  0, 255}}},
+    {{{     0,   -129,      0}, 0, {     0,      0}, { 0, 130,  0, 255}}},
+    {{{   146,    -42,      0}, 0, {     0,      0}, {124, 231,  0, 255}}},
+    {{{     0,      8,     90}, 0, {     0,      0}, { 0,  7, 126, 255}}},
+    {{{   257,     84,      0}, 0, {     0,      0}, {104, 71,  0, 255}}},
+    {{{  -145,    -42,      0}, 0, {     0,      0}, {132, 231,  0, 255}}},
+    {{{  -189,   -201,      0}, 0, {     0,      0}, {170, 163,  0, 255}}},
+    {{{  -256,     84,      0}, 0, {     0,      0}, {151, 71,  0, 255}}},
+    {{{     0,    246,      0}, 0, {     0,      0}, { 0, 126,  0, 255}}},
+    {{{    96,     99,      0}, 0, {     0,      0}, {61, 111,  0, 255}}},
+    {{{   -95,     99,      0}, 0, {     0,      0}, {195, 111,  0, 255}}},
+};
+
+const Vtx vertex_0302B920_n10[] = {
+    {{{    67,     86,     63}, 0, {   990,      0}, {24, 21, 122, 255}}},
+    {{{     0,    -27,     96}, 0, {     0,    990}, {24, 21, 122, 255}}},
+    {{{    67,    -29,     83}, 0, {   990,    990}, {24, 21, 122, 255}}},
+    {{{     0,     89,     76}, 0, {     0,      0}, {24, 21, 122, 255}}},
+    {{{     0,     89,     76}, 0, {   990,      0}, {232, 21, 122, 255}}},
+    {{{   -66,    -29,     83}, 0, {     0,    990}, {232, 21, 122, 255}}},
+    {{{     0,    -27,     96}, 0, {   990,    990}, {232, 21, 122, 255}}},
+    {{{     0,     89,     76}, 0, {   990,      0}, {231, 21, 122, 255}}},
+    {{{   -66,     86,     63}, 0, {     0,      0}, {231, 21, 122, 255}}},
+    {{{   -66,    -29,     83}, 0, {     0,    990}, {231, 21, 122, 255}}},
+};
+
+const Vtx vertex_0302C4A0_n12[] = {
+    {{{     0,      8,    -89}, 0, {     0,      0}, { 0,  7, 130, 255}}},
+    {{{   190,   -201,      0}, 0, {     0,      0}, {85, 163,  0, 255}}},
+    {{{     0,   -129,      0}, 0, {     0,      0}, { 0, 130,  0, 255}}},
+    {{{   146,    -42,      0}, 0, {     0,      0}, {124, 231,  0, 255}}},
+    {{{     0,      8,     90}, 0, {     0,      0}, { 0,  7, 126, 255}}},
+    {{{   257,     84,      0}, 0, {     0,      0}, {104, 71,  0, 255}}},
+    {{{  -145,    -42,      0}, 0, {     0,      0}, {132, 231,  0, 255}}},
+    {{{  -189,   -201,      0}, 0, {     0,      0}, {170, 163,  0, 255}}},
+    {{{  -256,     84,      0}, 0, {     0,      0}, {151, 71,  0, 255}}},
+    {{{     0,    246,      0}, 0, {     0,      0}, { 0, 126,  0, 255}}},
+    {{{    96,     99,      0}, 0, {     0,      0}, {61, 111,  0, 255}}},
+    {{{   -95,     99,      0}, 0, {     0,      0}, {195, 111,  0, 255}}},
+};
+
+const Vtx vertex_03022750_n7[] = {
+    {{{    33,     35,    118}, 0, {   728,    758}, {48, 38, 110, 255}}},
+    {{{    96,     22,     45}, 0, {  1240,    876}, {72, 164, 49, 255}}},
+    {{{    71,    101,    113}, 0, {  1028,    148}, {85, 22, 91, 255}}},
+    {{{     0,    110,    143}, 0, {   460,     68}, { 0, 52, 115, 255}}},
+    {{{   -31,     35,    118}, 0, {   206,    762}, {208, 38, 111, 255}}},
+    {{{   -70,    101,    113}, 0, {  -106,    158}, {171, 22, 91, 255}}},
+    {{{   -95,     22,     46}, 0, {  -302,    890}, {168, 185, 56, 255}}},
+};
+
+const Vtx vertex_030227C0_n16[] = {
+    {{{   -66,      2,    139}, 0, {     0,      0}, {176, 187, 69, 255}}},
+    {{{     0,      0,    163}, 0, {     0,      0}, { 0, 186, 105, 255}}},
+    {{{   -31,     35,    118}, 0, {     0,      0}, {208, 38, 111, 255}}},
+    {{{   -32,     17,    109}, 0, {     0,      0}, { 0, 131, 240, 255}}},
+    {{{    33,     17,    109}, 0, {     0,      0}, {251, 132, 234, 255}}},
+    {{{   -95,     22,     46}, 0, {     0,      0}, {168, 185, 56, 255}}},
+    {{{  -101,     10,     -7}, 0, {     0,      0}, {216, 137, 17, 255}}},
+    {{{   -70,    101,    113}, 0, {     0,      0}, {171, 22, 91, 255}}},
+    {{{  -135,     70,     23}, 0, {     0,      0}, {132, 21, 16, 255}}},
+    {{{  -125,     38,    -45}, 0, {     0,      0}, {141, 236, 209, 255}}},
+    {{{   -86,      1,    -60}, 0, {     0,      0}, {206, 140, 246, 255}}},
+    {{{   -41,    144,     64}, 0, {     0,      0}, {220, 121,  0, 255}}},
+    {{{   -76,     84,    -60}, 0, {     0,      0}, {213, 110, 211, 255}}},
+    {{{   136,     70,     22}, 0, {     0,      0}, {123, 22, 16, 255}}},
+    {{{    71,    101,    113}, 0, {     0,      0}, {85, 22, 91, 255}}},
+    {{{    96,     22,     45}, 0, {     0,      0}, {72, 164, 49, 255}}},
+};
+
+const Vtx vertex_030228C0_n15[] = {
+    {{{    42,    144,     64}, 0, {     0,      0}, {43, 118, 13, 255}}},
+    {{{   136,     70,     22}, 0, {     0,      0}, {123, 22, 16, 255}}},
+    {{{    76,     84,    -60}, 0, {     0,      0}, {42, 108, 207, 255}}},
+    {{{   103,     10,     -6}, 0, {     0,      0}, {66, 150, 18, 255}}},
+    {{{   126,     38,    -46}, 0, {     0,      0}, {115, 236, 208, 255}}},
+    {{{    71,    101,    113}, 0, {     0,      0}, {85, 22, 91, 255}}},
+    {{{    96,     22,     45}, 0, {     0,      0}, {72, 164, 49, 255}}},
+    {{{    67,      2,    139}, 0, {     0,      0}, {80, 186, 68, 255}}},
+    {{{    33,     17,    109}, 0, {     0,      0}, {251, 132, 234, 255}}},
+    {{{    33,     35,    118}, 0, {     0,      0}, {48, 38, 110, 255}}},
+    {{{    86,      1,    -60}, 0, {     0,      0}, {32, 134, 254, 255}}},
+    {{{     0,      0,    163}, 0, {     0,      0}, { 0, 186, 105, 255}}},
+    {{{   -31,     35,    118}, 0, {     0,      0}, {208, 38, 111, 255}}},
+    {{{    53,      0,   -118}, 0, {     0,      0}, {44, 181, 165, 255}}},
+    {{{    49,     62,   -139}, 0, {     0,      0}, {50, 73, 166, 255}}},
+};
+
+const Vtx vertex_030229B0_n15[] = {
+    {{{   -76,     84,    -60}, 0, {     0,      0}, {213, 110, 211, 255}}},
+    {{{   -41,    144,     64}, 0, {     0,      0}, {220, 121,  0, 255}}},
+    {{{    76,     84,    -60}, 0, {     0,      0}, {42, 108, 207, 255}}},
+    {{{     0,    110,    143}, 0, {     0,      0}, { 0, 52, 115, 255}}},
+    {{{    42,    144,     64}, 0, {     0,      0}, {43, 118, 13, 255}}},
+    {{{   -70,    101,    113}, 0, {     0,      0}, {171, 22, 91, 255}}},
+    {{{    71,    101,    113}, 0, {     0,      0}, {85, 22, 91, 255}}},
+    {{{    49,     62,   -139}, 0, {     0,      0}, {50, 73, 166, 255}}},
+    {{{   126,     38,    -46}, 0, {     0,      0}, {115, 236, 208, 255}}},
+    {{{   -52,      0,   -118}, 0, {     0,      0}, {210, 157, 193, 255}}},
+    {{{   -49,     62,   -138}, 0, {     0,      0}, {206, 26, 143, 255}}},
+    {{{    53,      0,   -118}, 0, {     0,      0}, {44, 181, 165, 255}}},
+    {{{  -125,     38,    -45}, 0, {     0,      0}, {141, 236, 209, 255}}},
+    {{{    86,      1,    -60}, 0, {     0,      0}, {32, 134, 254, 255}}},
+    {{{   -86,      1,    -60}, 0, {     0,      0}, {206, 140, 246, 255}}},
+};
+
+const Vtx vertex_03022AA0_n9[] = {
+    {{{    86,      1,    -60}, 0, {     0,      0}, {32, 134, 254, 255}}},
+    {{{   -86,      1,    -60}, 0, {     0,      0}, {206, 140, 246, 255}}},
+    {{{   -52,      0,   -118}, 0, {     0,      0}, {210, 157, 193, 255}}},
+    {{{    33,     17,    109}, 0, {     0,      0}, {251, 132, 234, 255}}},
+    {{{   -32,     17,    109}, 0, {     0,      0}, { 0, 131, 240, 255}}},
+    {{{  -101,     10,     -7}, 0, {     0,      0}, {216, 137, 17, 255}}},
+    {{{    96,     22,     45}, 0, {     0,      0}, {72, 164, 49, 255}}},
+    {{{   103,     10,     -6}, 0, {     0,      0}, {66, 150, 18, 255}}},
+    {{{    53,      0,   -118}, 0, {     0,      0}, {44, 181, 165, 255}}},
+};
+
 const Vtx ccm_vertex_05011710_n4[] = {
     {{{    26,     26,      0}, 0, {   990,      0}, {255, 255, 255, 255}}},
     {{{   -25,     26,      0}, 0, {     0,      0}, {255, 255, 255, 255}}},
@@ -9994,6 +10114,46 @@ const Vtx ccm_vertex_07028468_n13[] = {
     {{{  -511,   -409,    205}, 0, {  -200,   1332}, {204, 183,  0, 255}}},
 };
 
+Light_t light_0302A6E0 = {
+    { 255, 255, 255 }, 0, { 255, 255, 255 }, 0, { 40, 40, 40 }, 0
+};
+
+Light_t light_0302A6D8 = {
+    { 63, 63, 63 }, 0, { 63, 63, 63 }, 0, { -1, -1, -1 }, 0
+};
+
+Light_t light_0302B910 = {
+    { 255, 255, 255 }, 0, { 255, 255, 255 }, 0, { 40, 40, 40 }, 0
+};
+
+Light_t light_0302B908 = {
+    { 63, 63, 63 }, 0, { 63, 63, 63 }, 0, { -1, -1, -1 }, 0
+};
+
+Light_t light_0302C490 = {
+    { 30, 50, 230 }, 0, { 30, 50, 230 }, 0, { 40, 40, 40 }, 0
+};
+
+Light_t light_0302C488 = {
+    { 3, 5, 23 }, 0, { 3, 5, 23 }, 0, { 30, 50, -26 }, 0
+};
+
+Light_t light_0301CF40 = {
+    { 255, 0, 0 }, 0, { 255, 0, 0 }, 0, { 40, 40, 40 }, 0
+};
+
+Light_t light_0301CF38 = {
+    { 127, 0, 0 }, 0, { 127, 0, 0 }, 0, { -1, 0, 0 }, 0
+};
+
+Light_t light_0301CF10 = {
+    { 115, 6, 0 }, 0, { 115, 6, 0 }, 0, { 40, 40, 40 }, 0
+};
+
+Light_t light_0301CF08 = {
+    { 57, 3, 0 }, 0, { 57, 3, 0 }, 0, { 115, 6, 0 }, 0
+};
+
 Light_t ccm_light_05014130 = {
     { 238, 208, 141 }, 0, { 238, 208, 141 }, 0, { 40, 40, 40 }, 0
 };
@@ -10424,6 +10584,184 @@ Light_t ccm_light_07019A08 = {
 
 Light_t ccm_light_07019A00 = {
     { 4, 224, 0 }, 0, { 7, 1, 105 }, 0, { -65, 0, 0 }, 0
+};
+
+const Gfx dl_0302B7B0[] = {
+/* BE000000 00000000 */     gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0xB),
+/* 10008603 E0A60203 */     gsSPLight(/* light */ &light_0302A6E0.col, /* idx */ 1),
+/* 10008803 D8A60203 */     gsSPLight(/* light */ &light_0302A6D8.col, /* idx */ 2),
+/* C000B004 F0B60203 */     gsSPVertex(/* vertices */ vertex_0302B6F0_n12, /* count */ 0xC, /* v0 */ 0x0),
+/* 000000BF 0A1E0000 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
+/* 000000BF 281E0A00 */     gsSP2Triangles(/* v00 */ 0x2, /* v01 */ 0x1, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x1, /* v11 */ 0x3, /* v12 */ 0x4, /* flag1 */ 0x0),
+/* 000000BF 321E2800 */     gsSP2Triangles(/* v00 */ 0x5, /* v01 */ 0x3, /* v02 */ 0x0, /* flag0 */ 0x0, /* v10 */ 0x4, /* v11 */ 0x3, /* v12 */ 0x5, /* flag1 */ 0x0),
+/* 000000BF 28144600 */     gsSP2Triangles(/* v00 */ 0x6, /* v01 */ 0x7, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x2, /* v12 */ 0x4, /* flag1 */ 0x0),
+/* 000000BF 64285A00 */     gsSP2Triangles(/* v00 */ 0x8, /* v01 */ 0x6, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x9, /* v11 */ 0x4, /* v12 */ 0xA, /* flag1 */ 0x0),
+/* 000000BF 64322800 */     gsSP2Triangles(/* v00 */ 0x9, /* v01 */ 0xB, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x4, /* v11 */ 0x5, /* v12 */ 0xA, /* flag1 */ 0x0),
+/* 000000BF 46140000 */     gsSP2Triangles(/* v00 */ 0xB, /* v01 */ 0x8, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x2, /* v12 */ 0x7, /* flag1 */ 0x0),
+/* 000000BF 503C0000 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x7, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x6, /* v12 */ 0x8, /* flag1 */ 0x0),
+/* 000000BF 5A6E0000 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x8, /* v02 */ 0xB, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0xB, /* v12 */ 0x9, /* flag1 */ 0x0),
+/* 000000BF 5A006400 */     gsSP2Triangles(/* v00 */ 0xA, /* v01 */ 0x5, /* v02 */ 0x0, /* flag0 */ 0x0, /* v10 */ 0xA, /* v11 */ 0x0, /* v12 */ 0x9, /* flag1 */ 0x0),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+const Gfx dl_0302B870[] = {
+/* 000000E7 00000000 */     gsDPPipeSync(),
+/* 000000B7 00000400 */     gsSPSetGeometryMode(/* flags */ G_TEXTURE_GEN),
+/* 000000FB FFFFFFFF */     gsDPSetEnvColor(/* r */ 0xFF, /* g */ 0xFF, /* b */ 0xFF, /* a */ 0xFF),
+/* FFFFFFFC 7DFAFCFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_DECALFADE, /* cycle2 */ G_CC_DECALFADE),
+/* 000010FD F0A60203 */     gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ texture_0302A6F0_00ADCAFC_seg3),
+/* 000010F5 50800107 */     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x0, /* tmem */ 0x0, /* tile */ G_TX_LOADTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x6, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
+/* 000000E6 00000000 */     gsDPLoadSync(),
+/* 000000F3 00F17F07 */     gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7FF, /* dxt */ 0x100),
+/* 000000E7 00000000 */     gsDPPipeSync(),
+/* 001010F5 50800100 */     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x6, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x5, /* shifts */ 0x0),
+/* 000000F2 FCC00700 */     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0xFC),
+/* 010000BB C007C007 */     gsSPTexture(/* s */ 0x7C0, /* t */ 0x7C0, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_ON),
+/* 00000006 B0B70203 */     gsSPDisplayList(/* dl */ dl_0302B7B0),
+/* 000000E7 00000000 */     gsDPPipeSync(),
+/* 000000BB C007C007 */     gsSPTexture(/* s */ 0x7C0, /* t */ 0x7C0, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+/* 000000B6 00000400 */     gsSPClearGeometryMode(/* flags */ G_TEXTURE_GEN),
+/* 000000FB FFFFFFFF */     gsDPSetEnvColor(/* r */ 0xFF, /* g */ 0xFF, /* b */ 0xFF, /* a */ 0xFF),
+/* FFFFFFFC 3C79FEFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+const Gfx dl_0302B9C0[] = {
+/* BE000000 00000000 */     gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x9),
+/* 000010FD F0AE0203 */     gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ texture_0302AEF0_00ADD2FC_seg3),
+/* 000000E6 00000000 */     gsDPLoadSync(),
+/* 000000F3 00F13F07 */     gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+/* 10008603 10B90203 */     gsSPLight(/* light */ &light_0302B910.col, /* idx */ 1),
+/* 10008803 08B90203 */     gsSPLight(/* light */ &light_0302B908.col, /* idx */ 2),
+/* A0009004 20B90203 */     gsSPVertex(/* vertices */ vertex_0302B920_n10, /* count */ 0xA, /* v0 */ 0x0),
+/* 000000BF 0A1E0000 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
+/* 000000BF 5A504600 */     gsSP2Triangles(/* v00 */ 0x4, /* v01 */ 0x5, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x8, /* v12 */ 0x9, /* flag1 */ 0x0),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+const Gfx dl_0302BA18[] = {
+/* 000000E7 00000000 */     gsDPPipeSync(),
+/* 241812FC FFFF33FF */     gsDPSetCombineMode(/* cycle1 */ G_CC_MODULATEIA, /* cycle2 */ G_CC_MODULATEIA),
+/* 000000B6 00020000 */     gsSPClearGeometryMode(/* flags */ G_SHADING_SMOOTH),
+/* 000010F5 00000007 */     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x0, /* tmem */ 0x0, /* tile */ G_TX_LOADTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x0, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x0, /* shifts */ 0x0),
+/* 010000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_ON),
+/* 000000E8 00000000 */     gsDPTileSync(),
+/* 001010F5 50420900 */     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
+/* 000000F2 7CC00700 */     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
+/* 00000006 C0B90203 */     gsSPDisplayList(/* dl */ dl_0302B9C0),
+/* 000000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+/* 000000E7 00000000 */     gsDPPipeSync(),
+/* FFFFFFFC 3C79FEFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+/* 000000B7 00020000 */     gsSPSetGeometryMode(/* flags */ G_SHADING_SMOOTH),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+const Gfx dl_0302C560[] = {
+/* BE000000 00000000 */     gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0xB),
+/* 10008603 90C40203 */     gsSPLight(/* light */ &light_0302C490.col, /* idx */ 1),
+/* 10008803 88C40203 */     gsSPLight(/* light */ &light_0302C488.col, /* idx */ 2),
+/* C000B004 A0C40203 */     gsSPVertex(/* vertices */ vertex_0302C4A0_n12, /* count */ 0xC, /* v0 */ 0x0),
+/* 000000BF 0A1E0000 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x3, /* v12 */ 0x1, /* flag1 */ 0x0),
+/* 000000BF 281E0A00 */     gsSP2Triangles(/* v00 */ 0x2, /* v01 */ 0x1, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x1, /* v11 */ 0x3, /* v12 */ 0x4, /* flag1 */ 0x0),
+/* 000000BF 321E2800 */     gsSP2Triangles(/* v00 */ 0x5, /* v01 */ 0x3, /* v02 */ 0x0, /* flag0 */ 0x0, /* v10 */ 0x4, /* v11 */ 0x3, /* v12 */ 0x5, /* flag1 */ 0x0),
+/* 000000BF 28144600 */     gsSP2Triangles(/* v00 */ 0x6, /* v01 */ 0x7, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x2, /* v12 */ 0x4, /* flag1 */ 0x0),
+/* 000000BF 64285A00 */     gsSP2Triangles(/* v00 */ 0x8, /* v01 */ 0x6, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x9, /* v11 */ 0x4, /* v12 */ 0xA, /* flag1 */ 0x0),
+/* 000000BF 64322800 */     gsSP2Triangles(/* v00 */ 0x9, /* v01 */ 0xB, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x4, /* v11 */ 0x5, /* v12 */ 0xA, /* flag1 */ 0x0),
+/* 000000BF 46140000 */     gsSP2Triangles(/* v00 */ 0xB, /* v01 */ 0x8, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x2, /* v12 */ 0x7, /* flag1 */ 0x0),
+/* 000000BF 503C0000 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x7, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x6, /* v12 */ 0x8, /* flag1 */ 0x0),
+/* 000000BF 5A6E0000 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x8, /* v02 */ 0xB, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0xB, /* v12 */ 0x9, /* flag1 */ 0x0),
+/* 000000BF 5A006400 */     gsSP2Triangles(/* v00 */ 0xA, /* v01 */ 0x5, /* v02 */ 0x0, /* flag0 */ 0x0, /* v10 */ 0xA, /* v11 */ 0x0, /* v12 */ 0x9, /* flag1 */ 0x0),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+const Gfx dl_0302C620[] = {
+/* 000000E7 00000000 */     gsDPPipeSync(),
+/* FFFFFFFC 3D7BFEFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_SHADEFADEA, /* cycle2 */ G_CC_SHADEFADEA),
+/* 000000FB 78FFFFFF */     gsDPSetEnvColor(/* r */ 0xFF, /* g */ 0xFF, /* b */ 0xFF, /* a */ 0x78),
+/* 00000006 60C50203 */     gsSPDisplayList(/* dl */ dl_0302C560),
+/* 000000FB FFFFFFFF */     gsDPSetEnvColor(/* r */ 0xFF, /* g */ 0xFF, /* b */ 0xFF, /* a */ 0xFF),
+/* FFFFFFFC 3C79FEFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+const Gfx dl_03022B30[] = {
+/* BE000000 00000000 */     gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x6),
+/* 70006004 50270203 */     gsSPVertex(/* vertices */ vertex_03022750_n7, /* count */ 0x7, /* v0 */ 0x0),
+/* 000000BF 00281E00 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x0, /* flag1 */ 0x0),
+/* 000000BF 001E1400 */     gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x5, /* v02 */ 0x4, /* flag0 */ 0x0, /* v10 */ 0x2, /* v11 */ 0x3, /* v12 */ 0x0, /* flag1 */ 0x0),
+/* 000000BF 283C3200 */     gsSP1Triangle(/* v0 */ 0x5, /* v1 */ 0x6, /* v2 */ 0x4, /* flag */ 0x0),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+const Gfx dl_03022B68[] = {
+/* BE000000 00000000 */     gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0xF),
+/* 0001F004 C0270203 */     gsSPVertex(/* vertices */ vertex_030227C0_n16, /* count */ 0x10, /* v0 */ 0x0),
+/* 000000BF 0A281E00 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x1, /* flag1 */ 0x0),
+/* 000000BF 3C321E00 */     gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x1, /* v02 */ 0x0, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x5, /* v12 */ 0x6, /* flag1 */ 0x0),
+/* 000000BF 50463200 */     gsSP2Triangles(/* v00 */ 0x3, /* v01 */ 0x0, /* v02 */ 0x5, /* flag0 */ 0x0, /* v10 */ 0x5, /* v11 */ 0x7, /* v12 */ 0x8, /* flag1 */ 0x0),
+/* 000000BF 32140000 */     gsSP2Triangles(/* v00 */ 0x5, /* v01 */ 0x8, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x2, /* v12 */ 0x5, /* flag1 */ 0x0),
+/* 000000BF 3C5A5000 */     gsSP2Triangles(/* v00 */ 0x6, /* v01 */ 0x9, /* v02 */ 0xA, /* flag0 */ 0x0, /* v10 */ 0x8, /* v11 */ 0x9, /* v12 */ 0x6, /* flag1 */ 0x0),
+/* 000000BF 5A785000 */     gsSP2Triangles(/* v00 */ 0xB, /* v01 */ 0x8, /* v02 */ 0x7, /* flag0 */ 0x0, /* v10 */ 0x8, /* v11 */ 0xC, /* v12 */ 0x9, /* flag1 */ 0x0),
+/* 000000BF 968C8200 */     gsSP2Triangles(/* v00 */ 0xC, /* v01 */ 0x8, /* v02 */ 0xB, /* flag0 */ 0x0, /* v10 */ 0xD, /* v11 */ 0xE, /* v12 */ 0xF, /* flag1 */ 0x0),
+/* F000E004 C0280203 */     gsSPVertex(/* vertices */ vertex_030228C0_n15, /* count */ 0xF, /* v0 */ 0x0),
+/* 000000BF 0A281E00 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x1, /* flag1 */ 0x0),
+/* 000000BF 000A3200 */     gsSP2Triangles(/* v00 */ 0x4, /* v01 */ 0x2, /* v02 */ 0x1, /* flag0 */ 0x0, /* v10 */ 0x5, /* v11 */ 0x1, /* v12 */ 0x0, /* flag1 */ 0x0),
+/* 000000BF 50463C00 */     gsSP2Triangles(/* v00 */ 0x1, /* v01 */ 0x6, /* v02 */ 0x3, /* flag0 */ 0x0, /* v10 */ 0x6, /* v11 */ 0x7, /* v12 */ 0x8, /* flag1 */ 0x0),
+/* 000000BF 1E286400 */     gsSP2Triangles(/* v00 */ 0x9, /* v01 */ 0x7, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0xA, /* v11 */ 0x4, /* v12 */ 0x3, /* flag1 */ 0x0),
+/* 000000BF 506E4600 */     gsSP2Triangles(/* v00 */ 0x9, /* v01 */ 0xB, /* v02 */ 0x7, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0xB, /* v12 */ 0x8, /* flag1 */ 0x0),
+/* 000000BF 288C8200 */     gsSP2Triangles(/* v00 */ 0xC, /* v01 */ 0xB, /* v02 */ 0x9, /* flag0 */ 0x0, /* v10 */ 0xD, /* v11 */ 0xE, /* v12 */ 0x4, /* flag1 */ 0x0),
+/* F000E004 B0290203 */     gsSPVertex(/* vertices */ vertex_030229B0_n15, /* count */ 0xF, /* v0 */ 0x0),
+/* 000000BF 281E0A00 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x1, /* v11 */ 0x3, /* v12 */ 0x4, /* flag1 */ 0x0),
+/* 000000BF 14280A00 */     gsSP2Triangles(/* v00 */ 0x5, /* v01 */ 0x3, /* v02 */ 0x1, /* flag0 */ 0x0, /* v10 */ 0x1, /* v11 */ 0x4, /* v12 */ 0x2, /* flag1 */ 0x0),
+/* 000000BF 46140000 */     gsSP2Triangles(/* v00 */ 0x4, /* v01 */ 0x3, /* v02 */ 0x6, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x2, /* v12 */ 0x7, /* flag1 */ 0x0),
+/* 000000BF 6E645A00 */     gsSP2Triangles(/* v00 */ 0x8, /* v01 */ 0x7, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x9, /* v11 */ 0xA, /* v12 */ 0xB, /* flag1 */ 0x0),
+/* 000000BF 00644600 */     gsSP2Triangles(/* v00 */ 0xC, /* v01 */ 0xA, /* v02 */ 0x9, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0xA, /* v12 */ 0x0, /* flag1 */ 0x0),
+/* 000000BF 78640000 */     gsSP2Triangles(/* v00 */ 0xA, /* v01 */ 0x7, /* v02 */ 0xB, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0xA, /* v12 */ 0xC, /* flag1 */ 0x0),
+/* 000000BF 5A788C00 */     gsSP2Triangles(/* v00 */ 0xB, /* v01 */ 0x8, /* v02 */ 0xD, /* flag0 */ 0x0, /* v10 */ 0xE, /* v11 */ 0xC, /* v12 */ 0x9, /* flag1 */ 0x0),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+const Gfx dl_03022CC8[] = {
+/* BE000000 00000000 */     gsSPCullDisplayList(/* v0 */ 0x0, /* vn */ 0x8),
+/* 90008004 A02A0203 */     gsSPVertex(/* vertices */ vertex_03022AA0_n9, /* count */ 0x9, /* v0 */ 0x0),
+/* 000000BF 32281E00 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x1, /* v02 */ 0x2, /* flag0 */ 0x0, /* v10 */ 0x3, /* v11 */ 0x4, /* v12 */ 0x5, /* flag1 */ 0x0),
+/* 000000BF 323C4600 */     gsSP2Triangles(/* v00 */ 0x6, /* v01 */ 0x3, /* v02 */ 0x5, /* flag0 */ 0x0, /* v10 */ 0x7, /* v11 */ 0x6, /* v12 */ 0x5, /* flag1 */ 0x0),
+/* 000000BF 0A320000 */     gsSP2Triangles(/* v00 */ 0x0, /* v01 */ 0x7, /* v02 */ 0x5, /* flag0 */ 0x0, /* v10 */ 0x0, /* v11 */ 0x5, /* v12 */ 0x1, /* flag1 */ 0x0),
+/* 000000BF 00501400 */     gsSP1Triangle(/* v0 */ 0x2, /* v1 */ 0x8, /* v2 */ 0x0, /* flag */ 0x0),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+const Gfx dl_03022D10[] = {
+/* 00000006 682B0203 */     gsSPDisplayList(/* dl */ dl_03022B68),
+/* 10008603 10CF0103 */     gsSPLight(/* light */ &light_0301CF10.col, /* idx */ 1),
+/* 10008803 08CF0103 */     gsSPLight(/* light */ &light_0301CF08.col, /* idx */ 2),
+/* 00000006 C82C0203 */     gsSPDisplayList(/* dl */ dl_03022CC8),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+const Gfx dl_03022F48[] = {
+/* 000000E7 00000000 */     gsDPPipeSync(),
+/* 287E14FC 3D7BFE44 */     gsDPSetCombineMode(/* cycle1 */ G_CC_BLENDRGBFADEA, /* cycle2 */ G_CC_BLENDRGBFADEA),
+/* 000010F5 00000007 */     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x0, /* tmem */ 0x0, /* tile */ G_TX_LOADTILE, /* palette */ 0x0, /* cmt */ G_TX_WRAP, /* maskt */ 0x0, /* shiftt */ 0x0, /* cms */ G_TX_WRAP, /* masks */ 0x0, /* shifts */ 0x0),
+/* 010000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_ON),
+/* 000000E8 00000000 */     gsDPTileSync(),
+/* 001010F5 50420900 */     gsDPSetTile(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* line */ 0x8, /* tmem */ 0x0, /* tile */ G_TX_RENDERTILE, /* palette */ 0x0, /* cmt */ G_TX_CLAMP, /* maskt */ 0x5, /* shiftt */ 0x0, /* cms */ G_TX_CLAMP, /* masks */ 0x5, /* shifts */ 0x0),
+/* 000000F2 7CC00700 */     gsDPSetTileSize(/* tile */ G_TX_RENDERTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x7C, /* lrt */ 0x7C),
+/* 000010FD 90180004 */     gsDPSetTextureImage(/* fmt */ G_IM_FMT_RGBA, /* siz */ G_IM_SIZ_16b, /* width */ 0x1, /* texture_record */ texture_04001890_03F01890_seg4),
+/* 000000E6 00000000 */     gsDPLoadSync(),
+/* 000000F3 00F13F07 */     gsDPLoadBlock(/* tile */ G_TX_LOADTILE, /* uls */ 0x0, /* ult */ 0x0, /* lrs */ 0x3FF, /* dxt */ 0x100),
+/* 10008603 40CF0103 */     gsSPLight(/* light */ &light_0301CF40.col, /* idx */ 1),
+/* 10008803 38CF0103 */     gsSPLight(/* light */ &light_0301CF38.col, /* idx */ 2),
+/* 00000006 302B0203 */     gsSPDisplayList(/* dl */ dl_03022B30),
+/* 000000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ G_TX_RENDERTILE, /* on */ G_OFF),
+/* 000000E7 00000000 */     gsDPPipeSync(),
+/* FFFFFFFC 3D7BFEFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_SHADEFADEA, /* cycle2 */ G_CC_SHADEFADEA),
+/* 00000006 102D0203 */     gsSPDisplayList(/* dl */ dl_03022D10),
+/* 000000E7 00000000 */     gsDPPipeSync(),
+/* FFFFFFFC 3C79FEFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
+/* 020000B9 00000000 */     gsDPSetAlphaCompare(/* value */ G_AC_NONE),
+/* 000000FB FFFFFFFF */     gsDPSetEnvColor(/* r */ 0xFF, /* g */ 0xFF, /* b */ 0xFF, /* a */ 0xFF),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
 };
 
 const Gfx ccm_dl_05012750[] = {
@@ -17232,7 +17570,7 @@ const Gfx ccm_dl_07017368[] = {
 /* 000000E7 00000000 */     gsDPPipeSync(),
 /* FF7F12FC 38F8FFFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_MODULATEI, /* cycle2 */ G_CC_PASS2),
 /* 000000BB FFFFFFFF */     gsSPTexture(/* s */ 0xFFFF, /* t */ 0xFFFF, /* level */ 0x0, /* tile */ 0x0, /* on */ G_OFF),
-/* 000000B8 00000000 */     gsSPEndDisplayList(/* end */ 0x1),
+/* 000000B8 00000000 */     gsSPEndDisplayList(),
 };
 
 const Gfx ccm_dl_07018990[] = {
@@ -19697,6 +20035,18 @@ const Gfx ccm_dl_07028DC0[] = {
 /* FFFFFFFC 3C79FEFF */     gsDPSetCombineMode(/* cycle1 */ G_CC_SHADE, /* cycle2 */ G_CC_SHADE),
 /* 000000B7 00000200 */     gsSPSetGeometryMode(/* flags */ G_LIGHTING),
 /* 000000B8 00000000 */     gsSPEndDisplayList(),
+};
+
+ALIGNED8 Texture texture_04001890_03F01890_seg4 = {
+#include "ccm/texture_04001890_03F01890_seg4.inc.c"
+};
+
+ALIGNED8 Texture texture_0302A6F0_00ADCAFC_seg3 = {
+#include "ccm/texture_0302A6F0_00ADCAFC_seg3.inc.c"
+};
+
+ALIGNED8 Texture texture_0302AEF0_00ADD2FC_seg3 = {
+#include "ccm/texture_0302AEF0_00ADD2FC_seg3.inc.c"
 };
 
 ALIGNED8 Texture ccm_texture_05011750_008D28DC_seg5 = {
