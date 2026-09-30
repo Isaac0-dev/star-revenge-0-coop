@@ -3,64 +3,6 @@ inside the tunnels, try\
 to avoid touching the\
 walls or else you might\
 die. Safe swimming!"))
-smlua_text_utils_dialog_replace(DIALOG_001, 1, 4, 95, 200, ("Watch out! If you wander\
-around here, you're liable\
-to be plastered by a\
-water bomb!\
-Those enemy Bob-ombs love\
-to fight, and they're\
-always finding ways to\
-attack.\
-This meadow has become\
-a battlefield ever since\
-the Big Bob-omb got his\
-paws on the Power Star.\
-Can you recover the Star\
-for us? Cross the bridge\
-and go left up the path\
-to find the Big Bob-omb.\
-Please come back to see\
-me after you've retrieved\
-the Power Star!"))
-smlua_text_utils_dialog_replace(DIALOG_002, 1, 4, 95, 200, ("Hey, you! It's dangerous\
-ahead, so listen up! Take\
-my advice.\
-\
-Cross the two\
-bridges ahead, then\
-watch for falling\
-water bombs.\
-The Big Bob-omb at the\
-top of the mountain is\
-very powerful--don't let\
-him grab you!\
-We're Bob-omb Buddies,\
-and we're on your side.\
-You can talk to us\
-whenever you'd like to!"))
-smlua_text_utils_dialog_replace(DIALOG_003, 1, 5, 95, 200, ("Thank you, Mario! The Big\
-Bob-omb is nothing but a\
-big dud now! But the\
-battle for the castle has\
-just begun.\
-Other enemies are holding\
-the other Power Stars. If\
-you recover more Stars,\
-you can open new doors\
-that lead to new worlds!\
-My Bob-omb Buddies are\
-waiting for you. Be sure\
-to talk to them--they'll\
-set up cannons for you."))
-smlua_text_utils_dialog_replace(DIALOG_004, 1, 3, 95, 200, ("We're peace-loving\
-Bob-ombs, so we don't use\
-cannons.\
-But if you'd like\
-to blast off, we don't\
-mind. Help yourself.\
-We'll prepare all of the\
-cannons in this course for\
-you to use. Bon Voyage!"))
 smlua_text_utils_dialog_replace(DIALOG_005, 1, 3, 30, 200, ("Hey, Mario! Is it true\
 that you beat the Big\
 Bob-omb? Cool!\
@@ -79,44 +21,6 @@ Whaddya say? When I say\
 Ready....\
 \
 //Go!////Don't Go"))
-smlua_text_utils_dialog_replace(DIALOG_006, 1, 3, 30, 200, ("Hey!!! Don't try to scam\
-ME. You've gotta run\
-the whole course.\
-Later. Look me up when\
-you want to race for\
-real."))
-smlua_text_utils_dialog_replace(DIALOG_007, 1, 5, 30, 200, ("Hufff...fff...pufff...\
-Whoa! You...really...are...\
-fast! A human blur!\
-Here you go--you've won\
-it, fair and square!"))
-smlua_text_utils_dialog_replace(DIALOG_008, 1, 4, 30, 200, ("BEWARE OF CHAIN CHOMP\
-Extreme Danger!\
-Get close and press [C]^\
-for a better look.\
-Scary, huh?\
-See the Red Coin on top\
-of the stake?\
-\
-When you collect eight of\
-them, a Power Star will\
-appear in the meadow\
-across the bridge."))
-smlua_text_utils_dialog_replace(DIALOG_009, 1, 5, 30, 200, ("Long time, no see! Wow,\
-have you gotten fast!\
-Have you been training\
-on the sly, or is it the\
-power of the Stars?\
-I've been feeling down\
-about losing the last\
-race. This is my home\
-course--how about a\
-rematch?\
-The goal is in\
-Windswept Valley.\
-Ready?\
-\
-//Go//// Don't Go"))
 smlua_text_utils_dialog_replace(DIALOG_010, 1, 3, 95, 150, ("Would you like to Save?\
 \
 //Yes////No"))
@@ -132,17 +36,6 @@ smlua_text_utils_dialog_replace(DIALOG_013, 1, 3, 95, 150, ("Would you like to S
 smlua_text_utils_dialog_replace(DIALOG_014, 1, 3, 95, 150, ("Would you like to Save?\
 \
 //Yes////No"))
-smlua_text_utils_dialog_replace(DIALOG_015, 1, 4, 30, 200, ("You can punch enemies to\
-knock them down. Press [A]\
-to jump, [B] to punch.\
-Press [A] then [B] to Kick.\
-To pick something up,\
-press [B], too. To throw\
-something you're holding,\
-press [B] again."))
-smlua_text_utils_dialog_replace(DIALOG_016, 1, 3, 30, 200, ("Hop on the shiny shell and\
-ride wherever you want to\
-go! Shred those enemies!"))
 smlua_text_utils_dialog_replace(DIALOG_017, 1, 4, 30, 200, ("What makes you come\
 to this lost world?\
 A star? I have one.\
@@ -151,28 +44,6 @@ strange place and I see\
 that you have no good\
 intent for my star, so\
 I have to stop you now!"))
-smlua_text_utils_dialog_replace(DIALOG_018, 1, 4, 30, 200, ("I'm sleeping because...\
-...I'm sleepy. I don't\
-like being disturbed.\
-Please walk quietly."))
-smlua_text_utils_dialog_replace(DIALOG_019, 1, 2, 30, 200, ("Shhh! Please walk\
-quietly in the hallway!"))
-smlua_text_utils_dialog_replace(DIALOG_020, 1, 6, 95, 150, ("Dear Mario[C]\
-Please come to the\
-castle. I've baked\
-a cake for you.\
-Yours truly--\
-Princess Toadstool"))
-smlua_text_utils_dialog_replace(DIALOG_021, 1, 5, 95, 200, ("Welcome.\
-No one's home!\
-Now scram--\
-and don't come back!\
-Gwa ha ha!"))
-smlua_text_utils_dialog_replace(DIALOG_022, 1, 2, 95, 200, ("You need a key to open\
-this door."))
-smlua_text_utils_dialog_replace(DIALOG_023, 1, 3, 95, 200, ("This key doesn't fit!\
-Maybe it's for the\
-basement..."))
 smlua_text_utils_dialog_replace(DIALOG_024, 1, 4, 95, 200, ("You need 1 star for this\
 door, talk to the weird\
 looking guy over there\
@@ -192,96 +63,6 @@ enter the final level."))
 smlua_text_utils_dialog_replace(DIALOG_029, 1, 5, 95, 200, ("You need ^ more\
 stars before you can\
 enter the final level."))
-smlua_text_utils_dialog_replace(DIALOG_030, 1, 6, 30, 200, ("Hello! The Lakitu Bros.,\
-cutting in with a live\
-update on Mario's\
-progress. He's about to\
-learn a technique for\
-sneaking up on enemies.\
-The trick is this[C] He has\
-to walk very slowly in\
-order to walk quietly.\
-\
-\
-\
-And wrapping up filming\
-techniques reported on\
-earlier, you can take a\
-look around using [C]> and\
-[C]<. Press [C]| to view the\
-action from a distance.\
-When you can't move the\
-camera any farther, the\
-buzzer will sound. This is\
-the Lakitu Bros.,\
-signing off."))
-smlua_text_utils_dialog_replace(DIALOG_031, 1, 5, 30, 200, ("No way! You beat me...\
-again!! And I just spent\
-my entire savings on\
-these new Koopa\
-Mach 1 Sprint shoes!\
-Here, I guess I have to\
-hand over this Star to\
-the winner of the race.\
-Congrats, Mario!"))
-smlua_text_utils_dialog_replace(DIALOG_032, 1, 5, 30, 200, ("If you get the Wing Cap,\
-you can fly! Put the cap\
-on, then do a Triple\
-Jump--jump three times\
-in a row--to take off.\
-You can fly even higher\
-if you blast out of a\
-cannon wearing the\
-Wing Cap!\
-\
-Use the [C] Buttons to look\
-around while flying, and\
-press [Z] to land."))
-smlua_text_utils_dialog_replace(DIALOG_033, 1, 6, 30, 200, ("Ciao! You've reached\
-Princess Toadstool's\
-castle via a warp pipe.\
-Using the controller is a\
-piece of cake. Press [A] to\
-jump and [B] to attack.\
-Press [B] to read signs,\
-too. Use the Control Stick\
-in the center of the\
-controller to move Mario\
-around. Now, head for\
-the castle."))
-smlua_text_utils_dialog_replace(DIALOG_034, 1, 6, 30, 200, ("Good afternoon. The\
-Lakitu Bros., here,\
-reporting live from just\
-outside the Princess's\
-castle.\
-\
-Mario has just arrived\
-on the scene, and we'll\
-be filming the action live\
-as he enters the castle\
-and pursues the missing\
-Power Stars.\
-As seasoned cameramen,\
-we'll be shooting from the\
-recommended angle, but\
-you can change the\
-camera angle by pressing\
-the [C] Buttons.\
-If we can't adjust the\
-view any further, we'll\
-buzz. To take a look at\
-the surroundings, stop\
-and press [C]^.\
-\
-Press [A] to resume play.\
-Switch camera modes with\
-the [R] Button. Signs along\
-the way will review these\
-instructions.\
-\
-For now, reporting live,\
-this has been the\
-Lakitu Bros."))
 smlua_text_utils_dialog_replace(DIALOG_035, 1, 4, 30, 200, ("Welcome to our small\
 town. What brings you\
 to this place?\
@@ -298,11 +79,6 @@ If you can find the\
 switch then you are\
 probably manly enough\
 to use it!"))
-smlua_text_utils_dialog_replace(DIALOG_037, 1, 2, 30, 200, ("I win! You lose!\
-Ha ha ha ha!\
-You're no slouch, but I'm\
-a better sledder!\
-Better luck next time!"))
 smlua_text_utils_dialog_replace(DIALOG_038, 1, 1, 95, 150, ("The door is now unlocked!"))
 smlua_text_utils_dialog_replace(DIALOG_039, 1, 4, 30, 200, ("These rainbow pipes\
 seem to be everywhere\
@@ -317,13 +93,6 @@ and smooth to be really\
 perfect in my eyes...\
 this place delivers on\
 that front very well."))
-smlua_text_utils_dialog_replace(DIALOG_041, 1, 3, 30, 200, ("I win! You lose!\
-Ha ha ha!\
-\
-That's what you get for\
-messin' with Koopa the\
-Quick.\
-Better luck next time!"))
 smlua_text_utils_dialog_replace(DIALOG_042, 1, 5, 30, 200, ("Hey, you see that tall\
 orange building on the\
 other side of the town?\
@@ -339,41 +108,18 @@ it... not even a shell will\
 save you from it.\
 Use the underwater\
 tunnels to get around."))
-smlua_text_utils_dialog_replace(DIALOG_044, 1, 5, 95, 200, ("Whooo's there? Whooo\
-woke me up? It's still\
-daylight--I should be\
-sleeping!\
-\
-Hey, as long as I'm\
-awake, why not take a\
-short flight with me?\
-Press and hold [A] to grab\
-on. Release [A] to let go.\
-I'll take you wherever\
-you want to go, as long\
-as my wings hold out.\
-Watch my shadow, and\
-grab on."))
-smlua_text_utils_dialog_replace(DIALOG_045, 1, 6, 95, 200, ("Whew! I'm just about\
-flapped out. You should\
-lay off the pasta, Mario!\
-That's it for now. Press\
-[A] to let go. Okay,\
-bye byyyyyyeeee!"))
 smlua_text_utils_dialog_replace(DIALOG_046, 1, 3, 30, 200, ("You see that tall island\
 next to the red rock?\
 Someone once told me\
 there is a secret entrance\
 between the two to get\
 to a flashy pipe."))
-smlua_text_utils_dialog_replace(DIALOG_047, 1, 2, 95, 200, ("Hi! I'll prepare the\
-cannon for you!"))
 smlua_text_utils_dialog_replace(DIALOG_048, 1, 5, 30, 200, ("I heard of a volcano\
 that sits under these\
 islands here. There\
 has to be a tunnel\
 somewhere leading to it."))
-smlua_text_utils_dialog_replace(DIALOG_049, 1, 4, 30, 200, ("why did you come\
+smlua_text_utils_dialog_replace(DIALOG_049, 1, 4, 30, 200, ("... why did you come\
 here? I don't mind the\
 company but why?\
 Sorry, I got nothing...\
@@ -399,53 +145,7 @@ smlua_text_utils_dialog_replace(DIALOG_054, 1, 3, 30, 200, ("You are wondering w
 there is sand flowing\
 through the tube?\
 yes"))
-smlua_text_utils_dialog_replace(DIALOG_055, 1, 4, 30, 200, ("Hey-ey, Mario, buddy,\
-howzit goin'? Step right\
-up. You look like a fast\
-sleddin' kind of guy.\
-I know speed when I see\
-it, yes siree--I'm the\
-world champion sledder,\
-you know. Whaddya say?\
-How about a race?\
-Ready...\
-\
-//Go//// Don't Go"))
-smlua_text_utils_dialog_replace(DIALOG_056, 1, 6, 30, 200, ("You brrrr-oke my record!\
-Unbelievable! I knew\
-that you were the coolest.\
-Now you've proven\
-that you're also the\
-fastest!\
-I can't award you a gold\
-medal, but here, take this\
-Star instead. You've\
-earned it!"))
-smlua_text_utils_dialog_replace(DIALOG_057, 1, 4, 30, 200, ("Egad! My baby!! Have you\
-seen my baby??? She's\
-the most precious baby in\
-the whole wide world.\
-|They say she has my\
-beak...> I just can't\
-remember where I left\
-her.\
-Let's see...I stopped\
-for herring and ice cubes,\
-then I...oohh! I just\
-don't know!"))
-smlua_text_utils_dialog_replace(DIALOG_058, 1, 4, 30, 200, ("You found my precious,\
-precious baby! Where\
-have you been? How can\
-I ever thank you, Mario?\
-Oh, I do have this...\
-...Star. Here, take it\
-with my eternal\
-gratitude."))
-smlua_text_utils_dialog_replace(DIALOG_059, 1, 4, 30, 200, ("That's not my baby! She\
-looks nothing like me!\
-Her parents must be\
-worried sick!"))
-smlua_text_utils_dialog_replace(DIALOG_060, 1, 2, 30, 200, ("towers combined into\
+smlua_text_utils_dialog_replace(DIALOG_060, 1, 2, 30, 200, ("3 towers combined into\
 one...\
 amazing"))
 smlua_text_utils_dialog_replace(DIALOG_061, 1, 2, 30, 200, ("Have you visited\
@@ -581,59 +281,21 @@ I can tell you is that\
 below the highest tower\
 there is a hidden chain...\
 why? Idk actually."))
-smlua_text_utils_dialog_replace(DIALOG_079, 1, 4, 30, 200, (""))
-smlua_text_utils_dialog_replace(DIALOG_080, 1, 1, 30, 200, (""))
+smlua_text_utils_dialog_replace(DIALOG_079, 1, 4, 30, 200, ("-"))
+smlua_text_utils_dialog_replace(DIALOG_080, 1, 1, 30, 200, ("-"))
 smlua_text_utils_dialog_replace(DIALOG_081, 1, 6, 30, 200, ("Wanna know a secret?\
 You can do some crazy\
 angled walljumps if\
 you want to try, but\
 you won't need those\
 until later. Good luck."))
-smlua_text_utils_dialog_replace(DIALOG_082, 1, 4, 30, 200, ("Hold on to your hat! If\
-you lose it, you'll be\
-injured easily.\
-\
-If you do lose your Cap,\
-you'll have to find it in\
-the course where you\
-lost it.\
-Oh, boy, it's not looking\
-good for Peach. She's\
-still trapped somewhere\
-inside the walls.\
-Please, Mario, you have\
-to help her! Did you know\
-that there are enemy\
-worlds inside the walls?\
-Yup. It's true. Bowser's\
-troops are there, too.\
-Oh, here, take this. I've\
-been keeping it for you."))
-smlua_text_utils_dialog_replace(DIALOG_083, 1, 6, 30, 200, ("There's something strange\
-about that clock. As you\
-jump inside, watch the\
-position of the big hand.\
-Oh, look what I found!\
-Here, Mario, catch!"))
-smlua_text_utils_dialog_replace(DIALOG_084, 1, 3, 30, 200, ("Yeeoww! Unhand me,\
-brute! I'm late, so late,\
-I must make haste!\
-This shiny thing? Mine!\
-It's mine. Finders,\
-keepers, losers...\
-Late, late, late...\
-Ouch! Take it then! A\
-gift from Bowser, it was.\
-Now let me be! I have a\
-date! I cannot be late\
-for tea!"))
 smlua_text_utils_dialog_replace(DIALOG_085, 1, 6, 30, 200, ("Hey Mario, could you buy\
 some stuff from the\
 supermarket? I'm off\
 to save princess Daisy\
 once again.\
         - Your Bro, Luigi"))
-smlua_text_utils_dialog_replace(DIALOG_086, 1, 5, 30, 200, ("Camera Info -\
+smlua_text_utils_dialog_replace(DIALOG_086, 1, 5, 30, 200, ("- Camera Info -\
 If you need a stable\
 cam for platforming,\
 then try to use Lakitu\
@@ -661,12 +323,12 @@ smlua_text_utils_dialog_replace(DIALOG_089, 1, 2, 95, 200, ("Hey Mario, could yo
 get me an autograph?\
 From your brother of\
 course, not you!"))
-smlua_text_utils_dialog_replace(DIALOG_090, 1, 6, 30, 200, (""))
+smlua_text_utils_dialog_replace(DIALOG_090, 1, 6, 30, 200, ("-"))
 smlua_text_utils_dialog_replace(DIALOG_091, 2, 3, 30, 200, ("Feeling low on HP?\
 Then go grab one of\
 these mushrooms!"))
-smlua_text_utils_dialog_replace(DIALOG_092, 1, 5, 30, 200, (""))
-smlua_text_utils_dialog_replace(DIALOG_093, 1, 5, 30, 200, (""))
+smlua_text_utils_dialog_replace(DIALOG_092, 1, 5, 30, 200, ("-"))
+smlua_text_utils_dialog_replace(DIALOG_093, 1, 5, 30, 200, ("-"))
 smlua_text_utils_dialog_replace(DIALOG_094, 1, 4, 30, 200, ("What do you think you\
 are trying to do here?\
 You won't abuse me\
@@ -696,7 +358,7 @@ getting close to a star\
 or you are on the\
 pathway to one, you\
 will see one of these."))
-smlua_text_utils_dialog_replace(DIALOG_098, 1, 1, 95, 200, ("n\
+smlua_text_utils_dialog_replace(DIALOG_098, 1, 1, 95, 200, ("...\
 Stop that!"))
 smlua_text_utils_dialog_replace(DIALOG_099, 1, 7, 95, 200, ("When you see one of\
 these bumpers, then\
@@ -710,8 +372,8 @@ need to hold anything.\
 Sometimes get ready to\
 press the A button for\
 a walljump tho."))
-smlua_text_utils_dialog_replace(DIALOG_100, 1, 3, 95, 200, (""))
-smlua_text_utils_dialog_replace(DIALOG_101, 1, 3, 95, 200, (""))
+smlua_text_utils_dialog_replace(DIALOG_100, 1, 3, 95, 200, ("-"))
+smlua_text_utils_dialog_replace(DIALOG_101, 1, 3, 95, 200, ("-"))
 smlua_text_utils_dialog_replace(DIALOG_102, 1, 4, 30, 200, ("This noteblock here is\
 easy to use, just hold\
 the A button and off\
@@ -730,49 +392,10 @@ smlua_text_utils_dialog_replace(DIALOG_104, 1, 4, 30, 200, ("Watch it! Only step
 the brighter floors!\
 DO NOT AT ALL touch\
 the other tiles!"))
-smlua_text_utils_dialog_replace(DIALOG_105, 1, 3, 95, 200, ("Ready for blastoff! Come\
-on, hop into the cannon!\
-\
-You can reach the Star on\
-the floating island by\
-using the four cannons.\
-Use the Control Stick to\
-aim, then press [A] to fire.\
-\
-If you're handy, you can\
-grab on to trees or poles\
-to land."))
-smlua_text_utils_dialog_replace(DIALOG_106, 1, 2, 95, 200, ("Ready for blastoff! Come\
-on, hop into the cannon!"))
-smlua_text_utils_dialog_replace(DIALOG_107, 1, 3, 95, 200, ("Ghosts...\
-...don't...\
-...DIE!\
-Heh, heh, heh!\
-Can you get out of here...\
-...alive?"))
 smlua_text_utils_dialog_replace(DIALOG_108, 1, 4, 95, 200, ("Hahaha, you fell for my\
 trick... but I guess you\
 got me too, so we are\
 even in the end."))
-smlua_text_utils_dialog_replace(DIALOG_109, 1, 4, 95, 200, ("Ooooo Nooooo!\
-Talk about out-of-body\
-experiences--my body\
-has melted away!\
-Have you run in to any\
-headhunters lately??\
-I could sure use a new\
-body!\
-Brrr! My face might\
-freeze like this!"))
-smlua_text_utils_dialog_replace(DIALOG_110, 1, 5, 95, 200, ("I need a good head on my\
-shoulders. Do you know of\
-anybody in need of a good\
-body? Please! I'll follow\
-you if you do!"))
-smlua_text_utils_dialog_replace(DIALOG_111, 1, 4, 95, 200, ("Perfect! What a great\
-new body! Here--this is a\
-present for you. It's sure\
-to warm you up."))
 smlua_text_utils_dialog_replace(DIALOG_112, 1, 6, 30, 200, ("Need a bit of help finding\
 the right camera angle\
 for this? Switch to\
@@ -830,33 +453,6 @@ one for you... just say\
 next time you need one.\
 Now I'm gonna miss the\
 best part... thanks!"))
-smlua_text_utils_dialog_replace(DIALOG_120, 1, 4, 30, 200, ("Ooowaah! Can it be that\
-I've lost??? The power of\
-the Stars has failed me...\
-this time.\
-Consider this a draw.\
-Next time, I'll be in\
-perfect condition.\
-\
-Now, if you want to see\
-your precious Princess,\
-come to the top of the\
-tower.\
-I'll be waiting!\
-Gwa ha ha ha!"))
-smlua_text_utils_dialog_replace(DIALOG_121, 1, 5, 30, 200, ("Nooo! It can't be!\
-You've really beaten me,\
-Mario?!! I gave those\
-troops power, but now\
-it's fading away!\
-Arrgghh! I can see peace\
-returning to the world! I\
-can't stand it! Hmmm...\
-It's not over yet...\
-\
-C'mon troops! Let's watch\
-the ending together!\
-Bwa ha ha!"))
 smlua_text_utils_dialog_replace(DIALOG_122, 1, 7, 30, 200, ("There are some things\
 that can hurt you, but\
 under certain conditions\
@@ -942,14 +538,6 @@ and do your thing, then\
 we can think of what\
 to wish for... wasn't this\
 excited in a while."))
-smlua_text_utils_dialog_replace(DIALOG_132, 1, 4, 30, 200, ("Whoa, Mario, pal, you\
-aren't trying to cheat,\
-are you? Shortcuts aren't\
-allowed.\
-Now, I know that you\
-know better. You're\
-disqualified! Next time,\
-play fair!"))
 smlua_text_utils_dialog_replace(DIALOG_133, 1, 9, 95, 200, ("Hello, hello! Welcome to\
 the trap door quiz of\
 the Tower of Tempora!\
@@ -1028,74 +616,6 @@ checkpoint in the area\
 that is beyond this pipe.\
 So a timesave I guess.\
 Good luck!"))
-smlua_text_utils_dialog_replace(DIALOG_141, 1, 5, 150, 200, ("You've recovered one of\
-the stolen Power Stars!\
-Now you can open some of\
-the sealed doors in the\
-castle.\
-Try the Princess's room\
-on the second floor and\
-the room with the\
-painting of Whomp's\
-Fortress on Floor 1.\
-Bowser's troops are still\
-gaining power, so you\
-can't give up. Save us,\
-Mario! Keep searching for\
-Stars!"))
-smlua_text_utils_dialog_replace(DIALOG_142, 1, 5, 150, 200, ("You've recovered three\
-Power Stars! Now you can\
-open any door with a 3\
-on its star.\
-\
-You can come and go from\
-the open courses as you\
-please. The enemies ahead\
-are even meaner, so be\
-careful!"))
-smlua_text_utils_dialog_replace(DIALOG_143, 1, 6, 150, 200, ("You've recovered eight of\
-the Power Stars! Now you\
-can open the door with\
-the big Star! But Bowser\
-is just ahead...can you\
-hear the Princess calling?"))
-smlua_text_utils_dialog_replace(DIALOG_144, 1, 6, 150, 200, ("You've recovered 30\
-Power Stars! Now you can\
-open the door with the\
-big Star! But before you\
-move on, how's it going\
-otherwise?\
-Did you pound the two\
-columns down? You didn't\
-lose your hat, did you?\
-If you did, you'll have to\
-stomp on the condor to\
-get it back!\
-They say that Bowser has\
-sneaked out of the sea\
-and into the underground.\
-Have you finally\
-cornered him?"))
-smlua_text_utils_dialog_replace(DIALOG_145, 1, 6, 150, 200, ("You've recovered 50\
-Power Stars! Now you can\
-open the Star Door on the\
-third floor. Bowser's\
-there, you know.\
-\
-Oh! You've found all of\
-the Cap Switches, haven't\
-you? Red, green and blue?\
-The Caps you get from the\
-colored blocks are really\
-helpful.\
-Hurry along, now. The\
-third floor is just ahead."))
-smlua_text_utils_dialog_replace(DIALOG_146, 1, 6, 150, 200, ("You've found 70 Power\
-Stars! The mystery of the\
-endless stairs is solved,\
-thanks to you--and is\
-Bowser ever upset! Now,\
-on to the final bout!"))
 smlua_text_utils_dialog_replace(DIALOG_147, 1, 6, 30, 200, ("Well, well, well...\
 are you insane?\
 Nobody comes to this\
@@ -1154,101 +674,8 @@ Goodbye.\
 Cya.\
 Ok, you can go now\
 For real this time"))
-smlua_text_utils_dialog_replace(DIALOG_150, 1, 5, 30, 200, ("Waaaa! You've flooded my\
-house! Wh-why?? Look at\
-this mess! What am I\
-going to do now?\
-\
-The ceiling's ruined, the\
-floor is soaked...what to\
-do, what to do? Huff...\
-huff...it makes me so...\
-MAD!!!\
-Everything's been going\
-wrong ever since I got\
-this Star...It's so shiny,\
-but it makes me feel...\
-strange..."))
-smlua_text_utils_dialog_replace(DIALOG_151, 1, 4, 30, 200, ("I can't take this\
-anymore! First you get\
-me all wet, then you\
-stomp on me!\
-Now I'm really, really,\
-REALLY mad!\
-Waaaaaaaaaaaaaaaaa!!!"))
-smlua_text_utils_dialog_replace(DIALOG_152, 1, 3, 30, 200, ("Owwch! Uncle! Uncle!\
-Okay, I give. Take this\
-Star!\
-Whew! I feel better now.\
-I don't really need it\
-anymore, anyway--\
-I can see the stars\
-through my ceiling at\
-night.\
-They make me feel...\
-...peaceful. Please, come\
-back and visit anytime."))
-smlua_text_utils_dialog_replace(DIALOG_153, 1, 4, 30, 200, ("Hey! Who's there?\
-What's climbing on me?\
-Is it an ice ant?\
-A snow flea?\
-Whatever it is, it's\
-bugging me! I think I'll\
-blow it away!"))
-smlua_text_utils_dialog_replace(DIALOG_154, 1, 5, 30, 200, ("Hold on to your hat! If\
-you lose it, you'll be\
-easily injured. If you\
-lose it, look for it in the\
-course where you lost it.\
-Speaking of lost, the\
-Princess is still stuck in\
-the walls somewhere.\
-Please help, Mario!\
-\
-Oh, you know that there\
-are secret worlds in the\
-walls as well as in the\
-paintings, right?"))
 smlua_text_utils_dialog_replace(DIALOG_155, 1, 2, 30, 200, ("Well, go beat up Bowser\
 and we can take off!"))
-smlua_text_utils_dialog_replace(DIALOG_156, 1, 5, 30, 200, ("The world inside the\
-clock is so strange!\
-When you jump inside,\
-watch the position of\
-the big hand!"))
-smlua_text_utils_dialog_replace(DIALOG_157, 1, 5, 30, 200, ("Watch out! Don't let\
-yourself be swallowed by\
-quicksand.\
-\
-\
-If you sink into the sand,\
-you won't be able to\
-jump, and if your head\
-goes under, you'll be\
-smothered.\
-The dark areas are\
-bottomless pits."))
-smlua_text_utils_dialog_replace(DIALOG_158, 1, 6, 30, 200, ("If you jump repeatedly\
-and time it right, you'll\
-jump higher and higher.\
-If you run really fast and\
-time three jumps right,\
-you can do a Triple Jump.\
-2. Jump into a solid wall,\
-then jump again when you\
-hit the wall. You can\
-bounce to a higher level\
-using this Wall Kick."))
-smlua_text_utils_dialog_replace(DIALOG_159, 1, 6, 30, 200, ("If you stop, press [Z]\
-to crouch, then jump, you\
-can perform a Backward\
-Somersault. To do a Long\
-Jump, run fast, press [Z],\
-then jump."))
-smlua_text_utils_dialog_replace(DIALOG_160, 1, 4, 30, 200, ("Press [B] while running\
-fast to do a Body Slide\
-attack. To stand while\
-sliding, press [A] or [B]."))
 smlua_text_utils_dialog_replace(DIALOG_161, 1, 4, 30, 200, ("Mario!!!\
 It that really you???\
 It has been so long since\
@@ -1276,55 +703,6 @@ We hope that you like it!\
 Enjoy!!!『\
 \
 The Super Mario 64 Team"))
-smlua_text_utils_dialog_replace(DIALOG_162, 1, 4, 30, 200, ("No, no, no! Not you\
-again! I'm in a great\
-hurry, can't you see?\
-\
-I've no time to squabble\
-over Stars. Here, have it.\
-I never meant to hide it\
-from you...\
-It's just that I'm in such\
-a rush. That's it, that's\
-all. Now, I must be off.\
-Owww! Let me go!"))
-smlua_text_utils_dialog_replace(DIALOG_163, 1, 5, 30, 200, ("Noooo! You've really\
-beaten me this time,\
-Mario! I can't stand\
-losing to you!\
-\
-My troops...worthless!\
-They've turned over all\
-the Power Stars! What?!\
-There are 120 in all???\
-\
-Amazing! There were some\
-in the castle that I\
-missed??!!\
-\
-\
-Now I see peace\
-returning to the world...\
-Oooo! I really hate that!\
-I can't watch--\
-I'm outta here!\
-Just you wait until next\
-time. Until then, keep\
-that Control Stick\
-smokin'!\
-Buwaa ha ha!"))
-smlua_text_utils_dialog_replace(DIALOG_164, 1, 4, 30, 200, ("Mario! What's up, pal?\
-I haven't been on the\
-slide lately, so I'm out\
-of shape.\
-Still, I'm always up for a\
-good race, especially\
-against an old sleddin'\
-buddy.\
-Whaddya say?\
-Ready...set...\
-\
-//Go//// Don't Go"))
 smlua_text_utils_dialog_replace(DIALOG_165, 1, 5, 95, 200, ("QUICK NOTES[C]\
 - If you press all panels\
 in a level and the star\
@@ -1339,10 +717,6 @@ Another way to fix the\
 music issue is to simply\
 exit course and to\
 reenter the level."))
-smlua_text_utils_dialog_replace(DIALOG_166, 1, 4, 30, 200, ("I'll be back soon.\
-I'm out training now,\
-so come back later.\
-//--Koopa the Quick"))
 smlua_text_utils_dialog_replace(DIALOG_167, 1, 2, 30, 200, ("ATTENTION!\
 The letter of the day is[C]\
 t\
@@ -1352,11 +726,6 @@ attention.\
 \
 \
 |hi brodute [C]3>"))
-smlua_text_utils_dialog_replace(DIALOG_168, 1, 5, 30, 200, ("Hey! Knock it off! That's\
-the second time you've\
-nailed me. Now you're\
-asking for it, linguine\
-breath!"))
 smlua_text_utils_dialog_replace(DIALOG_169, 1, 2, 30, 200, ("Star Revenge 0 GoO\
 \
 An SM64 Hack\
